@@ -5,10 +5,9 @@ Scope of this mod:
 - Remove bloat from external mods
 - Rebalance external mods
 
-Mod patches are balanced around my mods, including [fried rice](https://github.com/friedriceworld/fried-rice). For example, [gene expansion](https://github.com/friedriceworld/gene-expansion) removes genetic aptitudes by default and the VRE Phytokins patch compensates for that metabolism loss. If aptitudes are toggled back on, Phytokin will have +1 metabolism.
+All patches are balanced around my mods (and personal modlist). For example, [gene expansion](https://github.com/friedriceworld/gene-expansion) removes genetic aptitudes by default and the VRE Phytokins patch compensates for that metabolism loss. If aptitudes are toggled back on, Phytokin will have +1 metabolism.
 
 ## Supported Mods
-
 ### Combat Extended
 - Prevents backpacks from spawning on non-player pawns
 

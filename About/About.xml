@@ -20,12 +20,12 @@
 	<loadBefore />
 	<loadAfter>
 		<li>ceteam.combatextended</li>
+		<li>friedrice.patches</li>
 		<li>moistestwhale.gitscyberbrains</li>
 		<li>oskarpotocki.vanillafactionsexpanded.core</li>
 		<li>oskarpotocki.vanillafactionsexpanded.settlersmodule</li>
 		<li>oskarpotocki.vfe.mechanoid</li>
 		<li>oskarpotocki.vfe.pirates</li>
-		<li>sarg.alphamemes</li>
 		<li>vanillaexpanded.basegenerationexpanded</li>
 		<li>vanillaexpanded.vappe</li>
 		<li>vanillaexpanded.vfesecurity</li>
