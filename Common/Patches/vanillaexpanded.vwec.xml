@@ -1,0 +1,20 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>[VWE - Coilguns] prevent spawning on non-player pawns</label>
+		<operations>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Vanilla Weapons Expanded - Coilguns</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationRemove">
+							<xpath>//ThingDef[starts-with(defName, "VWE_Gun_Gauss")]/weaponTags/li[text()="SpacerGun"]</xpath>
+						</li>
+					</operations>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

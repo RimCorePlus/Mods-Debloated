@@ -1,0 +1,38 @@
+﻿<ModMetaData>
+	<packageId>friedrice.noegg</packageId>
+	<name>mods debloated</name>
+	<author>boomer</author>
+	<description />
+	<supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+	<modVersion>1.5.0</modVersion>
+	<modIconPath IgnoreIfNoMatchingField="True" />
+	<url>https://github.com/friedriceworld/mods-debloated</url>
+	<modDependencies>
+		<li>
+			<packageId>friedrice.patches</packageId>
+			<displayName>fried rice</displayName>
+			<steamWorkshopUrl />
+			<downloadUrl>https://github.com/friedriceworld/fried-rice</downloadUrl>
+		</li>
+	</modDependencies>
+	<loadBefore />
+	<loadAfter>
+		<li>ceteam.combatextended</li>
+		<li>moistestwhale.gitscyberbrains</li>
+		<li>oskarpotocki.vanillafactionsexpanded.core</li>
+		<li>oskarpotocki.vanillafactionsexpanded.settlersmodule</li>
+		<li>oskarpotocki.vfe.mechanoid</li>
+		<li>oskarpotocki.vfe.pirates</li>
+		<li>sarg.alphamemes</li>
+		<li>vanillaexpanded.basegenerationexpanded</li>
+		<li>vanillaexpanded.vappe</li>
+		<li>vanillaexpanded.vfesecurity</li>
+		<li>vanillaexpanded.vpsycastse</li>
+		<li>vanillaexpanded.vwec</li>
+		<li>vanillaracesexpanded.archon</li>
+		<li>vanillaracesexpanded.phytokin</li>
+	</loadAfter>
+	<incompatibleWith />
+</ModMetaData>
