@@ -10,9 +10,13 @@ All patches are balanced around my mods (and personal modlist). For example, [ge
 ## Supported Mods
 ### Combat Extended
 - Prevents backpacks from spawning on non-player pawns
+- Removes gas masks, melee shield (not the ballistic shield), night vision goggles, and powered exoframe
 
 ### GiTS Cyberbrains
 - Removes abilities to make the brains less OP and reduce gizmo clutter
+
+### RimThunder Functional Furniture Expanded
+- Removes everything but a few of the doors
 
 ### Vanilla Apparel Expanded
 - Removes most non-specialized apparel
@@ -20,6 +24,11 @@ All patches are balanced around my mods (and personal modlist). For example, [ge
 - Nerfs non-specialized apparel like jumpsuits and boots
 - Prevents military uniforms from spawning on non-combatants
 - Allows jumpsuits to spawn on non-player pawns
+
+### Vanilla Apparel Expanded - Accessories
+- Removes backpack, battle banner, and mini-turret pack
+- Rebalances medic pack and tool belt
+- Prevents most accessories from spawning on non-player pawns
 
 ### Vanilla Factions Expanded - Mechanoids
 - Removes drones since we now have player mechanoids
@@ -31,6 +40,8 @@ All patches are balanced around my mods (and personal modlist). For example, [ge
 - Removes everything but ammo crates, artillery, decoys, EMP cannons, and shield generators
 - - Note: C# assemblies call for removed defs which results in harmless red errors at startup
 - Allows the player to build ammo crates without researching fabrication
+
+**Hard incompatibility**: These patches **must** be disabled if Vanilla Factions Expanded - Settlers is installed.
 
 ### Vanilla Psycasts Expanded
 - Removes psycaster raids to prevent spacer armor raids (mainly from VFE - Deserters) on my day 20 colony
@@ -48,7 +59,6 @@ All patches are balanced around my mods (and personal modlist). For example, [ge
 
 ## To-do:
 - Debloat [RimThunder Functional Furniture Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=3430151040)
-- Debloat [Vanilla Factions Expanded Settlers](https://steamcommunity.com/sharedfiles/filedetails/?id=2052918119)
 
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 

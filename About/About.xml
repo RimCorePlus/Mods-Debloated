@@ -2,7 +2,7 @@
 	<packageId>friedrice.noegg</packageId>
 	<name>mods debloated</name>
 	<author>boomer</author>
-	<description />
+	<description>Vanilla Factions Expanded - Settlers incompatibility:\nThe Vanilla Expanded team reused the VFES_ prefix for this mod's defs and the Vanilla Furniture Expanded - Security Module's defs. I like the security module more, and don't care to rewrite its patches to accomodate settlers. They also added a ton of duplicate buildings and apparel, never updated the mod to use the styles framework added with ideology, and then used that duplicate furniture in base generation, so patching out bloat isn't as straightforward as it is for other mods. I'm probably never going to play with settlers again anyway, so it's a hard incompatibility unless you turn off the security module patches.</description>
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>
@@ -34,5 +34,7 @@
 		<li>vanillaracesexpanded.archon</li>
 		<li>vanillaracesexpanded.phytokin</li>
 	</loadAfter>
-	<incompatibleWith />
+	<incompatibleWith>
+		<li>oskarpotocki.vanillafactionsexpanded.settlersmodule</li>
+	</incompatibleWith>
 </ModMetaData>

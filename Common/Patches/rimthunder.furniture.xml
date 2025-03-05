@@ -1,0 +1,26 @@
+<Patch><!--needs work, mostly removing the defs from linkables
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>True</enabled>
+        <label>[RimThunder Functional Furniture Expanded] remove everything but a few doors</label>
+        <operations>
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>RimThunder Functional Furniture Expanded</li>
+                </mods>
+                <match Class="PatchOperationSequence">
+                    <operations>
+                        <li Class="PatchOperationRemove">
+                            <xpath>//ThingDef[defName="RT_Removed_car_seats" or defName="RT_Removed_car_seats" or defName="RT_2_Post_Hoist" or defName="RT_4_Post_Hoist_POne" or defName="RT_4_Post_Hoist_PTwo" or defName="RT_Mobile_Ladder" or defName="RT_Car_Ramp" or defName="RT_Mobile_Blowe" or defName="RT_Mobile_Extinguisher" or defName="RT_Race_Simulator" or defName="RT_Motor_Simulator" or defName="RT_Small_Lathe" or defName="RT_Large_Lathe" or defName="RT_CNC_machine" or defName="RT_Grinding_Machine" or defName="RT_Milling" or defName="RT_Air_Compressors" or defName="RT_4Wheel_alignment_machine" or defName="RT_Engine_Oil_Extractor" or defName="RT_Hydraulic_Lifting_Jack_red" or defName="RT_Hydraulic_Lifting_Jack_yellow" or defName="RT_Sideboard" or defName="RT_Iron_Armoire" or defName="RT_Tin_Bedside_cabinetA" or defName="RT_Tin_Bedside_cabinetB" or defName="RT_Drum" or defName="RT_Iron_Shelves" or defName="RT_Lockers" or defName="RT_GarageDoorSmall" or defName="RT_GarageDoorSmallOpened" or defName="RT_GarageDoorLarge" or defName="RT_GarageDoorLargeOpened" or defName="RT_GarageAutoDoorSmall" or defName="RT_GarageAutoDoorSmallOpened" or defName="RT_GarageAutoDoorLarge" or defName="RT_GarageAutoDoorLargeOpened"]</xpath>
+                        </li>
+                        <li Class="PatchOperationRemove">
+                            <xpath>//JoyGiverDef[defName="Play_Simulator"]</xpath>
+                        </li>
+                        <li Class="PatchOperationRemove">
+                            <xpath>//JobDef[defName="Play_Simulator"]</xpath>
+                        </li>
+                    </operations>
+                </match>
+            </li>
+        </operations>
+    </Operation>-->
+</Patch>
