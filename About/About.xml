@@ -1,6 +1,6 @@
 ﻿<ModMetaData>
-	<packageId>friedrice.noegg</packageId>
-	<name>mods debloated</name>
+	<packageId>coreplus.debloat</packageId>
+	<name>[Core+] Mods Debloated</name>
 	<author>boomer</author>
 	<description>Vanilla Factions Expanded - Settlers incompatibility:\nThe Vanilla Expanded team reused the VFES_ prefix for this mod's defs and the Vanilla Furniture Expanded - Security Module's defs. I like the security module more, and don't care to rewrite its patches to accomodate settlers. They also added a ton of duplicate buildings and apparel, never updated the mod to use the styles framework added with ideology, and then used that duplicate furniture in base generation, so patching out bloat isn't as straightforward as it is for other mods. I'm probably never going to play with settlers again anyway, so it's a hard incompatibility unless you turn off the security module patches.</description>
 	<supportedVersions>
@@ -9,18 +9,11 @@
 	<modVersion>1.5.0</modVersion>
 	<modIconPath IgnoreIfNoMatchingField="True" />
 	<url>https://github.com/friedriceworld/mods-debloated</url>
-	<modDependencies>
-		<li>
-			<packageId>friedrice.patches</packageId>
-			<displayName>fried rice</displayName>
-			<steamWorkshopUrl />
-			<downloadUrl>https://github.com/friedriceworld/fried-rice</downloadUrl>
-		</li>
-	</modDependencies>
+	<modDependencies />
 	<loadBefore />
 	<loadAfter>
 		<li>ceteam.combatextended</li>
-		<li>friedrice.patches</li>
+		<li>coreplus.rebalance</li>
 		<li>moistestwhale.gitscyberbrains</li>
 		<li>oskarpotocki.vanillafactionsexpanded.core</li>
 		<li>oskarpotocki.vanillafactionsexpanded.settlersmodule</li>
