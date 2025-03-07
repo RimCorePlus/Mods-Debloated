@@ -9,7 +9,7 @@
 <!--![Supports Anomaly][badge-dlc-anomaly] supports Anomaly DLC-->
 [badge-dlc-anomaly]: https://img.shields.io/badge/DLC-Anomaly-darkseagreen
 
-# mods debloated
+# [Core+] Mods Debloated
 ![](About/Preview.png)\
 [![GPLv3][badge-license]](https://www.gnu.org/licenses/gpl-3.0) ![Supports Royalty][badge-dlc-royalty] ![Supports Ideology][badge-dlc-ideology] ![Supports Biotech][badge-dlc-biotech]
 
@@ -17,7 +17,7 @@ Scope of this mod:
 - Remove bloat from external mods
 - Rebalance external mods
 
-All patches are balanced around my mods (and personal modlist). For example, [gene expansion](https://github.com/friedriceworld/gene-expansion) removes genetic aptitudes by default and the VRE Phytokins patch compensates for that metabolism loss. If aptitudes are toggled back on, Phytokin will have +1 metabolism.
+All patches are balanced around my mods (and personal modlist). For example, [gene expansion](https://github.com/RimCorePlus/Genes) removes genetic aptitudes by default and the VRE Phytokins patch compensates for that metabolism loss. If aptitudes are toggled back on, Phytokin will have +1 metabolism.
 
 ## Supported Mods
 ### Combat Extended
@@ -60,7 +60,7 @@ All patches are balanced around my mods (and personal modlist). For example, [ge
 - Removes psycaster raids to prevent spacer armor raids (mainly from VFE - Deserters) on my day 20 colony
 
 ### Vanilla Races Expanded - Archon
-- Removes extremely aggressive and long pregnancy genes (fried rice increases pregnancy duration)
+- Removes extremely aggressive and long pregnancy genes ([\[Core+\] Rebalance](https://github.com/RimCorePlus/Rebalance) increases pregnancy duration)
 - Uses vanilla heads
 
 ### Vanilla Races Expanded - Phytokin
