@@ -20,6 +20,7 @@ Scope of this mod:
 All patches are balanced around my mods (and personal modlist). For example, [gene expansion](https://github.com/RimCorePlus/Genes) removes genetic aptitudes by default and the VRE Phytokins patch compensates for that metabolism loss. If aptitudes are toggled back on, Phytokin will have +1 metabolism.
 
 ## Supported Mods
+
 ### Combat Extended
 - Prevents backpacks from spawning on non-player pawns
 - Removes gas masks, melee shield (not the ballistic shield), night vision goggles, and powered exoframe
@@ -69,9 +70,6 @@ All patches are balanced around my mods (and personal modlist). For example, [ge
 
 ### Vanilla Weapons Expanded - Coilguns
 - Prevents coilguns from spawning on non-player pawns
-
-## Next:
-- [ ] [RimThunder Functional Furniture Expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=3430151040)
 
 ## Legal
 Portions of the materials used to create this mod are trademarks and/or copyrighted works of Ludeon Studios Inc. All rights reserved by Ludeon. This mod is not official and is not endorsed by Ludeon.
