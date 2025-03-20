@@ -20,6 +20,7 @@ Scope of this mod:
 All patches are balanced around my mods (and personal modlist). For example, [gene expansion](https://github.com/RimCorePlus/Genes) removes genetic aptitudes by default and the VRE Phytokins patch compensates for that metabolism loss. If aptitudes are toggled back on, Phytokin will have +1 metabolism.
 
 ## Supported Mods
+All patches are toggable.
 
 ### Combat Extended
 - Prevents backpacks from spawning on non-player pawns
@@ -27,6 +28,9 @@ All patches are balanced around my mods (and personal modlist). For example, [ge
 
 ### GiTS Cyberbrains
 - Removes abilities to make the brains less OP and reduce gizmo clutter
+
+## ReGrowth: Core
+- Removes grassland biome
 
 ### RimThunder Functional Furniture Expanded
 - Removes everything but a few of the doors
