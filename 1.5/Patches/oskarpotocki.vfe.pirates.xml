@@ -1,6 +1,24 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>True</enabled>
+		<label>[VFE - Pirates] debloat</label>
+		<operations>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Vanilla Factions Expanded - Pirates</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<li Class="PatchOperationRemove">
+							<xpath>//ThingDef[defName="VFEP_Turret_Cannon" or defName="VFEP_Artillery_Cannon" or defName="VFEP_Bullet_Cannonball"]</xpath>
+						</li>
+					</operations>
+				</match>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
 		<label>[VFE - Pirates] rename "rum" to pruno</label>
 		<operations>
 			<li Class="PatchOperationFindMod">

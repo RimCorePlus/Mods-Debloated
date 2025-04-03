@@ -41,6 +41,7 @@ All patches are toggable.
 - Nerfs non-specialized apparel like jumpsuits and boots
 - Prevents military uniforms from spawning on non-combatants
 - Allows jumpsuits to spawn on non-player pawns
+- Set military clothing research prerequisite to complex clothing
 
 ### Vanilla Apparel Expanded - Accessories
 - Removes backpack, battle banner, and mini-turret pack
@@ -48,18 +49,16 @@ All patches are toggable.
 - Prevents most accessories from spawning on non-player pawns
 
 ### Vanilla Factions Expanded - Mechanoids
-- Removes drones since we now have player mechanoids
+- Removes all drones since we have player mechanoids
 
 ### Vanilla Factions Expanded - Pirates
+- Removes cannon
 - Renames rum to pruno (toilet wine)
 
 ### Vanilla Furniture Expanded - Security
-- Removes everything but ammo crates, artillery, decoys, EMP cannons, and shield generators
-- - Note: C# assemblies call for removed defs which results in harmless red errors at startup
-- Allows the player to build ammo crates without researching fabrication
-
-> [!WARNING]
-> **Hard incompatibility**: These patches **must** be disabled if Vanilla Factions Expanded - Settlers is installed.
+- Removes barbed wire, cavalry spikes, and turrets that are sidegrades to vanilla turrets or copies of VFE - Mechanoids turrets
+- Replace fabrication research prerequisite for ammo crate with machining
+- Set trench warfare tech level to medieval and remove prerequisites
 
 ### Vanilla Psycasts Expanded
 - Removes psycaster raids to prevent spacer armor raids (mainly from VFE - Deserters) on my day 20 colony

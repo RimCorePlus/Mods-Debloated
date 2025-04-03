@@ -44,6 +44,15 @@
 						<li Class="PatchOperationRemove">
 							<xpath>//ResearchProjectDef[defName="VAE_CasualWear" or defName="VAE_FormalWear"]</xpath>
 						</li>
+						<!--change military clothing prerequisite-->
+						<li Class="PatchOperationReplace">
+							<xpath>//ResearchProjectDef[defName="VAE_MilitaryClothing"]/prerequisites</xpath>
+							<value>
+								<prerequisites>
+									<li>ComplexClothing</li>
+								</prerequisites>
+							</value>
+						</li>
 					</operations>
 				</match>
 			</li>
