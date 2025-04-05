@@ -36,12 +36,12 @@ All patches are toggable.
 - Removes everything but a few of the doors
 
 ### Vanilla Apparel Expanded
-- Removes most non-specialized apparel
+- Removes sidegrades to vanilla apparel and regular glasses
 - Prevents most mod apparel from spawning on non-player pawns
-- Nerfs non-specialized apparel like jumpsuits and boots
+- Nerfs most non-specialized apparel 
 - Prevents military uniforms from spawning on non-combatants
 - Allows jumpsuits to spawn on non-player pawns
-- Set military clothing research prerequisite to complex clothing
+- Changes research prerequisite to complex clothing for most apparel
 
 ### Vanilla Apparel Expanded - Accessories
 - Removes backpack, battle banner, and mini-turret pack

@@ -4,36 +4,53 @@
 		<enabled>True</enabled>
 		<label>[VFE - Security Module] debloat</label>
 		<operations>
-			<!--remove unwanted items-->
-			<li Class="PatchOperationRemove">
-				<xpath>//ThingDef[defName="VFES_BarbedWire" or defName="VFES_CavalrySpikes" or defName="VFES_Turret_AutocannonDouble" or defName="VFES_TurretDoubleAutocannon_Top" or defName="VFES_DeployableBarrier" or defName="VFES_Turret_FloorTurret" or defName="VFES_Gun_FloorTurret" or defName="VFES_Turret_MilitaryTurret" or defName="VFES_Gun_MilitaryTurret" or defName="VFES_Turret_Flame" or defName="VFES_Gun_FlameTurret" or defName="VFES_Bullet_FlameTurret" or defName="VFES_Turret_ChargeTurret" or defName="VFES_Gun_ChargeTurret" or defName="VFES_Turret_ChargeRailgunTurret" or defName="VFES_Gun_RailgunTurret" or defName="VFES_Bullet_DoubleChargeLance" or defName="VFES_Turret_EMPTurret" or defName="VFES_Gun_EMPTurret" or defName="VFES_Bullet_EMPCannon"]</xpath>
-			</li>
-			<!--adjust research projects-->
-			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[defName="VFES_Turret_HMGComplex"]/researchPrerequisites/li[text()="VWE_TrenchWarfare"]</xpath>
-				<value>
-					<li>CE_TurretHeavyWeapons</li>
-				</value>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[defName="VFES_AmmoCrate"]/researchPrerequisites/li[text()="Fabrication"]</xpath>
-				<value>
-					<li>Machining</li>
-				</value>
-			</li>
-			<!--fix trench warfare-->
-			<li Class="PatchOperationRemove">
-				<xpath>//ResearchProjectDef[defName="VWE_TrenchWarfare"]/prerequisites/li[text()="Mortars"]</xpath>
-			</li>
-			<li Class="PatchOperationReplace">
-				<xpath>//ResearchProjectDef[defName="VWE_TrenchWarfare"]/techLevel</xpath>
-				<value>
-					<techLevel>Medieval</techLevel>
-				</value>
-			</li>
-			<!--remove unused research projects-->
-			<li Class="PatchOperationRemove">
-				<xpath>//ResearchProjectDef[defName="VFES_ConcealedDefenses" or defName="VFES_EMPCannon" or defName="VFES_Railgun"]</xpath>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Vanilla Furniture Expanded - Security</li>
+				</mods>
+				<match Class="PatchOperationSequence">
+					<operations>
+						<!--remove unwanted items-->
+						<li Class="PatchOperationRemove">
+							<xpath>//ThingDef[defName="VFES_BarbedWire" or defName="VFES_CavalrySpikes" or defName="VFES_Turret_AutocannonDouble" or defName="VFES_TurretDoubleAutocannon_Top" or defName="VFES_DeployableBarrier" or defName="VFES_Turret_FloorTurret" or defName="VFES_Gun_FloorTurret" or defName="VFES_Turret_MilitaryTurret" or defName="VFES_Gun_MilitaryTurret" or defName="VFES_Turret_Flame" or defName="VFES_Gun_FlameTurret" or defName="VFES_Bullet_FlameTurret" or defName="VFES_Turret_ChargeTurret" or defName="VFES_Gun_ChargeTurret" or defName="VFES_Turret_ChargeRailgunTurret" or defName="VFES_Gun_RailgunTurret" or defName="VFES_Bullet_DoubleChargeLance" or defName="VFES_Turret_EMPTurret" or defName="VFES_Gun_EMPTurret" or defName="VFES_Bullet_EMPCannon"]</xpath>
+						</li>
+						<!--adjust research projects-->
+						<li Class="PatchOperationReplace">
+							<xpath>//ThingDef[defName="VFES_Turret_HMGComplex"]/researchPrerequisites/li[text()="VWE_TrenchWarfare"]</xpath>
+							<value>
+								<li>CE_TurretHeavyWeapons</li>
+							</value>
+						</li>
+						<li Class="PatchOperationReplace">
+							<xpath>//ThingDef[defName="VFES_AmmoCrate"]/researchPrerequisites/li[text()="Fabrication"]</xpath>
+							<value>
+								<li>Machining</li>
+							</value>
+						</li>
+						<!--fix trench warfare-->
+						<li Class="PatchOperationRemove">
+							<xpath>//ResearchProjectDef[defName="VWE_TrenchWarfare"]/prerequisites/li[text()="Mortars"]</xpath>
+						</li>
+						<li Class="PatchOperationReplace">
+							<xpath>//ResearchProjectDef[defName="VWE_TrenchWarfare"]/techLevel</xpath>
+							<value>
+								<techLevel>Medieval</techLevel>
+							</value>
+						</li>
+						<!--remove unused research projects-->
+						<li Class="PatchOperationRemove">
+							<xpath>//ResearchProjectDef[defName="VFES_ConcealedDefenses" or defName="VFES_EMPCannon" or defName="VFES_Railgun"]</xpath>
+						</li>
+						<li Class="PatchOperationFindMod">
+							<mods>
+								<li>Replace Stuff Mod Compatibility</li>
+							</mods>
+							<match Class="PatchOperationRemove">
+								<xpath>//*[name()="Replace_Stuff_Compatibility.InterchangeableItems"]/replaceLists/li/items/li[text()="VFES_BarbedWire" or text()="VFES_Turret_AutocannonDouble" or text()="VFES_DeployableBarrier" or text()="VFES_Turret_FloorTurret" or text()="VFES_Turret_MilitaryTurret" or text()="VFES_Turret_Flame" or text()="VFES_Turret_ChargeTurret" or text()="VFES_Turret_ChargeRailgunTurret" or text()="VFES_Turret_EMPTurret"]</xpath>
+							</match>
+						</li>
+					</operations>
+				</match>
 			</li>
 			<!--just in case, removes turrets from basegen-->
 			<li Class="PatchOperationFindMod">

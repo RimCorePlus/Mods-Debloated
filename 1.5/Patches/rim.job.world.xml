@@ -1,0 +1,80 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>True</enabled>
+        <label>[RimJobWorld] debloat and rebalance</label>
+        <operations>
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>RimJobWorld</li>
+                </mods>
+                <match Class="PatchOperationSequence">
+                    <operations>
+                        <!--make used condoms not ingestible-->
+                        <li Class="PatchOperationAttributeSet">
+                            <xpath>//ThingDef[defName="UsedCondom"]</xpath>
+                            <attribute>ParentName</attribute>
+                            <value>ResourceBase</value>
+                        </li>
+                        <li Class="PatchOperationRemove">
+                            <xpath>//ThingDef[defName="UsedCondom"]/ingestible | //ThingDef[defName="UsedCondom"]/statBases/Nutrition</xpath>
+                        </li>
+                        <!--change used condom category to waste if DBH is installed-->
+                        <li Class="PatchOperationConditional">
+                            <xpath>//ThingCategoryDef[defName="Waste"]</xpath>
+                            <match Class="PatchOperationReplace">
+                                <xpath>//ThingDef[defName="UsedCondom"]/thingCategories/li[text()="AnimalProductRaw"]</xpath>
+                                <value>
+                                    <li>Waste</li>
+                                </value>
+                            </match>
+                            <!--otherwise change category to manufactured-->
+                            <nomatch Class="PatchOperationReplace">
+                                <xpath>//ThingDef[defName="UsedCondom"]/thingCategories/li[text()="AnimalProductRaw"]</xpath>
+                                <value>
+                                    <li>Manufactured</li>
+                                </value>
+                            </nomatch>
+                        </li>
+                        <!--decrease condom stack limit (simplifies bedside storage distribution)-->
+                        <li Class="PatchOperationReplace">
+                            <xpath>//ThingDef[defName="Condom"]/stackLimit</xpath>
+                            <value>
+                                <stackLimit>10</stackLimit>
+                            </value>
+                        </li>
+                        <!--increase used condom stack limit-->
+                        <li Class="PatchOperationReplace">
+                            <xpath>//ThingDef[defName="UsedCondom"]/stackLimit</xpath>
+                            <value>
+                                <stackLimit>500</stackLimit>
+                            </value>
+                        </li>
+                        <!--change cringe used condom description-->
+                        <li Class="PatchOperationReplace">
+                            <xpath>//ThingDef[defName="UsedCondom"]/description</xpath>
+                            <value>
+                                <description>A used condom.</description>
+                            </value>
+                        </li>
+                        <!--humpshroom doesn't refill psyfocus-->
+                        <li Class="PatchOperationRemove">
+                            <xpath>//ThingDef[defName="HumpShroom"]/ingestible/outcomeDoers/li[@Class="IngestionOutcomeDoer_OffsetPsyfocus"]</xpath>
+                        </li>
+                        <!--updates hump shroom description-->
+                        <li Class="PatchOperationReplace">
+                            <xpath>//ThingDef[defName="HumpShroom" or defName="PlantHumpShroom"]/description</xpath>
+                            <value>
+                                <description>A mushshroom with tough flesh, thick juice and smooth soft skin. Exhibits aphrodisiac effects when consumed.</description>
+                            </value>
+                        </li>
+                        <!--remove bondage gear-->
+                        <!--holock is patched out but still appears in the game? not sure what's happening here-->
+                        <li Class="PatchOperationRemove">
+                            <xpath>//ThingDef[defName="holokey" or defName="hololock"] | //rjw.bondage_gear_def[defName="PrisonerChains"] | //RecipeDef[defName="MakeHololock" or defName="MakePrisonerChains"]</xpath>
+                        </li>
+                    </operations>
+                </match>
+            </li>
+        </operations>
+    </Operation>
+</Patch>
