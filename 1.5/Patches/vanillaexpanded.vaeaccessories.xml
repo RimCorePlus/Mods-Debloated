@@ -1,7 +1,7 @@
 <Patch>
     <Operation Class="VFECore.PatchOperationToggableSequence">
         <enabled>True</enabled>
-        <label>[VAE — Accessories] debloat and rebalance</label>
+        <label>[VAE - Accessories] debloat and rebalance</label>
         <operations>
             <li Class="PatchOperationFindMod">
                 <mods>
