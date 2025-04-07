@@ -1,0 +1,20 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>[Combat Extended] debloat</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>//ThingDef[defName="CE_Apparel_GasMask" or defName="CE_Apparel_ImprovGasMask" or defName="CE_Apparel_MeleeShield" or defName="CE_Apparel_ExoFrame" or defName="CE_Apparel_SimpleNightVision" or defName="CE_Apparel_AdvancedNightVision"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>[Combat Extended] prevent backpacks from spawning on non-player pawns</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>//ThingDef[@ParentName="ApparelCarryGearBase"]/apparel/tags/li[text()="IndustrialBasic" or text()="Neolithic"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

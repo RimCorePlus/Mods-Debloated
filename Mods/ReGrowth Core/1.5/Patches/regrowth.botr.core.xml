@@ -1,0 +1,11 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>True</enabled>
+        <label>[ReGrowth: Core] remove grassland</label>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>//BiomeDef[defName="RG_TemperateGrassland"] | //li[text()="RG_TemperateGrassland"] | //RG_TemperateGrassland</xpath>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

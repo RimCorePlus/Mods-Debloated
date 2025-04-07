@@ -1,0 +1,12 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>[Vanilla Brewing Expanded] tequila doesn't have meat in it</label>
+		<operations>
+			<!--remove apparel-->
+			<li Class="PatchOperationRemove">
+				<xpath>//RecipeDef[defName="VBE_MakeTequilaMust"]/ingredients/li[filter/thingDefs/li[text()="Meat_Megaspider"]]</xpath>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

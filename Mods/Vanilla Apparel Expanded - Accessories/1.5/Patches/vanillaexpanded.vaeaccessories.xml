@@ -1,0 +1,47 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>True</enabled>
+        <label>[VAE - Accessories] debloat and rebalance</label>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>//ThingDef[defName="VAEA_Apparel_Backpack" or defName="VAEA_Apparel_BattleBanner" or defName="VAEA_Apparel_MiniTurretPack"]</xpath>
+            </li>
+            <!--medic bag-->
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[defName="VAEA_Apparel_MedicBag"]/equippedStatOffsets/MedicalSurgerySuccessChance</xpath>
+                <value>
+                    <MedicalSurgerySuccessChance>0.1</MedicalSurgerySuccessChance>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[defName="VAEA_Apparel_MedicBag"]/equippedStatOffsets/MedicalTendQuality</xpath>
+                <value>
+                    <MedicalTendQuality>0.1</MedicalTendQuality>
+                </value>
+            </li>
+            <!--tool belt-->
+            <li Class="PatchOperationRemove">
+                <xpath>//ThingDef[defName="VAEA_Apparel_ToolBelt"]/equippedStatOffsets/FixBrokenDownBuildingSuccessChance</xpath>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[defName="VAEA_Apparel_ToolBelt"]/equippedStatOffsets/ConstructionSpeed</xpath>
+                <value>
+                    <ConstructionSpeed>0.1</ConstructionSpeed>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[defName="VAEA_Apparel_ToolBelt"]/equippedStatOffsets/ConstructSuccessChance</xpath>
+                <value>
+                    <ConstructSuccessChance>0.1</ConstructSuccessChance>
+                </value>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>//ThingDef[defName="VAEA_Apparel_ToolBelt"]/equippedStatOffsets/SmoothingSpeed</xpath>
+            </li>
+            <!--stop most of these items from spawning on non-player pawns-->
+            <li Class="PatchOperationRemove">
+                <xpath>//ThingDef[contains(defName, "VAEA_") and not(defName="VAEA_Apparel_ExplosiveBelt" or defName="VAEA_Apparel_Quiver")]/apparel/tags</xpath>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

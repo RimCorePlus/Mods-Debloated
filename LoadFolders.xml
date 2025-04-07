@@ -1,0 +1,20 @@
+<loadFolders>
+    <v1.5>
+        <li>/</li>
+        <li>1.5</li>
+        <li IfModActive="ceteam.combatextended">Mods/Combat Extended/1.5</li>
+        <li IfModActive="moistestwhale.gitscyberbrains">Mods/GiTS Cyberbrains/1.5</li>
+        <li IfModActive="regrowth.botr.core">Mods/ReGrowth Core/1.5</li>
+        <li IfModActive="rim.job.world">Mods/RimJobWorld/1.5</li>
+        <li IfModActive="vanillaexpanded.vappe">Mods/Vanilla Apparel Expanded/1.5</li>
+        <li IfModActive="vanillaexpanded.vaeaccessories">Mods/Vanilla Apparel Expanded - Accessories/1.5</li>
+        <li IfModActive="vanillaexpanded.vbrewe">Mods/Vanilla Brewing Expanded/1.5</li>
+        <li IfModActive="oskarpotocki.vfe.mechanoid">Mods/Vanilla Factions Expanded - Mechanoids/1.5</li>
+        <li IfModActive="oskarpotocki.vfe.pirates">Mods/Vanilla Factions Expanded - Pirates/1.5</li>
+        <li IfModActive="vanillaexpanded.vfesecurity">Mods/Vanilla Furniture Expanded - Security/1.5</li>
+        <li IfModActive="vanillaexpanded.vpsycastse">Mods/Vanilla Psycasts Expanded/1.5</li>
+        <li IfModActive="vanillaracesexpanded.archon">Mods/Vanilla Races Expanded - Archon/1.5</li>
+        <li IfModActive="vanillaracesexpanded.phytokin">Mods/Vanilla Races Expanded - Phytokin/1.5</li>
+        <li IfModActive="vanillaexpanded.vwec">Mods/Vanilla Weapons Expanded - Coilguns/1.5</li>
+    </v1.5>
+</loadFolders>

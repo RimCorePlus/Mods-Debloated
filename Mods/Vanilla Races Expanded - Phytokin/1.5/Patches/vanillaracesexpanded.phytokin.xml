@@ -1,0 +1,23 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>[VRE - Phytokin] compensate for removed aptitudes</label>
+		<operations>
+			<li Class="PatchOperationReplace">
+				<xpath>//GeneDef[defName="VRE_Photosynthesis"]/biostatMet</xpath>
+				<value>
+					<biostatMet>3</biostatMet>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>[VRE - Phytokin] vanilla heads</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>//GeneDef[defName="VRE_BarkSkin"]/forcedHeadTypes</xpath>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
