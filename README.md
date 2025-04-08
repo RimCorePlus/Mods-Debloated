@@ -23,17 +23,19 @@ All patches are balanced around my mods (and personal modlist). For example, [ge
 All patches are toggable.
 
 ### Combat Extended
-- Prevents backpacks from spawning on non-player pawns
-- Removes gas masks, melee shield (not the ballistic shield), night vision goggles, and powered exoframe
+- Removes gas masks and powered exoframe
+
+### Combat Extended Armory
+- Removes composite armor and helmet
 
 ### GiTS Cyberbrains
 - Removes abilities to make the brains less OP and reduce gizmo clutter
 
+### Mario's Pizza
+- Removes chef's hat and mustache
+
 ## ReGrowth: Core
 - Removes grassland biome
-
-### RimThunder Functional Furniture Expanded
-- Removes everything but a few of the doors
 
 ### Vanilla Apparel Expanded
 - Removes sidegrades to vanilla apparel and regular glasses
@@ -59,6 +61,10 @@ All patches are toggable.
 - Removes barbed wire, cavalry spikes, and turrets that are sidegrades to vanilla turrets or copies of VFE - Mechanoids turrets
 - Replace fabrication research prerequisite for ammo crate with machining
 - Set trench warfare tech level to medieval and remove prerequisites
+
+### Vanilla Hair Expanded
+- Removes barber's table
+- Replaces styling station texture with barber's table
 
 ### Vanilla Psycasts Expanded
 - Removes psycaster raids to prevent spacer armor raids (mainly from VFE - Deserters) on my day 20 colony

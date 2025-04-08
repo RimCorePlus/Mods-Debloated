@@ -6,7 +6,16 @@
 		<operations>
 			<!--remove unwanted items-->
 			<li Class="PatchOperationRemove">
-				<xpath>//ThingDef[defName="VFES_BarbedWire" or defName="VFES_CavalrySpikes" or defName="VFES_Turret_AutocannonDouble" or defName="VFES_TurretDoubleAutocannon_Top" or defName="VFES_DeployableBarrier" or defName="VFES_Turret_FloorTurret" or defName="VFES_Gun_FloorTurret" or defName="VFES_Turret_MilitaryTurret" or defName="VFES_Gun_MilitaryTurret" or defName="VFES_Turret_ChargeTurret" or defName="VFES_Gun_ChargeTurret" or defName="VFES_Turret_ChargeRailgunTurret" or defName="VFES_Gun_RailgunTurret" or defName="VFES_Bullet_DoubleChargeLance"]</xpath>
+				<xpath>//ThingDef[defName="VFES_BarbedWire" or defName="VFES_CavalrySpikes" or defName="VFES_Turret_AutocannonDouble" or defName="VFES_TurretDoubleAutocannon_Top" or defName="VFES_DeployableBarrier" or defName="VFES_Turret_FloorTurret" or defName="VFES_Gun_FloorTurret" or defName="VFES_Turret_MilitaryTurret" or defName="VFES_Gun_MilitaryTurret" or defName="VFES_Turret_ChargeRailgunTurret" or defName="VFES_Gun_RailgunTurret" or defName="VFES_Bullet_DoubleChargeLance"]</xpath>
+			</li>
+			<!--default to CE charge turret-->
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Combat Extended</li>
+				</mods>
+				<match Class="PatchOperationRemove">
+					<xpath>//ThingDef[defName="VFES_Turret_ChargeTurret" or defName="VFES_Gun_ChargeTurret"]</xpath>
+				</match>
 			</li>
 			<!--adjust research projects-->
 			<li Class="PatchOperationReplace">

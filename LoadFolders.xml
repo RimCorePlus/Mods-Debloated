@@ -3,14 +3,18 @@
         <li>/</li>
         <li>1.5</li>
         <li IfModActive="ceteam.combatextended">Mods/Combat Extended/1.5</li>
+        <li IfModActive="ceteam.combatextendedarmory">Mods/Combat Extended Armory/1.5</li>
         <li IfModActive="moistestwhale.gitscyberbrains">Mods/GiTS Cyberbrains/1.5</li>
+        <li IfModActive="sov.pizza">Mods/Marios Pizza/1.5</li>
         <li IfModActive="regrowth.botr.core">Mods/ReGrowth Core/1.5</li>
         <li IfModActive="rim.job.world">Mods/RimJobWorld/1.5</li>
         <li IfModActive="vanillaexpanded.vappe">Mods/Vanilla Apparel Expanded/1.5</li>
         <li IfModActive="vanillaexpanded.vaeaccessories">Mods/Vanilla Apparel Expanded - Accessories/1.5</li>
         <li IfModActive="vanillaexpanded.vbrewe">Mods/Vanilla Brewing Expanded/1.5</li>
+        <li IfModActive="oskarpotocki.vfe.empire">Mods/Vanilla Factions Expanded - Empire/1.5</li>
         <li IfModActive="oskarpotocki.vfe.mechanoid">Mods/Vanilla Factions Expanded - Mechanoids/1.5</li>
         <li IfModActive="oskarpotocki.vfe.pirates">Mods/Vanilla Factions Expanded - Pirates/1.5</li>
+        <li IfModActive="vanillaexpanded.vhe">Mods/Vanilla Hair Expanded/1.5</li>
         <li IfModActive="vanillaexpanded.vfesecurity">Mods/Vanilla Furniture Expanded - Security/1.5</li>
         <li IfModActive="vanillaexpanded.vpsycastse">Mods/Vanilla Psycasts Expanded/1.5</li>
         <li IfModActive="vanillaracesexpanded.archon">Mods/Vanilla Races Expanded - Archon/1.5</li>

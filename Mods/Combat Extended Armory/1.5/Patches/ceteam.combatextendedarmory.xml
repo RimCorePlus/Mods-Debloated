@@ -1,10 +1,10 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>True</enabled>
-		<label>[Combat Extended] debloat</label>
+		<label>[Combat Extended Armory] remove composite armor</label>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>//ThingDef[defName="CE_Apparel_GasMask" or defName="CE_Apparel_ImprovGasMask" or defName="CE_Apparel_ExoFrame"]</xpath>
+				<xpath>//ThingDef[defName="CE_Apparel_CompositeArmor" or defName="CE_Apparel_HeavyCompositeHelmet"]</xpath>
 			</li>
 		</operations>
 	</Operation>

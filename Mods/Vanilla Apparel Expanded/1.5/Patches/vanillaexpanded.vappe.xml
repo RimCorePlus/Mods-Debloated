@@ -118,6 +118,14 @@
 			<li Class="PatchOperationRemove">
 				<xpath>//ResearchProjectDef[starts-with(defName, "VAE_")]</xpath>
 			</li>
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Combat Extended Armors</li>
+				</mods>
+				<match Class="PatchoperationRemove">
+					<xpath>//ThingDef[defName="VAE_Apparel_Jumpsuit"]</xpath>
+				</match>
+			</li>
 		</operations>
 	</Operation>
 </Patch>
