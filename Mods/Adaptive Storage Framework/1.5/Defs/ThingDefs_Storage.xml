@@ -1,0 +1,17 @@
+<Defs>
+    <AdaptiveStorage.GraphicsDef>
+        <defName>CorePlus_BedsideCondoms</defName>
+        <targetDef>EndTable</targetDef>
+        <graphics>
+            <li>
+                <graphicData>
+                    <texPath>Things/Building/Furniture/EndTable</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>(1,1)</drawSize>
+                </graphicData>
+            </li>
+        </graphics>
+        <showContainedItems>false</showContainedItems>
+        <useDominantContentColor>false</useDominantContentColor>
+    </AdaptiveStorage.GraphicsDef>
+</Defs>
