@@ -1,0 +1,90 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>True</enabled>
+        <label>move kitchen buildings into their own architect tab</label>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs</xpath>
+                <value>
+                    <DesignationCategoryDef>
+                        <defName>CorePlus_CookingTab</defName>
+                        <label>kitchen</label>
+                        <order>550</order>
+                        <specialDesignatorClasses>
+                            <li>Designator_Cancel</li>
+                            <li>Designator_Deconstruct</li>
+                        </specialDesignatorClasses>
+                    </DesignationCategoryDef>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[defName="ElectricStove" or defName="FueledStove" or defName="FermentingBarrel" or defName="Brewery" or defName="NutrientPasteDispenser"]/designationCategory</xpath>
+                <value>
+                    <designationCategory>CorePlus_CookingTab</designationCategory>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[defName="Hopper"]/designationCategory</xpath>
+                <value>
+                    <designationCategory>Misc</designationCategory>
+                </value>
+            </li>
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Alpha Crafts</li>
+                </mods>
+                <match Class="PatchOperationReplace">
+                    <xpath>//ThingDef[starts-with(defName, "AC_") and @ParentName="BuildingBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>CorePlus_CookingTab</designationCategory>
+                    </value>
+                </match>
+            </li>
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Dubs Bad Hygiene</li>
+                </mods>
+                <match Class="PatchOperationReplace">
+                    <xpath>//ThingDef[defName="KitchenSink"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>CorePlus_CookingTab</designationCategory>
+                    </value>
+                </match>
+            </li>
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Vanilla Brewing Expanded</li>
+                </mods>
+                <match Class="PatchOperationReplace">
+                    <xpath>//ThingDef[starts-with(defName, "VBE_") and @ParentName="BuildingBase" or defName="VBE_Bar"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>CorePlus_CookingTab</designationCategory>
+                    </value>
+                </match>
+            </li>
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Vanilla Cooking Expanded</li>
+                </mods>
+                <!--works for every official VCE addon, and every VCE addon requires the main mod-->
+                <match Class="PatchOperationReplace">
+                    <xpath>//ThingDef[starts-with(defName, "VCE_") and @ParentName="BuildingBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>CorePlus_CookingTab</designationCategory>
+                    </value>
+                </match>
+            </li>
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Vanilla Furniture Expanded - Production</li>
+                </mods>
+                <match Class="PatchOperationReplace">
+                    <xpath>//ThingDef[defName="VFE_KitchenSinkCabinet" or defName="VFE_TableStoveLarge"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>CorePlus_CookingTab</designationCategory>
+                    </value>
+                </match>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

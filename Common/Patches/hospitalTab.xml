@@ -1,0 +1,66 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>True</enabled>
+        <label>move hospital buildings into their own architect tab</label>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs</xpath>
+                <value>
+                    <DesignationCategoryDef>
+                        <defName>CorePlus_HospitalTab</defName>
+                        <label>hospital</label>
+                        <order>450</order>
+                        <specialDesignatorClasses>
+                            <li>Designator_Cancel</li>
+                            <li>Designator_Deconstruct</li>
+                        </specialDesignatorClasses>
+                    </DesignationCategoryDef>
+                </value>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>//ThingDef[defName="HospitalBed"]</xpath>
+                <value>
+                    <designationCategory>CorePlus_HospitalTab</designationCategory>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[defName="VitalsMonitor"]/designationCategory</xpath>
+                <value>
+                    <designationCategory>CorePlus_HospitalTab</designationCategory>
+                </value>
+            </li>
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Vanilla Furniture Expanded - Medical Module</li>
+                </mods>
+                <match Class="PatchOperationReplace">
+                    <xpath>//ThingDef[defName="Bed_OperatingTable" or defName="Bed_OperatingTable" or defName="Facility_VitalsCentre" or defName="Facility_IVDrip" or defName="Bed_CryptoBed"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>CorePlus_HospitalTab</designationCategory>
+                    </value>
+                </match>
+            </li>
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>GiTS Cybernetic Equipment</li>
+                </mods>
+                <match Class="PatchOperationSequence">
+                    <operations>
+                        <li Class="PatchOperationAdd">
+                            <xpath>//ThingDef[defName="gitsCyberbodyAnchor"]</xpath>
+                            <value>
+                                <designationCategory>CorePlus_HospitalTab</designationCategory>
+                            </value>
+                        </li>
+                        <li Class="PatchOperationReplace">
+                            <xpath>//ThingDef[defName="gitsAnchorConsole"]/designationCategory</xpath>
+                            <value>
+                                <designationCategory>CorePlus_HospitalTab</designationCategory>
+                            </value>
+                        </li>
+                    </operations>
+                </match>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

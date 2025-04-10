@@ -16,6 +16,13 @@
 					<li>BasicMechtech</li>
 				</value>
 			</li>
+			<!--move missile launcher into factory tab-->
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[defName="VFE_LongRangeMissileLauncher" or defName="VFE_IndoctrinationPod" or defName="VFE_Supercomputer"]/designationCategory</xpath>
+                <value>
+                    <designationCategory>VFE_Factory</designationCategory>
+                </value>
+            </li>
 		</operations>
 	</Operation>
 </Patch>

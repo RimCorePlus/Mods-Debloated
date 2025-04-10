@@ -61,11 +61,6 @@
                     <description>A mushshroom with tough flesh, thick juice and smooth soft skin. Exhibits aphrodisiac effects when consumed.</description>
                 </value>
             </li>
-            <!--remove bondage gear-->
-            <!--holock is patched out but still appears in the game? not sure what's happening here-->
-            <li Class="PatchOperationRemove">
-                <xpath>//ThingDef[defName="holokey" or defName="hololock"] | //rjw.bondage_gear_def[defName="PrisonerChains"] | //RecipeDef[defName="MakeHololock" or defName="MakePrisonerChains"]</xpath>
-            </li>
         </operations>
     </Operation>
 </Patch>

@@ -2,6 +2,7 @@
     <v1.5>
         <li>/</li>
         <li>1.5</li>
+        <li>Common</li>
         <li IfModActive="ceteam.combatextended">Mods/Combat Extended/1.5</li>
         <li IfModActive="ceteam.combatextendedarmory">Mods/Combat Extended Armory/1.5</li>
         <li IfModActive="moistestwhale.gitscyberbrains">Mods/GiTS Cyberbrains/1.5</li>
@@ -19,6 +20,7 @@
         <li IfModActive="vanillaexpanded.vpsycastse">Mods/Vanilla Psycasts Expanded/1.5</li>
         <li IfModActive="vanillaracesexpanded.archon">Mods/Vanilla Races Expanded - Archon/1.5</li>
         <li IfModActive="vanillaracesexpanded.phytokin">Mods/Vanilla Races Expanded - Phytokin/1.5</li>
+        <li IfModActive="oskarpotocki.vanillavehiclesexpanded">Mods/Vanilla Vehicles Expanded/1.5</li>
         <li IfModActive="vanillaexpanded.vwec">Mods/Vanilla Weapons Expanded - Coilguns/1.5</li>
     </v1.5>
 </loadFolders>

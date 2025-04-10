@@ -1,0 +1,11 @@
+<Patch>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>True</enabled>
+		<label>[Vanilla Vehicles Expanded] remove tank trap</label>
+		<operations>
+            <li Class="PatchOperationRemove">
+                <xpath>//ThingDef[defName="VVE_TankTrap"]/designationCategory</xpath>
+            </li>
+		</operations>
+	</Operation>
+</Patch>

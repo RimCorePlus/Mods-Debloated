@@ -1,0 +1,39 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>True</enabled>
+        <label>move mechanitor buildings into their own architect tab</label>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs</xpath>
+                <value>
+                    <DesignationCategoryDef>
+                        <defName>CorePlus_MechanitorTab</defName>
+                        <label>mechanitor</label>
+                        <order>14</order>
+                        <specialDesignatorClasses>
+                            <li>Designator_Cancel</li>
+                            <li>Designator_Deconstruct</li>
+                        </specialDesignatorClasses>
+                    </DesignationCategoryDef>
+                </value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[@Name="BaseMechCharger" or @Name="MechGestatorBase" or defName="SubcoreEncoder" or @Name="SubcoreScannerBase" or defName="BandNode" or defName="BurnoutMechlinkBooster" or defName="MechbandDish" or defName="MechBooster"]/designationCategory</xpath>
+                <value>
+                    <designationCategory>CorePlus_MechanitorTab</designationCategory>
+                </value>
+            </li>
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Alpha Mechs</li>
+                </mods>
+                <match Class="PatchOperationReplace">
+                    <xpath>//ThingDef[starts-with(defName, "AM_") and @ParentName="BuildingBase"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>CorePlus_MechanitorTab</designationCategory>
+                    </value>
+                </match>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

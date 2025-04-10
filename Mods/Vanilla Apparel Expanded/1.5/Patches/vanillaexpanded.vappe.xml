@@ -84,7 +84,7 @@
 			<li Class="PatchOperationRemove">
 				<xpath>//ThingDef[defName="VAE_Apparel_MilitaryUniform"]/apparel/tags/li[text()="IndustrialBasic"]</xpath>
 			</li>
-			<!--allows jumpsuits to spawn on pawns (lol military uniforms are fine but not jumpsuits?)-->
+			<!--allows jumpsuits to spawn on pawns (lol military uniforms were fine but not jumpsuits)-->
 			<li Class="PatchOperationReplace">
 				<xpath>//ThingDef[defName="VAE_Apparel_Jumpsuit"]/apparel/tags/li[text()="IndustrialAdvanced"]</xpath>
 				<value>
@@ -118,12 +118,22 @@
 			<li Class="PatchOperationRemove">
 				<xpath>//ResearchProjectDef[starts-with(defName, "VAE_")]</xpath>
 			</li>
+			<!--prioritize CE jumpsuit-->
 			<li Class="PatchOperationFindMod">
 				<mods>
 					<li>Combat Extended Armors</li>
 				</mods>
 				<match Class="PatchoperationRemove">
 					<xpath>//ThingDef[defName="VAE_Apparel_Jumpsuit"]</xpath>
+				</match>
+			</li>
+			<!--fishing treasures add-on patch-->
+			<li Class="PatchOperationFindMod">
+				<mods>
+					<li>Vanilla Fishing Expanded - Fishing Treasures AddOn</li>
+				</mods>
+				<match Class="PatchOperationRemove">
+					<xpath>//*[name()="VCE_Fishing.FishDef"][defName="VCEF_SpecialVAE_Headgear_Fedora" or defName="VCEF_SpecialVAE_Apparel_Jeans"]</xpath>
 				</match>
 			</li>
 		</operations>
