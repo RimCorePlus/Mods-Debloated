@@ -1,0 +1,11 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>False</enabled>
+        <label>[Altered Carbon 2 ReSleeved] remove hair</label>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>//HairDef[starts-with(defName, "HairExt_")]</xpath>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

@@ -4,6 +4,7 @@
         <li>1.5</li>
         <li>Common</li>
         <li IfModActive="adaptive.storage.framework">Mods/Adaptive Storage Framework/1.5</li>
+        <li IfModActive="hlx.ultratechalteredcarbon">Mods/Altered Carbon 2 ReSleeved/1.5</li>
         <li IfModActive="ceteam.combatextended">Mods/Combat Extended/1.5</li>
         <li IfModActive="ceteam.combatextendedarmory">Mods/Combat Extended Armory/1.5</li>
         <li IfModActive="moistestwhale.gitscyberbrains">Mods/GiTS Cyberbrains/1.5</li>
@@ -18,6 +19,7 @@
         <li IfModActive="oskarpotocki.vfe.pirates">Mods/Vanilla Factions Expanded - Pirates/1.5</li>
         <li IfModActive="vanillaexpanded.vhe">Mods/Vanilla Hair Expanded/1.5</li>
         <li IfModActive="vanillaexpanded.vfesecurity">Mods/Vanilla Furniture Expanded - Security/1.5</li>
+        <li IfModActive="hourai.vanillahairsretex" IfModNotActive="unagi.hairs.b.zibunyou">Mods/Vanilla Hairs and Beards Retextured/1.5</li>
         <li IfModActive="vanillaexpanded.vpsycastse">Mods/Vanilla Psycasts Expanded/1.5</li>
         <li IfModActive="vanillaracesexpanded.archon">Mods/Vanilla Races Expanded - Archon/1.5</li>
         <li IfModActive="vanillaracesexpanded.phytokin">Mods/Vanilla Races Expanded - Phytokin/1.5</li>

@@ -13,10 +13,10 @@
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>True</enabled>
-		<label>[VRE - Phytokin] vanilla heads</label>
+		<label>[VRE - Phytokin] no cosmetic overrides</label>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>//GeneDef[defName="VRE_BarkSkin"]/forcedHeadTypes</xpath>
+				<xpath>//GeneDef[defName="VRE_FoliageHair"]/hairTagFilter | //GeneDef[defName="VRE_BarkSkin"]/forcedHeadTypes | //GeneDef[defName="VRE_BarkSkin"]/modExtensions | //GeneDef[defName="VRE_BarkSkin"]/fur | //GeneDef[defName="VRE_BarkSkin"]/skinIsHairColor | //GeneDef[defName="VRE_BarkSkin"]/tattoosVisible | //GeneDef[defName="VRE_BarkSkin"]/renderNodeProperties</xpath>
 			</li>
 		</operations>
 	</Operation>
