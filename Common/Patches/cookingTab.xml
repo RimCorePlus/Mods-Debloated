@@ -18,7 +18,7 @@
                 </value>
             </li>
             <li Class="PatchOperationReplace">
-                <xpath>//ThingDef[defName="ElectricStove" or defName="FueledStove" or defName="FermentingBarrel" or defName="Brewery" or defName="NutrientPasteDispenser"]/designationCategory</xpath>
+                <xpath>//ThingDef[defName="TableButcher" or defName="VFE_TableButcherElectric" or defName="ElectricStove" or defName="FueledStove" or defName="FermentingBarrel" or defName="Brewery" or defName="NutrientPasteDispenser"]/designationCategory</xpath>
                 <value>
                     <designationCategory>CorePlus_CookingTab</designationCategory>
                 </value>
@@ -34,7 +34,7 @@
                     <li>Alpha Crafts</li>
                 </mods>
                 <match Class="PatchOperationReplace">
-                    <xpath>//ThingDef[starts-with(defName, "AC_") and @ParentName="BuildingBase"]/designationCategory</xpath>
+                    <xpath>//ThingDef[starts-with(defName, "AC_") and @ParentName="BuildingBase" and not(researchPrerequisites/li[text()="AC_NeuralDigitalization" or text()="AC_NeuralCasting" or text()="AC_SleeveGestation"])]/designationCategory</xpath>
                     <value>
                         <designationCategory>CorePlus_CookingTab</designationCategory>
                     </value>

@@ -1,0 +1,11 @@
+<Patch>
+    <Operation MayRequire="dubwise.dubsbadhygiene" Class="VFECore.PatchOperationToggableSequence">
+        <enabled>True</enabled>
+        <label>[Dubs Bad Hygiene] remove DBH kitchen sink</label>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>//ThingDef[defName="KitchenSink"]</xpath>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

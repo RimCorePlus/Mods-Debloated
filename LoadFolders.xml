@@ -18,6 +18,7 @@
         <li IfModActive="oskarpotocki.vfe.mechanoid">Mods/Vanilla Factions Expanded - Mechanoids/1.5</li>
         <li IfModActive="oskarpotocki.vfe.pirates">Mods/Vanilla Factions Expanded - Pirates/1.5</li>
         <li IfModActive="vanillaexpanded.vhe">Mods/Vanilla Hair Expanded/1.5</li>
+        <li IfModActive="vanillaexpanded.vfeproduction">Mods/Vanilla Furniture Expanded - Production/Dubs Bad Hygiene/1.5</li>
         <li IfModActive="vanillaexpanded.vfesecurity">Mods/Vanilla Furniture Expanded - Security/1.5</li>
         <li IfModActive="hourai.vanillahairsretex" IfModNotActive="unagi.hairs.b.zibunyou">Mods/Vanilla Hairs and Beards Retextured/1.5</li>
         <li IfModActive="vanillaexpanded.vpsycastse">Mods/Vanilla Psycasts Expanded/1.5</li>
