@@ -1,0 +1,83 @@
+<Patch>
+    <!--add SOS2 comp to the armor base conditionally, should be fine even if they add native patches later-->
+    <Operation Class="PatchOperationConditional">
+        <xpath>//ThingDef[@Name="AC_ApparelArmorChrysalisMakeableBase"]/comps[not(li/compClass="SaveOurShip2.CompEVA")]</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>//ThingDef[@Name="AC_ApparelArmorChrysalisMakeableBase"]/comps[not(li/compClass="SaveOurShip2.CompEVA")]</xpath>
+            <value>
+                <li>
+                    <compClass>SaveOurShip2.CompEVA</compClass>
+                </li>
+            </value>
+        </match>
+    </Operation>
+    <!--helmet base-->
+    <Operation Class="PatchOperationConditional">
+        <xpath>//ThingDef[@Name="AC_ApparelArmorHelmetChrysalisMakeableBase"]/comps[not(li/compClass="SaveOurShip2.CompEVA")]</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>//ThingDef[@Name="AC_ApparelArmorHelmetChrysalisMakeableBase"]/comps[not(li/compClass="SaveOurShip2.CompEVA")]</xpath>
+            <value>
+                <li>
+                    <compClass>SaveOurShip2.CompEVA</compClass>
+                </li>
+            </value>
+        </match>
+    </Operation>
+    <!--add EVA stats conditonally, same logic as above-->
+    <Operation Class="PatchOperationConditional">
+        <xpath>//ThingDef[@Name="AC_ApparelArmorChrysalisMakeableBase"][not(equippedStatOffsets)]</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>//ThingDef[@Name="AC_ApparelArmorChrysalisMakeableBase"][not(equippedStatOffsets)]</xpath>
+            <value>
+                <equippedStatOffsets />
+            </value>
+        </match>
+    </Operation>
+    <!--helmet base-->
+    <Operation Class="PatchOperationConditional">
+        <xpath>//ThingDef[@Name="AC_ApparelArmorHelmetChrysalisMakeableBase"][not(equippedStatOffsets)]</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>//ThingDef[@Name="AC_ApparelArmorHelmetChrysalisMakeableBase"][not(equippedStatOffsets)]</xpath>
+            <value>
+                <equippedStatOffsets />
+            </value>
+        </match>
+    </Operation>
+    <!-- Armor DecompressionResistance -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>//ThingDef[@Name="AC_ApparelArmorChrysalisMakeableBase"]/equippedStatOffsets[not(DecompressionResistance)]</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>//ThingDef[@Name="AC_ApparelArmorChrysalisMakeableBase"]/equippedStatOffsets[not(DecompressionResistance)]</xpath>
+            <value>
+                <DecompressionResistance>0.75</DecompressionResistance>
+            </value>
+        </match>
+    </Operation>
+    <!-- Helmets DecompressionResistance -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>//ThingDef[@Name="AC_ApparelArmorHelmetChrysalisMakeableBase"]/equippedStatOffsets[not(DecompressionResistance)]</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>//ThingDef[@Name="AC_ApparelArmorHelmetChrysalisMakeableBase"]/equippedStatOffsets[not(DecompressionResistance)]</xpath>
+            <value>
+                <DecompressionResistance>0.25</DecompressionResistance>
+            </value>
+        </match>
+    </Operation>
+    <!-- Helmets HypoxiaResistance -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>//ThingDef[@Name="AC_ApparelArmorHelmetChrysalisMakeableBase"]/equippedStatOffsets[not(HypoxiaResistance)]</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>//ThingDef[@Name="AC_ApparelArmorHelmetChrysalisMakeableBase"]/equippedStatOffsets[not(HypoxiaResistance)]</xpath>
+            <value>
+                <HypoxiaResistance>1</HypoxiaResistance>
+            </value>
+        </match>
+    </Operation>
+    <!-- Marine Armor Insulation_Cold -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>//ThingDef[@Name="AC_ApparelArmorChrysalisMakeableBase"]/statBases/Insulation_Cold</xpath>
+        <value>
+            <Insulation_Cold>90</Insulation_Cold>
+        </value>
+    </Operation>
+</Patch>

@@ -10,28 +10,28 @@
 				<!-- Grenadier armor -->
 
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="Apparel_ArmorGrenadierPrestige"]/statBases/ArmorRating_Sharp</xpath>
+					<xpath>//ThingDef[defName="Apparel_ArmorGrenadierPrestige"]/statBases/ArmorRating_Sharp</xpath>
 					<value>
 						<ArmorRating_Sharp>18</ArmorRating_Sharp>
 					</value>
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="Apparel_ArmorGrenadierPrestige"]/statBases/ArmorRating_Blunt</xpath>
+					<xpath>//ThingDef[defName="Apparel_ArmorGrenadierPrestige"]/statBases/ArmorRating_Blunt</xpath>
 					<value>
 						<ArmorRating_Blunt>41</ArmorRating_Blunt>
 					</value>
 				</li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Apparel_ArmorGrenadierPrestige"]/costList</xpath>
+					<xpath>//ThingDef[defName="Apparel_ArmorGrenadierPrestige"]/costList</xpath>
 					<value>
 						<DevilstrandCloth>50</DevilstrandCloth>
 					</value>
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="Apparel_ArmorGrenadierPrestige"]/verbs</xpath>
+					<xpath>//ThingDef[defName="Apparel_ArmorGrenadierPrestige"]/verbs</xpath>
 					<value>
 						<verbs>
 							<li Class="CombatExtended.VerbPropertiesCE">
@@ -59,14 +59,14 @@
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="Apparel_ArmorGrenadierPrestige"]/comps/li[@Class="CompProperties_ApparelReloadable"]/ammoDef</xpath>
+					<xpath>//ThingDef[defName="Apparel_ArmorGrenadierPrestige"]/comps/li[@Class="CompProperties_ApparelReloadable"]/ammoDef</xpath>
 					<value>
 						<ammoDef>Ammo_30x29mmGrenade_HE</ammoDef>
 					</value>
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="Apparel_ArmorGrenadierPrestige"]/comps/li[@Class="CompProperties_ApparelReloadable"]/ammoCountPerCharge</xpath>
+					<xpath>//ThingDef[defName="Apparel_ArmorGrenadierPrestige"]/comps/li[@Class="CompProperties_ApparelReloadable"]/ammoCountPerCharge</xpath>
 					<value>
 						<ammoCountPerCharge>1</ammoCountPerCharge>
 					</value>
@@ -75,7 +75,7 @@
 				<!-- Phoenix armor -->
 
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Apparel_ArmorPhoenixPrestige"]/statBases</xpath>
+					<xpath>//ThingDef[defName="Apparel_ArmorPhoenixPrestige"]/statBases</xpath>
 					<value>
 						<Bulk>110</Bulk>
 						<WornBulk>18</WornBulk>
@@ -83,35 +83,35 @@
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="Apparel_ArmorPhoenixPrestige"]/statBases/Flammability</xpath>
+					<xpath>//ThingDef[defName="Apparel_ArmorPhoenixPrestige"]/statBases/Flammability</xpath>
 					<value>
 						<Flammability>0</Flammability>
 					</value>
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="Apparel_ArmorPhoenixPrestige"]/statBases/ArmorRating_Sharp</xpath>
+					<xpath>//ThingDef[defName="Apparel_ArmorPhoenixPrestige"]/statBases/ArmorRating_Sharp</xpath>
 					<value>
 						<ArmorRating_Sharp>26</ArmorRating_Sharp>
 					</value>
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="Apparel_ArmorPhoenixPrestige"]/statBases/ArmorRating_Blunt</xpath>
+					<xpath>//ThingDef[defName="Apparel_ArmorPhoenixPrestige"]/statBases/ArmorRating_Blunt</xpath>
 					<value>
 						<ArmorRating_Blunt>55</ArmorRating_Blunt>
 					</value>
 				</li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Apparel_ArmorPhoenixPrestige"]/costList</xpath>
+					<xpath>//ThingDef[defName="Apparel_ArmorPhoenixPrestige"]/costList</xpath>
 					<value>
 						<DevilstrandCloth>60</DevilstrandCloth>
 					</value>
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="Apparel_ArmorPhoenixPrestige"]/verbs</xpath>
+					<xpath>//ThingDef[defName="Apparel_ArmorPhoenixPrestige"]/verbs</xpath>
 					<value>
 						<verbs>
 							<li Class="CombatExtended.VerbPropertiesCE">
@@ -139,14 +139,14 @@
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="Apparel_ArmorPhoenixPrestige"]/comps/li[@Class="CompProperties_ApparelReloadable"]/ammoDef</xpath>
+					<xpath>//ThingDef[defName="Apparel_ArmorPhoenixPrestige"]/comps/li[@Class="CompProperties_ApparelReloadable"]/ammoDef</xpath>
 					<value>
 						<ammoDef>Ammo_30x64mmFuel_Incendiary</ammoDef>
 					</value>
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="Apparel_ArmorPhoenixPrestige"]/comps/li[@Class="CompProperties_ApparelReloadable"]/ammoCountPerCharge</xpath>
+					<xpath>//ThingDef[defName="Apparel_ArmorPhoenixPrestige"]/comps/li[@Class="CompProperties_ApparelReloadable"]/ammoCountPerCharge</xpath>
 					<value>
 						<ammoCountPerCharge>1</ammoCountPerCharge>
 					</value>
@@ -155,7 +155,7 @@
 				<!-- ========== Locust Armor ========== -->
 
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Apparel_ArmorLocustPrestige"]/statBases</xpath>
+					<xpath>//ThingDef[defName="Apparel_ArmorLocustPrestige"]/statBases</xpath>
 					<value>
 						<Bulk>85</Bulk>
 						<WornBulk>15</WornBulk>
@@ -163,28 +163,28 @@
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="Apparel_ArmorLocustPrestige"]/statBases/ArmorRating_Sharp</xpath>
+					<xpath>//ThingDef[defName="Apparel_ArmorLocustPrestige"]/statBases/ArmorRating_Sharp</xpath>
 					<value>
 						<ArmorRating_Sharp>15</ArmorRating_Sharp>
 					</value>
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="Apparel_ArmorLocustPrestige"]/statBases/ArmorRating_Blunt</xpath>
+					<xpath>//ThingDef[defName="Apparel_ArmorLocustPrestige"]/statBases/ArmorRating_Blunt</xpath>
 					<value>
 						<ArmorRating_Blunt>38</ArmorRating_Blunt>
 					</value>
 				</li>
 
 				<li Class="PatchOperationAdd">
-					<xpath>Defs/ThingDef[defName="Apparel_ArmorLocustPrestige"]/costList</xpath>
+					<xpath>//ThingDef[defName="Apparel_ArmorLocustPrestige"]/costList</xpath>
 					<value>
 						<DevilstrandCloth>40</DevilstrandCloth>
 					</value>
 				</li>
 
 				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="Apparel_ArmorLocustPrestige"]/statBases/JumpRange</xpath>
+					<xpath>//ThingDef[defName="Apparel_ArmorLocustPrestige"]/statBases/JumpRange</xpath>
 					<value>
 						<JumpRange>30</JumpRange>
 					</value>
