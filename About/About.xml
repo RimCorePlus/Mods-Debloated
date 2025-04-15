@@ -12,20 +12,35 @@
 	<modDependencies />
 	<loadBefore />
 	<loadAfter>
+		<li>adaptive.storage.framework</li>
+		<li>atk.anthrosonae</li>
 		<li>ceteam.combatextended</li>
+		<li>ceteam.combatextendedarmory</li>
 		<li>coreplus.rebalance</li>
 		<li>dankpyon.medieval.overhaul</li>
+		<li>dubwise.dubsbadhygiene</li>
+		<li>hlx.ultratechalteredcarbon</li>
+		<li>hourai.vanillahairsretex</li>
 		<li>moistestwhale.gitscyberbrains</li>
+		<li>oppey.eyegenes2</li>
 		<li>oskarpotocki.vanillafactionsexpanded.core</li>
 		<li>oskarpotocki.vanillafactionsexpanded.settlersmodule</li>
+		<li>oskarpotocki.vanillavehiclesexpanded</li>
+		<li>oskarpotocki.vfe.empire</li>
 		<li>oskarpotocki.vfe.mechanoid</li>
 		<li>oskarpotocki.vfe.pirates</li>
 		<li>regrowth.botr.core</li>
 		<li>rim.job.world</li>
+		<li>sov.pizza</li>
+		<li>unagi.ap.dress</li>
+		<li>unagi.hairs.b.zibunyou</li>
 		<li>vanillaexpanded.basegenerationexpanded</li>
+		<li>vanillaexpanded.vaeaccessories</li>
 		<li>vanillaexpanded.vappe</li>
 		<li>vanillaexpanded.vbrewe</li>
+		<li>vanillaexpanded.vfeproduction</li>
 		<li>vanillaexpanded.vfesecurity</li>
+		<li>vanillaexpanded.vhe</li>
 		<li>vanillaexpanded.vpsycastse</li>
 		<li>vanillaexpanded.vwec</li>
 		<li>vanillaracesexpanded.archon</li>

@@ -1,0 +1,16 @@
+<Patch>
+    <!--<Operation Class="PatchOperationConditional">
+        <xpath>//handlingTypes/li[text()="Turret"]</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>//handlingTypes[li[text()="Turret"]]</xpath>
+            <value>
+                <handlingTypes>Turret</handlingTypes>
+            </value>
+        </match>
+    </Operation>
+    apparently <handlingTypes><li>Turret</li></handlingTypes> isn't correct
+    this patch is supposed to resolve that by replacing offending nodes with the correct syntax
+    however, for some reason, this patch is firing an error about applying the patch directly
+    no idea what it means, why it's firing, or how to fix it
+    will probably delete later-->
+</Patch>

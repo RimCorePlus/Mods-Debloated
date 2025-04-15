@@ -42,17 +42,6 @@
             </li>
             <li Class="PatchOperationFindMod">
                 <mods>
-                    <li>Dubs Bad Hygiene</li>
-                </mods>
-                <match Class="PatchOperationReplace">
-                    <xpath>//ThingDef[defName="KitchenSink"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>CorePlus_CookingTab</designationCategory>
-                    </value>
-                </match>
-            </li>
-            <li Class="PatchOperationFindMod">
-                <mods>
                     <li>Vanilla Brewing Expanded</li>
                 </mods>
                 <match Class="PatchOperationReplace">

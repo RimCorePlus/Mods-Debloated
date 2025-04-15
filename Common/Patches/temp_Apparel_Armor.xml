@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-	<!--delete when CE PR is merged and pushed to steam version-->
+	<!--CE merged the PR, just waiting for the Steam version to be updated-->
 	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Vanilla Prestige Specialist Armours Reworked</li>

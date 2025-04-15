@@ -1,0 +1,17 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>True</enabled>
+        <label>[UNAGI Royalty Apparel] prevent clothes from spawning on non-royal pawns</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[defName="UNA_MstyleShirtpants"]/apparel/tags/li[text()="IndustrialBasic"]</xpath>
+                <value>
+                    <li>Royal</li>
+                </value>
+            </li>
+            <li Class="PatchOperationRemove">
+                <xpath>//ThingDef[defName="Apparel_UNA_TogeHelm"]/apparel/tags/li[text()="IndustrialMilitaryBasic"]</xpath>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

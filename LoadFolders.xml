@@ -3,6 +3,7 @@
         <li>/</li>
         <li>1.5</li>
         <li>Common</li>
+        <li IfModActive="atk.anthrosonae,oppey.eyegenes2">Mods/[BT] EyeGenes2 Base - [NL] Facial Animation/Anthrosonae/1.5</li>
         <li IfModActive="adaptive.storage.framework">Mods/Adaptive Storage Framework/1.5</li>
         <li IfModActive="hlx.ultratechalteredcarbon">Mods/Altered Carbon 2 ReSleeved/1.5</li>
         <li IfModActive="ceteam.combatextended">Mods/Combat Extended/1.5</li>
@@ -11,6 +12,7 @@
         <li IfModActive="sov.pizza">Mods/Marios Pizza/1.5</li>
         <li IfModActive="regrowth.botr.core">Mods/ReGrowth Core/1.5</li>
         <li IfModActive="rim.job.world">Mods/RimJobWorld/1.5</li>
+        <li IfModActive="unagi.ap.dress">Mods/UNAGI Royalty Apparel/1.5</li>
         <li IfModActive="vanillaexpanded.vappe">Mods/Vanilla Apparel Expanded/1.5</li>
         <li IfModActive="vanillaexpanded.vaeaccessories">Mods/Vanilla Apparel Expanded - Accessories/1.5</li>
         <li IfModActive="vanillaexpanded.vbrewe">Mods/Vanilla Brewing Expanded/1.5</li>
@@ -18,7 +20,7 @@
         <li IfModActive="oskarpotocki.vfe.mechanoid">Mods/Vanilla Factions Expanded - Mechanoids/1.5</li>
         <li IfModActive="oskarpotocki.vfe.pirates">Mods/Vanilla Factions Expanded - Pirates/1.5</li>
         <li IfModActive="vanillaexpanded.vhe">Mods/Vanilla Hair Expanded/1.5</li>
-        <li IfModActive="vanillaexpanded.vfeproduction">Mods/Vanilla Furniture Expanded - Production/Dubs Bad Hygiene/1.5</li>
+        <li IfModActive="vanillaexpanded.vfeproduction,dubwise.dubsbadhygiene">Mods/Vanilla Furniture Expanded - Production/Dubs Bad Hygiene/1.5</li>
         <li IfModActive="vanillaexpanded.vfesecurity">Mods/Vanilla Furniture Expanded - Security/1.5</li>
         <li IfModActive="hourai.vanillahairsretex" IfModNotActive="unagi.hairs.b.zibunyou">Mods/Vanilla Hairs and Beards Retextured/1.5</li>
         <li IfModActive="vanillaexpanded.vpsycastse">Mods/Vanilla Psycasts Expanded/1.5</li>
