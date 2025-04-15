@@ -9,18 +9,20 @@
 <!--![Supports Anomaly][badge-dlc-anomaly] supports Anomaly DLC-->
 [badge-dlc-anomaly]: https://img.shields.io/badge/DLC-Anomaly-darkseagreen
 
-# [Core+] Mods Debloated
+# [CorePlus] Mods Debloated
 ![](About/Preview.png)\
 [![GPLv3][badge-license]](https://www.gnu.org/licenses/gpl-3.0) ![Supports Royalty][badge-dlc-royalty] ![Supports Ideology][badge-dlc-ideology] ![Supports Biotech][badge-dlc-biotech]
-
-Scope of this mod:
-- Remove bloat from external mods
-- Rebalance external mods
 
 All patches are balanced around my mods (and personal modlist). For example, [gene expansion](https://github.com/RimCorePlus/Genes) removes genetic aptitudes by default and the VRE Phytokins patch compensates for that metabolism loss. If aptitudes are toggled back on, Phytokin will have +1 metabolism.
 
 ## Supported Mods
-All patches are toggable.
+All patches are toggable unless noted otherwise.
+
+### [BT] EyeGenes2 Base - [NL] Facial Animation
+- Automatic, non-toggable patch to fix duplicate displayPriorityInXenotype red erros with other mods, no in-game impact
+
+### Altered Carbon 2: ReSleeved
+- Remove hair
 
 ### Combat Extended
 - Removes gas masks and powered exoframe
@@ -34,8 +36,26 @@ All patches are toggable.
 ### Mario's Pizza
 - Removes chef's hat and mustache
 
-## ReGrowth: Core
+### Melee Animation
+- Remove lassos
+
+### pphhyy Sanguinary Animals
+- Prevent animals from spawning naturally
+
+### ReGrowth: Core
 - Removes grassland biome
+
+### RimJobWorld
+- Remove cum eating fetish shit and humpshroom psyfocus gain
+
+#### + Adaptive Storage Framework
+- Unused condoms can be stored in end tables for easy access (currently not toggable)
+
+### Save Our Ship 2
+- Automatic, non-toggable (conditional) EVA patches for mods that add power armor
+
+### UNAGI Royalty Apparel
+- Prevent royal apparels from spawning on non-royal pawns
 
 ### Vanilla Apparel Expanded
 - Removes sidegrades to vanilla apparel and regular glasses
@@ -49,6 +69,12 @@ All patches are toggable.
 - Removes backpack, battle banner, and mini-turret pack
 - Rebalances medic pack and tool belt
 - Prevents most accessories from spawning on non-player pawns
+
+### Vanilla Brewing Expanded
+- Remove insect meat from tequila recipe
+
+> [!NOTE]
+> Autism: This is probably inspired by [maguey worms](https://en.wikipedia.org/wiki/Maguey_worm), which is found in mezcal. Tequila isn't mezcal, not all mezcal has them, and maguey worms are caterpillar larvae (not a chunk of insect flesh).
 
 ### Vanilla Factions Expanded - Mechanoids
 - Removes all drones since we have player mechanoids
@@ -66,16 +92,22 @@ All patches are toggable.
 - Removes barber's table
 - Replaces styling station texture with barber's table
 
+### Vanilla Hairs and Beards Retextured
+- Removes hairs and beards that are not retextured, but only if Unagi's vanilla hairs retexture isn't present
+
 ### Vanilla Psycasts Expanded
 - Removes psycaster raids to prevent spacer armor raids (mainly from VFE - Deserters) on my day 20 colony
 
 ### Vanilla Races Expanded - Archon
-- Removes extremely aggressive and long pregnancy genes ([\[Core+\] Rebalance](https://github.com/RimCorePlus/Rebalance) increases pregnancy duration)
+- Removes extremely aggressive and long pregnancy genes ([\[CorePlus\] Rebalance](https://github.com/RimCorePlus/Rebalance) increases human pregnancy duration)
 - Uses vanilla heads
 
 ### Vanilla Races Expanded - Phytokin
 - Adjusts metabolism gain from photosynthesis to compensate for removed aptitudes
 - Uses vanilla heads
+
+### Vanilla Vehicles Expanded
+- Remove tank trap
 
 ### Vanilla Weapons Expanded - Coilguns
 - Prevents coilguns from spawning on non-player pawns
