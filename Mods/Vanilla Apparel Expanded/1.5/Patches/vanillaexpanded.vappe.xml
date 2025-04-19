@@ -13,7 +13,7 @@
 			</li>
 			<!--nerf non-specialized apparel-->
 			<li Class="PatchOperationRemove">
-				<xpath>//ThingDef[not(defName="VAE_Headgear_Hardhat") and not(defName="VAE_Headgear_SurgicalMask") and not(defName="VAE_Headgear_Sunglasses") and not(defName="VAE_Headgear_ChefsToque") and not(defName="VAE_Apparel_ShirtandTie") and not(defName="VAE_Apparel_SuitJacket") and not(defName="VAE_Apparel_Trousers") and not(defName="VAE_Apparel_Overalls") and not(defName="VAE_Apparel_FleeceShirt") and not(defName="VAE_Apparel_ChefsUniform") and not(defName="VAE_Apparel_MilitaryJacket") and not(defName="VAE_Apparel_MilitaryUniform") and not(defName="VAE_Apparel_BuildersJacket") and not(defName="VAE_Apparel_DoctorScrubs") and not(defName="VAE_Apparel_SheriffShirt") and not(defName="VAE_Apparel_Jumpsuit") and not(defName="VAE_Apparel_Apron")]/equippedStatOffsets</xpath>
+				<xpath>//ThingDef[starts-with (defName, "VAE_") and not(defName="VAE_Headgear_Hardhat") and not(defName="VAE_Headgear_SurgicalMask") and not(defName="VAE_Headgear_Sunglasses") and not(defName="VAE_Headgear_ChefsToque") and not(defName="VAE_Apparel_ShirtandTie") and not(defName="VAE_Apparel_SuitJacket") and not(defName="VAE_Apparel_Trousers") and not(defName="VAE_Apparel_Overalls") and not(defName="VAE_Apparel_FleeceShirt") and not(defName="VAE_Apparel_ChefsUniform") and not(defName="VAE_Apparel_MilitaryJacket") and not(defName="VAE_Apparel_MilitaryUniform") and not(defName="VAE_Apparel_BuildersJacket") and not(defName="VAE_Apparel_DoctorScrubs") and not(defName="VAE_Apparel_SheriffShirt") and not(defName="VAE_Apparel_Jumpsuit") and not(defName="VAE_Apparel_Apron")]/equippedStatOffsets</xpath>
 			</li>
 			<!--rebalance apparel-->
 			<li Class="PatchOperationReplace">
