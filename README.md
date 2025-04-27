@@ -30,6 +30,9 @@ All patches are toggable unless noted otherwise.
 ### Combat Extended Armory
 - Removes composite armor and helmet
 
+### Dubs Bad Hygiene
+- Prevents traits from being generated on new pawns
+
 ### GiTS Cyberbrains
 - Removes abilities to make the brains less OP and reduce gizmo clutter
 
@@ -82,6 +85,9 @@ All patches are toggable unless noted otherwise.
 ### Vanilla Factions Expanded - Pirates
 - Removes cannon
 - Renames rum to pruno (toilet wine)
+
+### Vanilla Fishing Expanded
+- Prevents traits from being generated on new pawns
 
 ### Vanilla Furniture Expanded - Security
 - Removes barbed wire, cavalry spikes, and turrets that are sidegrades to vanilla turrets or copies of VFE - Mechanoids turrets

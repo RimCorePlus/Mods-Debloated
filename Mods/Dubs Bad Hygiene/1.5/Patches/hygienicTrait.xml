@@ -1,0 +1,14 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>True</enabled>
+        <label>[Dubs Bad Hygiene] remove traits</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>//TraitDef[defName="Hygienic"]/commonality</xpath>
+                <value>
+                    <commonality>0</commonality>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

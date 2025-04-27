@@ -1,0 +1,14 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>True</enabled>
+        <label>[Vanilla Fishing Expanded] remove fisherman trait</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>//TraitDef[defName="VCEF_Fisherman"]/commonality</xpath>
+                <value>
+                    <commonality>0</commonality>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>
