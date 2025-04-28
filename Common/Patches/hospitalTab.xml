@@ -24,20 +24,16 @@
                 </value>
             </li>
             <li Class="PatchOperationReplace">
-                <xpath>//ThingDef[defName="VitalsMonitor"]/designationCategory</xpath>
-                <value>
-                    <designationCategory>CorePlus_HospitalTab</designationCategory>
-                </value>
+                <xpath>//ThingDef[defName="VitalsMonitor"]/designationCategory/text()</xpath>
+                <value>CorePlus_HospitalTab</value>
             </li>
             <li Class="PatchOperationFindMod">
                 <mods>
                     <li>Vanilla Furniture Expanded - Medical Module</li>
                 </mods>
                 <match Class="PatchOperationReplace">
-                    <xpath>//ThingDef[defName="Bed_OperatingTable" or defName="Bed_OperatingTable" or defName="Facility_VitalsCentre" or defName="Facility_IVDrip" or defName="Bed_CryptoBed"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>CorePlus_HospitalTab</designationCategory>
-                    </value>
+                    <xpath>//ThingDef[defName="Bed_OperatingTable" or defName="Bed_OperatingTable" or defName="Facility_VitalsCentre" or defName="Facility_IVDrip" or defName="Bed_CryptoBed"]/designationCategory/text()</xpath>
+                    <value>CorePlus_HospitalTab</value>
                 </match>
             </li>
             <li Class="PatchOperationFindMod">
@@ -53,10 +49,8 @@
                             </value>
                         </li>
                         <li Class="PatchOperationReplace">
-                            <xpath>//ThingDef[defName="gitsAnchorConsole"]/designationCategory</xpath>
-                            <value>
-                                <designationCategory>CorePlus_HospitalTab</designationCategory>
-                            </value>
+                            <xpath>//ThingDef[defName="gitsAnchorConsole"]/designationCategory/text()</xpath>
+                            <value>CorePlus_HospitalTab</value>
                         </li>
                     </operations>
                 </match>

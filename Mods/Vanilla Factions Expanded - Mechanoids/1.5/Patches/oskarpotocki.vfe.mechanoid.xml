@@ -11,18 +11,14 @@
 				<xpath>//ResearchProjectDef[defName="VFE_BasicDroneAssembly" or defName="VFE_AdvancedDroneAssembly"] | //ResearchProjectDef/prerequisites/li[text()="VFE_AdvancedDroneAssembly"]</xpath>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>//ResearchProjectDef/prerequisites/li[text()="VFE_BasicDroneAssembly"] | //ThingDef/researchPrerequisites/li[text()="VFE_BasicDroneAssembly"] | //ThingDef/recipeMaker/researchPrerequisites/li[text()="VFE_BasicDroneAssembly"]</xpath>
-				<value>
-					<li>BasicMechtech</li>
-				</value>
+				<xpath>//ResearchProjectDef/prerequisites/li[text()="VFE_BasicDroneAssembly"] | //ThingDef/researchPrerequisites/li[text()="VFE_BasicDroneAssembly"] | //ThingDef/recipeMaker/researchPrerequisites/li[text()="VFE_BasicDroneAssembly"]/text()</xpath>
+				<value>BasicMechtech</value>
 			</li>
 			<!--move missile launcher into factory tab-->
-            <li Class="PatchOperationReplace">
-                <xpath>//ThingDef[defName="VFE_LongRangeMissileLauncher" or defName="VFE_IndoctrinationPod" or defName="VFE_Supercomputer"]/designationCategory</xpath>
-                <value>
-                    <designationCategory>VFE_Factory</designationCategory>
-                </value>
-            </li>
+			<li Class="PatchOperationReplace">
+				<xpath>//ThingDef[defName="VFE_LongRangeMissileLauncher" or defName="VFE_IndoctrinationPod" or defName="VFE_Supercomputer"]/designationCategory/text()</xpath>
+				<value>VFE_Factory</value>
+			</li>
 		</operations>
 	</Operation>
 </Patch>

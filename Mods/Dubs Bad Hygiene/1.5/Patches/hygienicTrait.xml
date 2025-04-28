@@ -4,10 +4,8 @@
         <label>[Dubs Bad Hygiene] remove traits</label>
         <operations>
             <li Class="PatchOperationReplace">
-                <xpath>//TraitDef[defName="Hygienic"]/commonality</xpath>
-                <value>
-                    <commonality>0</commonality>
-                </value>
+                <xpath>//TraitDef[defName="Hygienic"]/commonality/text()</xpath>
+                <value>0</value>
             </li>
         </operations>
     </Operation>

@@ -16,39 +16,29 @@
             <li Class="PatchOperationConditional">
                 <xpath>//ThingCategoryDef[defName="Waste"]</xpath>
                 <match Class="PatchOperationReplace">
-                    <xpath>//ThingDef[defName="UsedCondom"]/thingCategories/li[text()="AnimalProductRaw"]</xpath>
-                    <value>
-                        <li>Waste</li>
-                    </value>
+                    <xpath>//ThingDef[defName="UsedCondom"]/thingCategories/li[text()="AnimalProductRaw"]/text()</xpath>
+                    <value>Waste</value>
                 </match>
                 <!--otherwise change category to manufactured-->
                 <nomatch Class="PatchOperationReplace">
-                    <xpath>//ThingDef[defName="UsedCondom"]/thingCategories/li[text()="AnimalProductRaw"]</xpath>
-                    <value>
-                        <li>Manufactured</li>
-                    </value>
+                    <xpath>//ThingDef[defName="UsedCondom"]/thingCategories/li[text()="AnimalProductRaw"]/text()</xpath>
+                    <value>Manufactured</value>
                 </nomatch>
             </li>
             <!--decrease condom stack limit (simplifies bedside storage distribution)-->
             <li Class="PatchOperationReplace">
-                <xpath>//ThingDef[defName="Condom"]/stackLimit</xpath>
-                <value>
-                    <stackLimit>10</stackLimit>
-                </value>
+                <xpath>//ThingDef[defName="Condom"]/stackLimit/text()</xpath>
+                <value>10</value>
             </li>
             <!--increase used condom stack limit-->
             <li Class="PatchOperationReplace">
-                <xpath>//ThingDef[defName="UsedCondom"]/stackLimit</xpath>
-                <value>
-                    <stackLimit>500</stackLimit>
-                </value>
+                <xpath>//ThingDef[defName="UsedCondom"]/stackLimit/text()</xpath>
+                <value>500</value>
             </li>
             <!--change cringe used condom description-->
             <li Class="PatchOperationReplace">
-                <xpath>//ThingDef[defName="UsedCondom"]/description</xpath>
-                <value>
-                    <description>A used condom.</description>
-                </value>
+                <xpath>//ThingDef[defName="UsedCondom"]/description/text()</xpath>
+                <value>A used condom.</value>
             </li>
             <!--humpshroom doesn't refill psyfocus-->
             <li Class="PatchOperationRemove">
@@ -56,10 +46,8 @@
             </li>
             <!--updates hump shroom description-->
             <li Class="PatchOperationReplace">
-                <xpath>//ThingDef[defName="HumpShroom" or defName="PlantHumpShroom"]/description</xpath>
-                <value>
-                    <description>A mushshroom with tough flesh, thick juice and smooth soft skin. Exhibits aphrodisiac effects when consumed.</description>
-                </value>
+                <xpath>//ThingDef[defName="HumpShroom" or defName="PlantHumpShroom"]/description/text()</xpath>
+                <value>A mushshroom with tough flesh, thick juice and smooth soft skin. Exhibits aphrodisiac effects when consumed.</value>
             </li>
         </operations>
     </Operation>

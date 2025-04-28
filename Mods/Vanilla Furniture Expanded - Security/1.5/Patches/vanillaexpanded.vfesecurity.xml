@@ -19,32 +19,24 @@
 			</li>
 			<!--adjust research projects-->
 			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[defName="VFES_Turret_HMGComplex"]/researchPrerequisites/li[text()="VWE_TrenchWarfare"]</xpath>
-				<value>
-					<li>CE_TurretHeavyWeapons</li>
-				</value>
+				<xpath>//ThingDef[defName="VFES_Turret_HMGComplex"]/researchPrerequisites/li[text()="VWE_TrenchWarfare"]/text()</xpath>
+				<value>CE_TurretHeavyWeapons</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[defName="VFES_AmmoCrate"]/researchPrerequisites/li[text()="Fabrication"]</xpath>
-				<value>
-					<li>Machining</li>
-				</value>
+				<xpath>//ThingDef[defName="VFES_AmmoCrate"]/researchPrerequisites/li[text()="Fabrication"]/text()</xpath>
+				<value>Machining</value>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>//ThingDef[defName="VFES_Turret_EMPTurret"]/researchPrerequisites/li[text()="VFES_EMPCannon"]</xpath>
-				<value>
-					<li>VFES_PulseChargedDefenses</li>
-				</value>
+				<xpath>//ThingDef[defName="VFES_Turret_EMPTurret"]/researchPrerequisites/li[text()="VFES_EMPCannon"]/text()</xpath>
+				<value>VFES_PulseChargedDefenses</value>
 			</li>
 			<!--fix trench warfare-->
 			<li Class="PatchOperationRemove">
 				<xpath>//ResearchProjectDef[defName="VWE_TrenchWarfare"]/prerequisites/li[text()="Mortars"]</xpath>
 			</li>
 			<li Class="PatchOperationReplace">
-				<xpath>//ResearchProjectDef[defName="VWE_TrenchWarfare"]/techLevel</xpath>
-				<value>
-					<techLevel>Medieval</techLevel>
-				</value>
+				<xpath>//ResearchProjectDef[defName="VWE_TrenchWarfare"]/techLevel/text()</xpath>
+				<value>Medieval</value>
 			</li>
 			<!--remove unused research projects-->
 			<li Class="PatchOperationRemove">

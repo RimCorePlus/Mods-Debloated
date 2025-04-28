@@ -1,8 +1,6 @@
 <Patch>
     <Operation Class="PatchOperationReplace">
-        <xpath>//GeneCategoryDef[defName="EyeGenes2_Eyes"]/displayPriorityInXenotype</xpath>
-        <value>
-            <displayPriorityInXenotype>277</displayPriorityInXenotype>
-        </value>
+        <xpath>//GeneCategoryDef[defName="EyeGenes2_Eyes"]/displayPriorityInXenotype/text()</xpath>
+        <value>277</value>
     </Operation>
 </Patch>

@@ -4,10 +4,8 @@
         <label>[UNAGI Royalty Apparel] prevent clothes from spawning on non-royal pawns</label>
         <operations>
             <li Class="PatchOperationReplace">
-                <xpath>//ThingDef[defName="UNA_MstyleShirtpants"]/apparel/tags/li[text()="IndustrialBasic"]</xpath>
-                <value>
-                    <li>Royal</li>
-                </value>
+                <xpath>//ThingDef[defName="UNA_MstyleShirtpants"]/apparel/tags/li[text()="IndustrialBasic"]/text()</xpath>
+                <value>Royal</value>
             </li>
             <li Class="PatchOperationRemove">
                 <xpath>//ThingDef[defName="Apparel_UNA_TogeHelm"]/apparel/tags/li[text()="IndustrialMilitaryBasic"]</xpath>

@@ -4,10 +4,8 @@
 		<label>[VRE - Phytokin] compensate for removed aptitudes</label>
 		<operations>
 			<li Class="PatchOperationReplace">
-				<xpath>//GeneDef[defName="VRE_Photosynthesis"]/biostatMet</xpath>
-				<value>
-					<biostatMet>3</biostatMet>
-				</value>
+				<xpath>//GeneDef[defName="VRE_Photosynthesis"]/biostatMet/text()</xpath>
+				<value>3</value>
 			</li>
 		</operations>
 	</Operation>

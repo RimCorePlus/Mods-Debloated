@@ -8,32 +8,24 @@
             </li>
             <!--medic bag-->
             <li Class="PatchOperationReplace">
-                <xpath>//ThingDef[defName="VAEA_Apparel_MedicBag"]/equippedStatOffsets/MedicalSurgerySuccessChance</xpath>
-                <value>
-                    <MedicalSurgerySuccessChance>0.1</MedicalSurgerySuccessChance>
-                </value>
+                <xpath>//ThingDef[defName="VAEA_Apparel_MedicBag"]/equippedStatOffsets/MedicalSurgerySuccessChance/text()</xpath>
+                <value>0.1</value>
             </li>
             <li Class="PatchOperationReplace">
-                <xpath>//ThingDef[defName="VAEA_Apparel_MedicBag"]/equippedStatOffsets/MedicalTendQuality</xpath>
-                <value>
-                    <MedicalTendQuality>0.1</MedicalTendQuality>
-                </value>
+                <xpath>//ThingDef[defName="VAEA_Apparel_MedicBag"]/equippedStatOffsets/MedicalTendQuality/text()</xpath>
+                <value>0.1</value>
             </li>
             <!--tool belt-->
             <li Class="PatchOperationRemove">
                 <xpath>//ThingDef[defName="VAEA_Apparel_ToolBelt"]/equippedStatOffsets/FixBrokenDownBuildingSuccessChance</xpath>
             </li>
             <li Class="PatchOperationReplace">
-                <xpath>//ThingDef[defName="VAEA_Apparel_ToolBelt"]/equippedStatOffsets/ConstructionSpeed</xpath>
-                <value>
-                    <ConstructionSpeed>0.1</ConstructionSpeed>
-                </value>
+                <xpath>//ThingDef[defName="VAEA_Apparel_ToolBelt"]/equippedStatOffsets/ConstructionSpeed/text()</xpath>
+                <value>0.1</value>
             </li>
             <li Class="PatchOperationReplace">
-                <xpath>//ThingDef[defName="VAEA_Apparel_ToolBelt"]/equippedStatOffsets/ConstructSuccessChance</xpath>
-                <value>
-                    <ConstructSuccessChance>0.1</ConstructSuccessChance>
-                </value>
+                <xpath>//ThingDef[defName="VAEA_Apparel_ToolBelt"]/equippedStatOffsets/ConstructSuccessChance/text()</xpath>
+                <value>0.1</value>
             </li>
             <li Class="PatchOperationRemove">
                 <xpath>//ThingDef[defName="VAEA_Apparel_ToolBelt"]/equippedStatOffsets/SmoothingSpeed</xpath>

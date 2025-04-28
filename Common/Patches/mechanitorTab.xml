@@ -18,20 +18,16 @@
                 </value>
             </li>
             <li Class="PatchOperationReplace">
-                <xpath>//ThingDef[@Name="BaseMechCharger" or @Name="MechGestatorBase" or defName="SubcoreEncoder" or @Name="SubcoreScannerBase" or defName="BandNode" or defName="BurnoutMechlinkBooster" or defName="MechbandDish" or defName="MechBooster"]/designationCategory</xpath>
-                <value>
-                    <designationCategory>CorePlus_MechanitorTab</designationCategory>
-                </value>
+                <xpath>//ThingDef[@Name="BaseMechCharger" or @Name="MechGestatorBase" or defName="SubcoreEncoder" or @Name="SubcoreScannerBase" or defName="BandNode" or defName="BurnoutMechlinkBooster" or defName="MechbandDish" or defName="MechBooster"]/designationCategory/text()</xpath>
+                <value>CorePlus_MechanitorTab</value>
             </li>
             <li Class="PatchOperationFindMod">
                 <mods>
                     <li>Alpha Mechs</li>
                 </mods>
                 <match Class="PatchOperationReplace">
-                    <xpath>//ThingDef[starts-with(defName, "AM_") and @ParentName="BuildingBase"]/designationCategory</xpath>
-                    <value>
-                        <designationCategory>CorePlus_MechanitorTab</designationCategory>
-                    </value>
+                    <xpath>//ThingDef[starts-with(defName, "AM_") and @ParentName="BuildingBase"]/designationCategory/text()</xpath>
+                    <value>CorePlus_MechanitorTab</value>
                 </match>
             </li>
         </operations>
