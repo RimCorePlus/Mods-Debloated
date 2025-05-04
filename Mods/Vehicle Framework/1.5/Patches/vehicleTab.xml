@@ -1,0 +1,28 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>True</enabled>
+        <label>[Vehicle Framework] move all vehicle buildings into their own architect tab</label>
+        <operations>
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>RimThunder - Core</li>
+                </mods>
+                <match Class="PatchOperationSequence">
+                    <operations>
+                        <!--should work for all submods-->
+                        <li Class="PatchOperationReplace">
+                            <xpath>//ThingDef[(@ParentName="BuildingBase" or @ParentName="BenchBase" or @ParentName="FurnitureBase" or @ParentName="StorageShelfBase") and (starts-with(defName, "RT_") or starts-with(defName, "RTC_"))]/designationCategory[not(text()="VF_Vehicles")]/text()</xpath>
+                            <value>VF_Vehicles</value>
+                        </li>
+                        <li Class="PatchOperationAdd">
+                            <xpath>//ThingDef[(@ParentName="BuildingBase" or @ParentName="BenchBase" or @ParentName="FurnitureBase" or @ParentName="StorageShelfBase") and (starts-with(defName, "RT_") or starts-with(defName, "RTC_")) and not(designationCategory)]</xpath>
+                            <value>
+                                <designationCategory>VF_Vehicles</designationCategory>
+                            </value>
+                        </li>
+                    </operations>
+                </match>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

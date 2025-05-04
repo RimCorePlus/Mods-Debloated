@@ -19,7 +19,7 @@ All patches are balanced around my mods (and personal modlist). For example, [ge
 All patches are toggable unless noted otherwise.
 
 ### [BT] EyeGenes2 Base - [NL] Facial Animation
-- Automatic, non-toggable patch to fix duplicate displayPriorityInXenotype red erros with other mods, no in-game impact
+- Automatic, non-toggable patch to fix duplicate displayPriorityInXenotype red erros with other mods
 
 ### Altered Carbon 2: ReSleeved
 - Remove hair
@@ -29,6 +29,9 @@ All patches are toggable unless noted otherwise.
 
 ### Combat Extended Armory
 - Removes composite armor and helmet
+
+### Custom Colt Anaconda
+- Prevent the .50 BMG variant from spawning on non-spacer pawns because it can easily shoot off entire limbs
 
 ### Dubs Bad Hygiene
 - Prevents traits from being generated on new pawns

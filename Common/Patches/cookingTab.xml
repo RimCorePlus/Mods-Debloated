@@ -25,6 +25,7 @@
                 <xpath>//ThingDef[defName="Hopper"]/designationCategory/text()</xpath>
                 <value>Misc</value>
             </li>
+            <!--no longer maintaining any Alpha series patches-->
             <li Class="PatchOperationFindMod">
                 <mods>
                     <li>Alpha Crafts</li>
@@ -59,6 +60,25 @@
                 </mods>
                 <match Class="PatchOperationReplace">
                     <xpath>//ThingDef[defName="VFE_KitchenSinkCabinet" or defName="VFE_TableStoveLarge"]/designationCategory/text()</xpath>
+                    <value>CorePlus_CookingTab</value>
+                </match>
+            </li>
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Mashed's Ashlands</li>
+                </mods>
+                <match Class="PatchOperationReplace">
+                    <xpath>//ThingDef[@Name="Mashed_Ashlands_AshlandFermentingBarrel_Base"]/designationCategory/text()</xpath>
+                    <value>CorePlus_CookingTab</value>
+                </match>
+            </li>
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Dubs Bad Hygiene</li>
+                </mods>
+                <!--also using ParentName because the defName isn't unique-->
+                <match Class="PatchOperationReplace">
+                    <xpath>//ThingDef[defName="KitchenSink" and @ParentName="DubsDirtyBasinBase"]/designationCategory/text()</xpath>
                     <value>CorePlus_CookingTab</value>
                 </match>
             </li>

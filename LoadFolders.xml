@@ -3,11 +3,15 @@
         <li>/</li>
         <li>1.5</li>
         <li>Common</li>
+        <!--DLC-->
+        <li IfModActive="Ludeon.Rimworld.Biotech">DLC/Biotech/1.5</li>
+        <!--mods-->
         <li IfModActive="atk.anthrosonae,oppey.eyegenes2">Mods/[BT] EyeGenes2 Base - [NL] Facial Animation/Anthrosonae/1.5</li>
         <li IfModActive="adaptive.storage.framework">Mods/Adaptive Storage Framework/1.5</li>
         <li IfModActive="hlx.ultratechalteredcarbon">Mods/Altered Carbon 2 ReSleeved/1.5</li>
         <li IfModActive="ceteam.combatextended">Mods/Combat Extended/1.5</li>
         <li IfModActive="ceteam.combatextendedarmory">Mods/Combat Extended Armory/1.5</li>
+        <li IfModActive="harkon.other.coltanaconda">Mods/Custom Colt Anaconda/1.5</li>
         <li IfModActive="dubwise.dubsbadhygiene">Mods/Dubs Bad Hygiene/1.5</li>
         <li IfModActive="moistestwhale.gitscyberbrains">Mods/GiTS Cyberbrains/1.5</li>
         <li IfModActive="sov.pizza">Mods/Marios Pizza/1.5</li>
@@ -23,7 +27,7 @@
         <li IfModActive="oskarpotocki.vfe.pirates">Mods/Vanilla Factions Expanded - Pirates/1.5</li>
         <li IfModActive="vanillaexpanded.vhe">Mods/Vanilla Hair Expanded/1.5</li>
         <li IfModActive="vanillaexpanded.vcef">Mods/Vanilla Fishing Expanded/1.5</li>
-        <li IfModActive="dubwise.dubsbadhygiene,vanillaexpanded.vfeproduction">Mods/Vanilla Furniture Expanded - Production/Dubs Bad Hygiene/1.5</li>
+        <li IfModActive="vanillaexpanded.vfeproduction">Mods/Vanilla Furniture Expanded - Production/1.5</li>
         <li IfModActive="vanillaexpanded.vfesecurity">Mods/Vanilla Furniture Expanded - Security/1.5</li>
         <li IfModActive="hourai.vanillahairsretex" IfModNotActive="unagi.hairs.b.zibunyou">Mods/Vanilla Hairs and Beards Retextured/1.5</li>
         <li IfModActive="vanillaexpanded.vpsycastse">Mods/Vanilla Psycasts Expanded/1.5</li>
@@ -31,5 +35,6 @@
         <li IfModActive="vanillaracesexpanded.phytokin">Mods/Vanilla Races Expanded - Phytokin/1.5</li>
         <li IfModActive="oskarpotocki.vanillavehiclesexpanded">Mods/Vanilla Vehicles Expanded/1.5</li>
         <li IfModActive="vanillaexpanded.vwec">Mods/Vanilla Weapons Expanded - Coilguns/1.5</li>
+        <li IfModActive="smashphil.vehicleframework">Mods/Vehicle Framework/1.5</li>
     </v1.5>
 </loadFolders>
