@@ -63,6 +63,15 @@
                     <value>CorePlus_CookingTab</value>
                 </match>
             </li>
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>[CorePlus] Utilities</li>
+                </mods>
+                <match Class="PatchOperationReplace">
+                    <xpath>//ThingDef[@Name="CorePlus_FridgeBase"]/designationCategory/text()</xpath>
+                    <value>CorePlus_CookingTab</value>
+                </match>
+            </li>
         </operations>
     </Operation>
 </Patch>
