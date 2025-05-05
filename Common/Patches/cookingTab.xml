@@ -18,7 +18,7 @@
                 </value>
             </li>
             <li Class="PatchOperationReplace">
-                <xpath>//ThingDef[defName="TableButcher" or defName="VFE_TableButcherElectric" or defName="ElectricStove" or defName="FueledStove" or defName="FermentingBarrel" or defName="Brewery" or defName="NutrientPasteDispenser"]/designationCategory/text()</xpath>
+                <xpath>//ThingDef[contains(label, "stove") or contains(label, "butcher") or contains(label, "kitchen") or researchPrerequisites/li[text()="Brewing"] or defName="NutrientPasteDispenser"]/designationCategory/text()</xpath>
                 <value>CorePlus_CookingTab</value>
             </li>
             <li Class="PatchOperationReplace">
@@ -40,7 +40,7 @@
                     <li>Vanilla Brewing Expanded</li>
                 </mods>
                 <match Class="PatchOperationReplace">
-                    <xpath>//ThingDef[starts-with(defName, "VBE_") and @ParentName="BuildingBase" or defName="VBE_Bar"]/designationCategory/text()</xpath>
+                    <xpath>//ThingDef[(starts-with(defName, "VBE_") and @ParentName="BuildingBase") or defName="VBE_Bar"]/designationCategory/text()</xpath>
                     <value>CorePlus_CookingTab</value>
                 </match>
             </li>
@@ -56,29 +56,10 @@
             </li>
             <li Class="PatchOperationFindMod">
                 <mods>
-                    <li>Vanilla Furniture Expanded - Production</li>
-                </mods>
-                <match Class="PatchOperationReplace">
-                    <xpath>//ThingDef[defName="VFE_KitchenSinkCabinet" or defName="VFE_TableStoveLarge"]/designationCategory/text()</xpath>
-                    <value>CorePlus_CookingTab</value>
-                </match>
-            </li>
-            <li Class="PatchOperationFindMod">
-                <mods>
                     <li>Mashed's Ashlands</li>
                 </mods>
                 <match Class="PatchOperationReplace">
                     <xpath>//ThingDef[@Name="Mashed_Ashlands_AshlandFermentingBarrel_Base"]/designationCategory/text()</xpath>
-                    <value>CorePlus_CookingTab</value>
-                </match>
-            </li>
-            <li Class="PatchOperationFindMod">
-                <mods>
-                    <li>Dubs Bad Hygiene</li>
-                </mods>
-                <!--also using ParentName because the defName isn't unique-->
-                <match Class="PatchOperationReplace">
-                    <xpath>//ThingDef[defName="KitchenSink" and @ParentName="DubsDirtyBasinBase"]/designationCategory/text()</xpath>
                     <value>CorePlus_CookingTab</value>
                 </match>
             </li>
