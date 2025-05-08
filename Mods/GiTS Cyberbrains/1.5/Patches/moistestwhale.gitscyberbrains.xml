@@ -1,6 +1,6 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>[GiTS Cyberbrains] remove abilities</label>
 		<operations>
 			<li Class="PatchOperationRemove">

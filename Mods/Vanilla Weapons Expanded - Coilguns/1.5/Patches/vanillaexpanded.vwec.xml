@@ -1,6 +1,6 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>[VWE - Coilguns] prevent spawning on non-player pawns</label>
 		<operations>
 			<li Class="PatchOperationRemove">

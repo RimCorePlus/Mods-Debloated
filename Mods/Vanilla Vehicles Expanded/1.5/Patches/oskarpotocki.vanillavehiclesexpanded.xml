@@ -1,6 +1,6 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>[Vanilla Vehicles Expanded] remove tank trap</label>
 		<operations>
             <li Class="PatchOperationRemove">

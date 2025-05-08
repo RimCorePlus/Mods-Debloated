@@ -15,7 +15,7 @@
                 <li Class="PatchOperationAdd">
                     <xpath>//ThingDef[defName="EndTable"]</xpath>
                     <value>
-                        <drawGUIOverlay>True</drawGUIOverlay>
+                        <drawGUIOverlay>true</drawGUIOverlay>
                         <inspectorTabs>
                             <li>ITab_Storage</li>
                         </inspectorTabs>

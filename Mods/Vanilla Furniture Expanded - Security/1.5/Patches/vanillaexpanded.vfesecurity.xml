@@ -1,7 +1,7 @@
 <Patch>
 	<!--this is getting a full rewrite soon-ish-->
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>[VFE - Security Module] debloat</label>
 		<operations>
 			<!--remove unwanted items-->

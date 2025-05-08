@@ -38,7 +38,7 @@
 								<label>launch 30x29mm grenade</label>
 								<verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
 								<hasStandardCommand>true</hasStandardCommand>
-								<onlyManualCast>True</onlyManualCast>
+								<onlyManualCast>true</onlyManualCast>
 								<warmupTime>1.5</warmupTime>
 								<range>40</range>
 								<minRange>5</minRange>
@@ -118,7 +118,7 @@
 								<label>launch 30x64mm incendiary</label>
 								<verbClass>CombatExtended.Verb_LaunchProjectileStaticCE</verbClass>
 								<hasStandardCommand>true</hasStandardCommand>
-								<onlyManualCast>True</onlyManualCast>
+								<onlyManualCast>true</onlyManualCast>
 								<warmupTime>1.5</warmupTime>
 								<range>40</range>
 								<minRange>5</minRange>

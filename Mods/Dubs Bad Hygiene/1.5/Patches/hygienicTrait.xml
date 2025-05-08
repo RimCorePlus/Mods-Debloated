@@ -1,6 +1,6 @@
 <Patch>
     <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>True</enabled>
+        <enabled>true</enabled>
         <label>[Dubs Bad Hygiene] remove traits</label>
         <operations>
             <li Class="PatchOperationReplace">

@@ -1,6 +1,6 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>[VRE - Archon] remove extremely aggressive and long pregnancy genes</label>
 		<operations>
 			<li Class="PatchOperationRemove">
@@ -16,7 +16,7 @@
 		</operations>
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>[VRE - Archon] vanilla heads</label>
 		<operations>
 			<li Class="PatchOperationRemove">

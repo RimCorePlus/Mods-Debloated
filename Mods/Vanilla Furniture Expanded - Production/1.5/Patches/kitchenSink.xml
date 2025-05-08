@@ -1,6 +1,6 @@
 <Patch>
     <Operation MayRequire="dubwise.dubsbadhygiene" Class="VFECore.PatchOperationToggableSequence">
-        <enabled>True</enabled>
+        <enabled>true</enabled>
         <label>[Dubs Bad Hygiene] remove DBH kitchen sink</label>
         <operations>
             <li Class="PatchOperationRemove">

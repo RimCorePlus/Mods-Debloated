@@ -1,6 +1,6 @@
 <Patch>
     <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>True</enabled>
+        <enabled>true</enabled>
         <label>[UNAGI Royalty Apparel] prevent clothes from spawning on non-royal pawns</label>
         <operations>
             <li Class="PatchOperationReplace">

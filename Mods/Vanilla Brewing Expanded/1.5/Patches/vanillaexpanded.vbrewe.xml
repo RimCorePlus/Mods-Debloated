@@ -1,6 +1,6 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>True</enabled>
+		<enabled>true</enabled>
 		<label>[Vanilla Brewing Expanded] tequila doesn't have meat in it</label>
 		<operations>
 			<!--remove apparel-->
