@@ -1,0 +1,12 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>[AS Neolithic Module] unlock all buildings with complex furniture</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[@Name="ASNeolithicItemDisplayBase" or @Name="ASNeolithicStorageBase"]/researchPrerequisites/li/text()</xpath>
+                <value>ComplexFurniture</value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

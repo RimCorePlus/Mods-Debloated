@@ -20,6 +20,7 @@
 	<loadBefore />
 	<loadAfter>
 		<li>adaptive.storage.framework</li>
+		<li>adaptive.storage.neolithic</li>
 		<li>atk.anthrosonae</li>
 		<li>ceteam.combatextended</li>
 		<li>ceteam.combatextendedarmory</li>

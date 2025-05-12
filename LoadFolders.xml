@@ -8,6 +8,7 @@
         <!--mods-->
         <li IfModActive="atk.anthrosonae,oppey.eyegenes2">Mods/[BT] EyeGenes2 Base - [NL] Facial Animation/Anthrosonae/1.5</li>
         <li IfModActive="adaptive.storage.framework">Mods/Adaptive Storage Framework/1.5</li>
+        <li IfModActive="adaptive.storage.neolithic">Mods/Adaptive Storage Neolithic Module/1.5</li>
         <li IfModActive="hlx.ultratechalteredcarbon">Mods/Altered Carbon 2 ReSleeved/1.5</li>
         <li IfModActive="ceteam.combatextended">Mods/Combat Extended/1.5</li>
         <li IfModActive="ceteam.combatextendedarmory">Mods/Combat Extended Armory/1.5</li>
