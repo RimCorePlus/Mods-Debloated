@@ -41,7 +41,7 @@ All patches are toggable unless noted otherwise.
 ### RimJobWorld
 - Remove cum eating fetish shit and humpshroom psyfocus gain
 #### + Adaptive Storage Framework
-- Unused condoms can be stored in end tables for easy access (currently not toggable)
+- Unused condoms can be stored in end tables for easy access
 ### Save Our Ship 2
 - Automatic, non-toggable (conditional) EVA patches for mods that add power armor
 ### UNAGI Royalty Apparel
