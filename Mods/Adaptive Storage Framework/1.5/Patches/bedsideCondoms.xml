@@ -1,7 +1,7 @@
 <Patch>
     <Operation MayRequire="rim.job.world" Class="VFECore.PatchOperationToggableSequence">
         <enabled>true</enabled>
-        <label>[AS Neolithic Module] unlock all buildings with complex furniture</label>
+        <label>[ASF + RJW] end tables as condom storage</label>
         <operations>
             <li Class="PatchOperationAdd">
                 <xpath>/Defs</xpath>
