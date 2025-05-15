@@ -7,6 +7,9 @@
                 <xpath>//ThingDef[researchPrerequisites/li[text()="ASNeolithicNeolithicStorage" or text()="ASNeolithicNeolithicItemDisplay"]]/researchPrerequisites/li/text()</xpath>
                 <value>ComplexFurniture</value>
             </li>
+            <li Class="PatchOperationRemove">
+                <xpath>//ResearchProjectDef[@Name="ASNeolithicResearchBase" or @ParentName="ASNeolithicResearchBase"] | //ResearchTabDef[defName="ASFAdaptiveStorage"]</xpath>
+            </li>
         </operations>
     </Operation>
 </Patch>
