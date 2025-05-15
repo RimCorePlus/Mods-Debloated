@@ -4,7 +4,7 @@
         <label>[AS Neolithic Module] unlock all buildings with complex furniture</label>
         <operations>
             <li Class="PatchOperationReplace">
-                <xpath>//ThingDef[@Name="ASNeolithicItemDisplayBase" or @Name="ASNeolithicStorageBase"]/researchPrerequisites/li/text()</xpath>
+                <xpath>//ThingDef[researchPrerequisites/li[text()="ASNeolithicNeolithicStorage" or text()="ASNeolithicNeolithicItemDisplay"]]/researchPrerequisites/li/text()</xpath>
                 <value>ComplexFurniture</value>
             </li>
         </operations>
