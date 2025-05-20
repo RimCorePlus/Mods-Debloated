@@ -1,10 +1,19 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>true</enabled>
-		<label>[Combat Extended] Remove gas masks and exoframe</label>
+		<label>[Combat Extended] Remove gas masks</label>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>//ThingDef[defName="CE_Apparel_GasMask" or defName="CE_Apparel_ImprovGasMask" or defName="CE_Apparel_ExoFrame"]</xpath>
+				<xpath>//ThingDef[defName="CE_Apparel_GasMask" or defName="CE_Apparel_ImprovGasMask"]</xpath>
+			</li>
+		</operations>
+	</Operation>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>true</enabled>
+		<label>[Combat Extended] Remove exoframe from pawn generation</label>
+		<operations>
+			<li Class="PatchOperationRemove">
+				<xpath>//ThingDef[defName="CE_Apparel_ExoFrame"]/apparel/defaultOutfitTags | //ThingDef[defName="CE_Apparel_ExoFrame"]/apparel/tags</xpath>
 			</li>
 		</operations>
 	</Operation>
