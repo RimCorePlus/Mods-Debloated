@@ -55,7 +55,7 @@
             </li>
             <li Class="PatchOperationFindMod">
                 <mods>
-                    <li>[CorePlus] Utilities</li>
+                    <li>[RCP] Utilities</li>
                 </mods>
                 <match Class="PatchOperationReplace">
                     <xpath>//ThingDef[@Name="CorePlus_FridgeBase"]/designationCategory/text()</xpath>
