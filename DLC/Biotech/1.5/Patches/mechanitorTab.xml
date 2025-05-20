@@ -1,7 +1,7 @@
 <Patch>
     <Operation Class="VFECore.PatchOperationToggableSequence">
         <enabled>true</enabled>
-        <label>[Biotech] move mechanitor buildings into their own architect tab</label>
+        <label>[Biotech] Move mechanitor buildings into their own architect tab</label>
         <operations>
             <li Class="PatchOperationAdd">
                 <xpath>Defs</xpath>
@@ -20,16 +20,6 @@
             <li Class="PatchOperationReplace">
                 <xpath>//ThingDef[@Name="BaseMechCharger" or @Name="MechGestatorBase" or defName="SubcoreEncoder" or @Name="SubcoreScannerBase" or defName="BandNode" or defName="BurnoutMechlinkBooster" or defName="MechbandDish" or defName="MechBooster"]/designationCategory/text()</xpath>
                 <value>CorePlus_MechanitorTab</value>
-            </li>
-            <!--no longer maintaining any Alpha series patches-->
-            <li Class="PatchOperationFindMod">
-                <mods>
-                    <li>Alpha Mechs</li>
-                </mods>
-                <match Class="PatchOperationReplace">
-                    <xpath>//ThingDef[starts-with(defName, "AM_") and @ParentName="BuildingBase"]/designationCategory/text()</xpath>
-                    <value>CorePlus_MechanitorTab</value>
-                </match>
             </li>
         </operations>
     </Operation>

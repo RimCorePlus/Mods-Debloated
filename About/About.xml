@@ -6,9 +6,10 @@
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>
-	<modVersion>1.5.0</modVersion>
+	<modVersion />
 	<modIconPath IgnoreIfNoMatchingField="True" />
 	<url>https://github.com/RimCorePlus/Mods-Debloated</url>
+	<descriptionsByVersion />
 	<modDependencies>
 		<li>
 			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
@@ -17,43 +18,28 @@
 			<downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
 		</li>
 	</modDependencies>
+	<modDependenciesByVersion />
 	<loadBefore />
+	<loadBeforeByVersion />
+	<forceLoadBefore />
 	<loadAfter>
 		<li>adaptive.storage.framework</li>
 		<li>adaptive.storage.neolithic</li>
-		<li>atk.anthrosonae</li>
 		<li>ceteam.combatextended</li>
 		<li>ceteam.combatextendedarmory</li>
-		<li>co.uk.epicguru.meleeanimation</li>
-		<li>coreplus.rebalance</li>
+		<li>boomer.rebalance</li>
 		<li>coreplus.utilities</li>
 		<li>dankpyon.medieval.overhaul</li>
 		<li>dubwise.dubsbadhygiene</li>
-		<li>hlx.ultratechalteredcarbon</li>
-		<li>hourai.vanillahairsretex</li>
 		<li>moistestwhale.gitscyberbrains</li>
 		<li>oppey.eyegenes2</li>
-		<li>oskarpotocki.vanillafactionsexpanded.core</li>
-		<li>oskarpotocki.vanillafactionsexpanded.settlersmodule</li>
-		<li>oskarpotocki.vanillavehiclesexpanded</li>
-		<li>oskarpotocki.vfe.mechanoid</li>
-		<li>oskarpotocki.vfe.pirates</li>
 		<li>regrowth.botr.core</li>
 		<li>rim.job.world</li>
+		<li>smashphil.vehicleframework</li>
 		<li>sov.pizza</li>
-		<li>unagi.ap.dress</li>
-		<li>unagi.hairs.b.zibunyou</li>
-		<li>vanillaexpanded.basegenerationexpanded</li>
-		<li>vanillaexpanded.vaeaccessories</li>
-		<li>vanillaexpanded.vappe</li>
-		<li>vanillaexpanded.vbrewe</li>
-		<li>vanillaexpanded.vfeproduction</li>
-		<li>vanillaexpanded.vfesecurity</li>
-		<li>vanillaexpanded.vhe</li>
-		<li>vanillaexpanded.vpsycastse</li>
-		<li>vanillaexpanded.vwec</li>
-		<li>vanillaracesexpanded.archon</li>
-		<li>vanillaracesexpanded.phytokin</li>
 	</loadAfter>
+	<loadAfterByVersion />
+	<forceLoadAfter />
 	<incompatibleWith />
+	<incompatibleWithByVersion />
 </ModMetaData>

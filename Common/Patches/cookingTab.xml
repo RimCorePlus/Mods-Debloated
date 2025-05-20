@@ -25,16 +25,6 @@
                 <xpath>//ThingDef[defName="Hopper"]/designationCategory/text()</xpath>
                 <value>Misc</value>
             </li>
-            <!--no longer maintaining any Alpha series patches-->
-            <li Class="PatchOperationFindMod">
-                <mods>
-                    <li>Alpha Crafts</li>
-                </mods>
-                <match Class="PatchOperationReplace">
-                    <xpath>//ThingDef[starts-with(defName, "AC_") and @ParentName="BuildingBase" and not(researchPrerequisites/li[text()="AC_NeuralDigitalization" or text()="AC_NeuralCasting" or text()="AC_SleeveGestation"])]/designationCategory/text()</xpath>
-                    <value>CorePlus_CookingTab</value>
-                </match>
-            </li>
             <li Class="PatchOperationFindMod">
                 <mods>
                     <li>Vanilla Brewing Expanded</li>

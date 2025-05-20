@@ -1,7 +1,7 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>true</enabled>
-		<label>[Combat Extended] debloat</label>
+		<label>[Combat Extended] Remove gas masks and exoframe</label>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//ThingDef[defName="CE_Apparel_GasMask" or defName="CE_Apparel_ImprovGasMask" or defName="CE_Apparel_ExoFrame"]</xpath>

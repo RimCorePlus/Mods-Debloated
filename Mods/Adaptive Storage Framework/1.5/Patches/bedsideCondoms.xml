@@ -1,7 +1,7 @@
 <Patch>
     <Operation MayRequire="rim.job.world" Class="VFECore.PatchOperationToggableSequence">
         <enabled>true</enabled>
-        <label>[ASF + RJW] end tables as condom storage</label>
+        <label>[ASF + RJW] End tables as condom storage</label>
         <operations>
             <li Class="PatchOperationAdd">
                 <xpath>/Defs</xpath>

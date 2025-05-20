@@ -1,7 +1,7 @@
 <Patch>
     <Operation Class="VFECore.PatchOperationToggableSequence">
         <enabled>true</enabled>
-        <label>[Vehicle Framework] move all vehicle buildings into their own architect tab</label>
+        <label>[Vehicle Framework] Move all vehicle buildings into their own architect tab</label>
         <operations>
             <li Class="PatchOperationFindMod">
                 <mods>

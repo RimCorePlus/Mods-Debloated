@@ -1,7 +1,7 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>true</enabled>
-		<label>[Combat Extended Armory] remove composite armor</label>
+		<label>[Combat Extended Armory] Remove composite armor</label>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//ThingDef[defName="CE_Apparel_CompositeArmor" or defName="CE_Apparel_HeavyCompositeHelmet"]</xpath>
