@@ -15,6 +15,7 @@
         <li IfModActive="dubwise.dubsbadhygiene">Mods/Dubs Bad Hygiene/1.5</li>
         <li IfModActive="moistestwhale.gitscyberbrains">Mods/GiTS Cyberbrains/1.5</li>
         <li IfModActive="sov.pizza">Mods/Marios Pizza/1.5</li>
+        <li IfModActive="itchyflea.medicaltraining">Mods/Medical Training/1.5</li>
         <li IfModActive="regrowth.botr.core">Mods/ReGrowth Core/1.5</li>
         <li IfModActive="rim.job.world">Mods/RimJobWorld/1.5</li>
         <li IfModActive="smashphil.vehicleframework">Mods/Vehicle Framework/1.5</li>

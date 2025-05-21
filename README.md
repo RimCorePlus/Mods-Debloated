@@ -9,44 +9,59 @@
 <!--![Supports Anomaly][badge-dlc-anomaly] supports Anomaly DLC-->
 [badge-dlc-anomaly]: https://img.shields.io/badge/DLC-Anomaly-darkseagreen
 
-# [RCP] Mods Debloated
+# Reduce, Reuse, Recycle
 ![](About/Preview.png)\
 [![GPLv3][badge-license]](https://www.gnu.org/licenses/gpl-3.0) ![Supports Royalty][badge-dlc-royalty] ![Supports Ideology][badge-dlc-ideology] ![Supports Biotech][badge-dlc-biotech]
 
 Don't download this.
 
-## Supported Mods
+## Settings
 All patches are toggable unless noted otherwise.
 
-### [BT] EyeGenes2 Base - [NL] Facial Animation
+## Architect Tabs
+- Butcher tables, kitchen sinks, stoves, etc into a new kitchen tab
+- Hospital buildings and linkables into a new hospital tab
+- (with Biotech) Mechanitor buildings from the Biotech tab into a new mechanitor tab
+- (with Vehicle Framework) Modded buildings and vehicles from their own tabs into the existing vehicles tab
+
+### [[BT] EyeGenes2 | Base - [NL] Facial Animation |](https://steamcommunity.com/sharedfiles/filedetails/?id=2898151329)
 - Automatic, non-toggable patch to fix duplicate displayPriorityInXenotype red erros with other mods
 
-### Combat Extended
-- Remove gas masks and powered exoframe
+### [Adaptive Storage Neolithic Module](https://steamcommunity.com/sharedfiles/filedetails/?id=3033901895)
+- Unlock all buildings with complex furniture
 
-### Combat Extended Armory
+### [Combat Extended](https://steamcommunity.com/workshop/filedetails/?id=2890901044)
+- Remove gas masks
+- Remove apparel tags from powered exoframe to make it player-only
+
+### [Combat Extended Armory](https://steamcommunity.com/sharedfiles/filedetails/?id=2911110083)
 - Remove composite armor and helmet
 
-### Custom Colt Anaconda
+### [Custom Colt Anaconda](https://steamcommunity.com/sharedfiles/filedetails/?id=2437436419)
 - Prevent the .50 BMG variant from spawning on non-spacer pawns because it can easily shoot off entire limbs
 
-### Dubs Bad Hygiene
+### [Dubs Bad Hygiene](https://steamcommunity.com/sharedfiles/filedetails/?id=836308268)
 - Prevent traits from being generated on new pawns
 
-### GiTS Cyberbrains
+### [GiTS Cyberbrains](https://steamcommunity.com/sharedfiles/filedetails/?id=3272114598)
 - Remove abilities to make the brains less OP and reduce gizmo clutter
 
-### Mario's Pizza
+### [Mario's Pizza](https://steamcommunity.com/sharedfiles/filedetails/?id=3226188356)
 - Remove chef's hat and mustache
 
-### ReGrowth: Core
+### [Medical Training](https://steamcommunity.com/sharedfiles/filedetails/?id=1214615921)
+- Remove (tm) from table name
+- Remove wood from costlist
+- Upscaled table texture
+
+### [ReGrowth: Core](https://steamcommunity.com/workshop/filedetails/?id=2260097569)
 - Remove grassland biome
 
-### RimJobWorld
+### [RimJobWorld](https://gitgud.io/Ed86/rjw)
 - Remove cum eating fetish shit and humpshroom psyfocus gain
 
-#### + Adaptive Storage Framework
-- Unused condoms can be stored in end tables for easy access
+#### + [Adaptive Storage Framework](https://steamcommunity.com/workshop/filedetails/?id=3033901359)
+- Unused condoms can be stored in end tables
 
 ## Legal
 Portions of the materials used to create this mod are trademarks and/or copyrighted works of Ludeon Studios Inc. All rights reserved by Ludeon. This mod is not official and is not endorsed by Ludeon.
