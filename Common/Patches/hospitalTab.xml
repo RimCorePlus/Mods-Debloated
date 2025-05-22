@@ -55,6 +55,15 @@
                     </operations>
                 </match>
             </li>
+            <li Class="PatchOperationFindMod">
+                <mods>
+                    <li>Medical Training</li>
+                </mods>
+                <match Class="PatchOperationReplace">
+                    <xpath>//ThingDef[defName="IF_MeditrainTable"]/designationCategory/text()</xpath>
+                    <value>CorePlus_HospitalTab</value>
+                </match>
+            </li>
         </operations>
     </Operation>
 </Patch>
