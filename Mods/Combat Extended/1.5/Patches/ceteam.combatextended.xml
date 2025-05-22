@@ -1,10 +1,10 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>true</enabled>
-		<label>[Combat Extended] Remove gas masks</label>
+		<label>[Combat Extended] Remove duplicate gas mask</label>
 		<operations>
 			<li Class="PatchOperationRemove">
-				<xpath>//ThingDef[defName="CE_Apparel_GasMask" or defName="CE_Apparel_ImprovGasMask"]</xpath>
+				<xpath>//ThingDef[defName="CE_Apparel_GasMask"]</xpath>
 			</li>
 		</operations>
 	</Operation>

@@ -31,7 +31,7 @@ All patches are toggable unless noted otherwise.
 - Unlock all buildings with complex furniture
 
 ### [Combat Extended](https://steamcommunity.com/workshop/filedetails/?id=2890901044)
-- Remove gas masks
+- Remove duplicate gas mask
 - Remove apparel tags from powered exoframe to make it player-only
 
 ### [Combat Extended Armory](https://steamcommunity.com/sharedfiles/filedetails/?id=2911110083)
