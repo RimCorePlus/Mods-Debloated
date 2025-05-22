@@ -32,6 +32,7 @@
 	<loadAfter>
 		<li>adaptive.storage.framework</li>
 		<li>adaptive.storage.neolithic</li>
+		<li>aoba.deadmanswitch.core</li>
 		<li>boomer.rebalance</li>
 		<li>ceteam.combatextended</li>
 		<li>ceteam.combatextendedarmory</li>

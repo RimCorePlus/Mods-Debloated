@@ -1,0 +1,55 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>[The Dead Mans Switch] Remove all empire mechanics</label>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>//PawnKindDef/titleRequired[contains(text(),"DMS")] | //RoyalTitlePermitDef[contains(defName,"DMS_") or contains(@Name,"DMS")] | //RoyalTitleDef[contains(defName,"DMS_") or contains(@Name,"DMS")] | //TraderKindDef[defName="DMS_Caravan_TributeCollector"] | //li[text()="DMS_Caravan_TributeCollector"] | //FactionDef[defName="DMS_Army"]/royalFavorLabel | //FactionDef[defName="DMS_Army"]/royalFavorIconPath | //FactionDef[defName="DMS_Army"]/royalTitleTags | //FactionDef[defName="DMS_Army"]/royalTitleTags | //FactionDef[defName="DMS_Army"]/royalTitleInheritanceWorkerClass | //FactionDef[defName="DMS_Army"]/royalTitleInheritanceRelations</xpath>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>//FactionDef[defName="DMS_Army"]/configurationListOrderPriority/text()</xpath>
+                <value>65</value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>[The Dead Mans Switch] Make faction natural enemy</label>
+        <operations>
+            <li Class="PatchOperationAdd">
+                <xpath>//FactionDef[defName="DMS_Army"]</xpath>
+                <value>
+                    <naturalEnemy>true</naturalEnemy>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>[The Dead Mans Switch] Lower settlement commonality</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>//FactionDef[defName="DMS_Army"]/settlementGenerationWeight/text()</xpath>
+                <value>1</value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>[The Dead Mans Switch] Remove vanilla tags from apparel</label>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>//ThingDef[(contains(@Name,"DMS") or contains(@ParentName,"DMS") or contains(defName,"DMS")) and apparel]/apparel/tags/li[not(contains(.,"DMS")) and not(contains(.,"Garrision"))]</xpath>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>[The Dead Mans Switch] Remove vanilla tags from weapons</label>
+        <operations>
+            <li Class="PatchOperationRemove">
+                <xpath>//ThingDef[(contains(@Name,"DMS") or contains(@ParentName,"DMS") or contains(defName,"DMS")) and weaponTags]/weaponTags/li[not(contains(.,"A_")) and not(contains(.,"AK21")) and not(contains(.,"Bipod_SAW")) and not(contains(.,"CE_")) and not(contains(.,"CivilianGun")) and not(contains(.,"DMS")) and not(contains(.,"Dragoon")) and not(contains(.,"ElephantGun")) and not(contains(.,"GSHG")) and not(contains(.,"H_")) and not(contains(.,"NoS")) and not(contains(.,"RiotLMG")) and not(contains(.,"Simple_LongRange")) and not(contains(.,"SurvivalRifle")) and not(contains(.,"V_")) and not(contains(.,"WarcasketAll")) and not(contains(.,"YAKB"))]</xpath>
+            </li>
+        </operations>
+    </Operation>
+</Patch>
