@@ -402,3 +402,6 @@ FodyWeavers.xsd
 
 # Optimized textures
 *.dds
+
+# "You MAY NOT reuse or modify any assets in this mod without getting written permission upfront from me AND SirVan." lol
+Mods/ReGrowth ReTextures/1.5/Textures
