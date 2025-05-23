@@ -16,10 +16,10 @@
         <li IfModActive="moistestwhale.gitscyberbrains">Mods/GiTS Cyberbrains/1.5</li>
         <li IfModActive="sov.pizza">Mods/Marios Pizza/1.5</li>
         <li IfModActive="itchyflea.medicaltraining">Mods/Medical Training/1.5</li>
-        <li IfModActive="regrowth.botr.core">Mods/ReGrowth Core/1.5</li>
+        <li IfModActive="regrowth.botr.core">Mods/ReGrowth/1.5</li>
         <li IfModActive="regrowth.botr.retextures">Mods/ReGrowth ReTextures/1.5</li>
         <li IfModActive="rim.job.world">Mods/RimJobWorld/1.5</li>
+        <li IfModActive="rimthunder.core">Mods/RimThunder/1.5</li>
         <li IfModActive="aoba.deadmanswitch.core">Mods/The Dead Mans Switch/1.5</li>
-        <li IfModActive="smashphil.vehicleframework">Mods/Vehicle Framework/1.5</li>
     </v1.5>
 </loadFolders>
