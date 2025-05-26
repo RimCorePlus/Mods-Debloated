@@ -7,7 +7,7 @@
                 <xpath>Defs</xpath>
                 <value>
                     <DesignationCategoryDef>
-                        <defName>CorePlus_MechanitorTab</defName>
+                        <defName>RCP_MechanitorTab</defName>
                         <label>mechanitor</label>
                         <order>14</order>
                         <specialDesignatorClasses>
@@ -19,7 +19,7 @@
             </li>
             <li Class="PatchOperationReplace">
                 <xpath>//ThingDef[@Name="BaseMechCharger" or @Name="MechGestatorBase" or defName="SubcoreEncoder" or @Name="SubcoreScannerBase" or defName="BandNode" or defName="BurnoutMechlinkBooster" or defName="MechbandDish" or defName="MechBooster"]/designationCategory/text()</xpath>
-                <value>CorePlus_MechanitorTab</value>
+                <value>RCP_MechanitorTab</value>
             </li>
         </operations>
     </Operation>

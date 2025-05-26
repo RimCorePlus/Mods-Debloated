@@ -5,11 +5,11 @@
         <operations>
             <!--parasol wood floor-->
             <li Class="PatchOperationConditional">
-                <xpath>//DesignatorDropdownGroupDef[defName="CorePlus_WoodFloor"]</xpath>
+                <xpath>//DesignatorDropdownGroupDef[defName="RCP_WoodFloor"]</xpath>
                 <match Class="PatchOperationAdd">
                     <xpath>//TerrainDef[defName="Mashed_Ashlands_ParasolWoodPlankFloor"]</xpath>
                     <value>
-                        <designatorDropdown>CorePlus_WoodFloor</designatorDropdown>
+                        <designatorDropdown>RCP_WoodFloor</designatorDropdown>
                     </value>
                 </match>
                 <nomatch Class="PatchOperationSequence">
@@ -18,14 +18,14 @@
                             <xpath>Defs</xpath>
                             <value>
                                 <DesignatorDropdownGroupDef>
-                                    <defName>CorePlus_WoodFloor</defName>
+                                    <defName>RCP_WoodFloor</defName>
                                 </DesignatorDropdownGroupDef>
                             </value>
                         </li>
                         <li Class="PatchOperationAdd">
                             <xpath>//TerrainDef[defName="Mashed_Ashlands_ParasolWoodPlankFloor" or defName="WoodPlankFloor"]</xpath>
                             <value>
-                                <designatorDropdown>CorePlus_WoodFloor</designatorDropdown>
+                                <designatorDropdown>RCP_WoodFloor</designatorDropdown>
                             </value>
                         </li>
                     </operations>
@@ -33,11 +33,11 @@
             </li>
             <!--parasol bridge-->
             <li Class="PatchOperationConditional">
-                <xpath>//DesignatorDropdownGroupDef[defName="CorePlus_Bridge"]</xpath>
+                <xpath>//DesignatorDropdownGroupDef[defName="RCP_Bridge"]</xpath>
                 <match Class="PatchOperationAdd">
                     <xpath>//TerrainDef[defName="Mashed_Ashlands_ParasolWoodBridge"]</xpath>
                     <value>
-                        <designatorDropdown>CorePlus_Bridge</designatorDropdown>
+                        <designatorDropdown>RCP_Bridge</designatorDropdown>
                     </value>
                 </match>
                 <nomatch Class="PatchOperationSequence">
@@ -46,14 +46,14 @@
                             <xpath>Defs</xpath>
                             <value>
                                 <DesignatorDropdownGroupDef>
-                                    <defName>CorePlus_Bridge</defName>
+                                    <defName>RCP_Bridge</defName>
                                 </DesignatorDropdownGroupDef>
                             </value>
                         </li>
                         <li Class="PatchOperationAdd">
                             <xpath>//TerrainDef[defName="Mashed_Ashlands_ParasolWoodBridge" or defName="Bridge"]</xpath>
                             <value>
-                                <designatorDropdown>CorePlus_Bridge</designatorDropdown>
+                                <designatorDropdown>RCP_Bridge</designatorDropdown>
                             </value>
                         </li>
                     </operations>

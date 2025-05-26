@@ -7,7 +7,7 @@
                 <xpath>Defs</xpath>
                 <value>
                     <DesignationCategoryDef>
-                        <defName>CorePlus_HospitalTab</defName>
+                        <defName>RCP_HospitalTab</defName>
                         <label>hospital</label>
                         <order>450</order>
                         <specialDesignatorClasses>
@@ -20,12 +20,12 @@
             <li Class="PatchOperationAdd">
                 <xpath>//ThingDef[defName="HospitalBed"]</xpath>
                 <value>
-                    <designationCategory>CorePlus_HospitalTab</designationCategory>
+                    <designationCategory>RCP_HospitalTab</designationCategory>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
                 <xpath>//ThingDef[defName="VitalsMonitor"]/designationCategory/text()</xpath>
-                <value>CorePlus_HospitalTab</value>
+                <value>RCP_HospitalTab</value>
             </li>
             <li Class="PatchOperationFindMod">
                 <mods>
@@ -33,7 +33,7 @@
                 </mods>
                 <match Class="PatchOperationReplace">
                     <xpath>//ThingDef[defName="Bed_OperatingTable" or defName="Bed_OperatingTable" or defName="Facility_VitalsCentre" or defName="Facility_IVDrip" or defName="Bed_CryptoBed"]/designationCategory/text()</xpath>
-                    <value>CorePlus_HospitalTab</value>
+                    <value>RCP_HospitalTab</value>
                 </match>
             </li>
             <li Class="PatchOperationFindMod">
@@ -45,12 +45,12 @@
                         <li Class="PatchOperationAdd">
                             <xpath>//ThingDef[defName="gitsCyberbodyAnchor"]</xpath>
                             <value>
-                                <designationCategory>CorePlus_HospitalTab</designationCategory>
+                                <designationCategory>RCP_HospitalTab</designationCategory>
                             </value>
                         </li>
                         <li Class="PatchOperationReplace">
                             <xpath>//ThingDef[defName="gitsAnchorConsole"]/designationCategory/text()</xpath>
-                            <value>CorePlus_HospitalTab</value>
+                            <value>RCP_HospitalTab</value>
                         </li>
                     </operations>
                 </match>
@@ -61,7 +61,7 @@
                 </mods>
                 <match Class="PatchOperationReplace">
                     <xpath>//ThingDef[defName="IF_MeditrainTable"]/designationCategory/text()</xpath>
-                    <value>CorePlus_HospitalTab</value>
+                    <value>RCP_HospitalTab</value>
                 </match>
             </li>
         </operations>

@@ -7,7 +7,7 @@
                 <xpath>Defs</xpath>
                 <value>
                     <DesignationCategoryDef>
-                        <defName>CorePlus_CookingTab</defName>
+                        <defName>RCP_CookingTab</defName>
                         <label>kitchen</label>
                         <order>550</order>
                         <specialDesignatorClasses>
@@ -19,7 +19,7 @@
             </li>
             <li Class="PatchOperationReplace">
                 <xpath>//ThingDef[contains(label, "stove") or contains(label, "butcher") or contains(label, "kitchen") or researchPrerequisites/li[text()="Brewing"] or defName="NutrientPasteDispenser"]/designationCategory/text()</xpath>
-                <value>CorePlus_CookingTab</value>
+                <value>RCP_CookingTab</value>
             </li>
             <li Class="PatchOperationReplace">
                 <xpath>//ThingDef[defName="Hopper"]/designationCategory/text()</xpath>
@@ -31,7 +31,7 @@
                 </mods>
                 <match Class="PatchOperationReplace">
                     <xpath>//ThingDef[(starts-with(defName, "VBE_") and @ParentName="BuildingBase") or defName="VBE_Bar"]/designationCategory/text()</xpath>
-                    <value>CorePlus_CookingTab</value>
+                    <value>RCP_CookingTab</value>
                 </match>
             </li>
             <li Class="PatchOperationFindMod">
@@ -41,7 +41,7 @@
                 <!--works for every official VCE addon, and every VCE addon requires the main mod-->
                 <match Class="PatchOperationReplace">
                     <xpath>//ThingDef[starts-with(defName, "VCE_") and @ParentName="BuildingBase"]/designationCategory/text()</xpath>
-                    <value>CorePlus_CookingTab</value>
+                    <value>RCP_CookingTab</value>
                 </match>
             </li>
             <li Class="PatchOperationFindMod">
@@ -50,7 +50,7 @@
                 </mods>
                 <match Class="PatchOperationReplace">
                     <xpath>//ThingDef[@Name="Mashed_Ashlands_AshlandFermentingBarrel_Base"]/designationCategory/text()</xpath>
-                    <value>CorePlus_CookingTab</value>
+                    <value>RCP_CookingTab</value>
                 </match>
             </li>
             <li Class="PatchOperationFindMod">
@@ -58,8 +58,8 @@
                     <li>[RCP] Utilities</li>
                 </mods>
                 <match Class="PatchOperationReplace">
-                    <xpath>//ThingDef[@Name="CorePlus_FridgeBase"]/designationCategory/text()</xpath>
-                    <value>CorePlus_CookingTab</value>
+                    <xpath>//ThingDef[@Name="RCP_FridgeBase"]/designationCategory/text()</xpath>
+                    <value>RCP_CookingTab</value>
                 </match>
             </li>
         </operations>

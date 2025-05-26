@@ -7,7 +7,7 @@
                 <xpath>/Defs</xpath>
                 <value>
                     <AdaptiveStorage.GraphicsDef>
-                        <defName>CorePlus_BedsideCondoms</defName>
+                        <defName>RCP_BedsideCondoms</defName>
                         <targetDef>EndTable</targetDef>
                         <graphics>
                             <li>
