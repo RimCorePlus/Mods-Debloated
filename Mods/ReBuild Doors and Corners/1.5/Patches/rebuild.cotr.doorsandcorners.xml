@@ -1,0 +1,13 @@
+<Patch>
+    <Operation MayRequire="dubwise.dubsskylights" Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>[ReBuild + Dubs Skylights] Use ReBuild glass</label>
+        <operations>
+            <li Class="PatchOperationSetName">
+                <success>Always</success> <!--supress false red error-->
+                <xpath>//ThingDef[costList/GlassPane]/costList/GlassPane</xpath>
+                <name>RB_Glass</name>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

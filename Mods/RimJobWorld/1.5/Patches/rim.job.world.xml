@@ -25,14 +25,9 @@
                     <value>Manufactured</value>
                 </nomatch>
             </li>
-            <!--decrease condom stack limit (simplifies bedside storage distribution)-->
-            <li Class="PatchOperationReplace">
-                <xpath>//ThingDef[defName="Condom"]/stackLimit/text()</xpath>
-                <value>10</value>
-            </li>
             <!--increase used condom stack limit-->
             <li Class="PatchOperationReplace">
-                <xpath>//ThingDef[defName="UsedCondom"]/stackLimit/text()</xpath>
+                <xpath>//ThingDef[defName="Condom" or defName="UsedCondom"]/stackLimit/text()</xpath>
                 <value>500</value>
             </li>
             <!--change cringe used condom description-->
@@ -48,6 +43,17 @@
             <li Class="PatchOperationReplace">
                 <xpath>//ThingDef[defName="HumpShroom" or defName="PlantHumpShroom"]/description/text()</xpath>
                 <value>A mushshroom with tough flesh, thick juice and smooth soft skin. Exhibits aphrodisiac effects when consumed.</value>
+            </li>
+        </operations>
+    </Operation>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>[RimJobWorld] Remove slut traits from pawn generation</label>
+        <operations>
+            <!--make used condoms not ingestible-->
+            <li Class="PatchOperationReplace">
+                <xpath>//TraitDef[defName="FootSlut" or defName="CumSlut" or defName="ButtSlut"]/commonality/text()</xpath>
+                <value>0</value>
             </li>
         </operations>
     </Operation>

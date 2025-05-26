@@ -1,0 +1,64 @@
+<Patch>
+    <Operation MayRequire="dubwise.dubsskylights" Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>[Mashed's Ashlands] Architect menu cleanup</label>
+        <operations>
+            <!--parasol wood floor-->
+            <li Class="PatchOperationConditional">
+                <xpath>//DesignatorDropdownGroupDef[defName="CorePlus_WoodFloor"]</xpath>
+                <match Class="PatchOperationAdd">
+                    <xpath>//TerrainDef[defName="Mashed_Ashlands_ParasolWoodPlankFloor"]</xpath>
+                    <value>
+                        <designatorDropdown>CorePlus_WoodFloor</designatorDropdown>
+                    </value>
+                </match>
+                <nomatch Class="PatchOperationSequence">
+                    <operations>
+                        <li Class="PatchOperationAdd">
+                            <xpath>Defs</xpath>
+                            <value>
+                                <DesignatorDropdownGroupDef>
+                                    <defName>CorePlus_WoodFloor</defName>
+                                </DesignatorDropdownGroupDef>
+                            </value>
+                        </li>
+                        <li Class="PatchOperationAdd">
+                            <xpath>//TerrainDef[defName="Mashed_Ashlands_ParasolWoodPlankFloor" or defName="WoodPlankFloor"]</xpath>
+                            <value>
+                                <designatorDropdown>CorePlus_WoodFloor</designatorDropdown>
+                            </value>
+                        </li>
+                    </operations>
+                </nomatch>
+            </li>
+            <!--parasol bridge-->
+            <li Class="PatchOperationConditional">
+                <xpath>//DesignatorDropdownGroupDef[defName="CorePlus_Bridge"]</xpath>
+                <match Class="PatchOperationAdd">
+                    <xpath>//TerrainDef[defName="Mashed_Ashlands_ParasolWoodBridge"]</xpath>
+                    <value>
+                        <designatorDropdown>CorePlus_Bridge</designatorDropdown>
+                    </value>
+                </match>
+                <nomatch Class="PatchOperationSequence">
+                    <operations>
+                        <li Class="PatchOperationAdd">
+                            <xpath>Defs</xpath>
+                            <value>
+                                <DesignatorDropdownGroupDef>
+                                    <defName>CorePlus_Bridge</defName>
+                                </DesignatorDropdownGroupDef>
+                            </value>
+                        </li>
+                        <li Class="PatchOperationAdd">
+                            <xpath>//TerrainDef[defName="Mashed_Ashlands_ParasolWoodBridge" or defName="Bridge"]</xpath>
+                            <value>
+                                <designatorDropdown>CorePlus_Bridge</designatorDropdown>
+                            </value>
+                        </li>
+                    </operations>
+                </nomatch>
+            </li>
+        </operations>
+    </Operation>
+</Patch>
