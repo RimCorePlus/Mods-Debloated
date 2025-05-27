@@ -1,10 +1,7 @@
 <Patch>
-    <Operation Class="ModSettingsFramework.PatchOperationModOption">
-        <defaultValue>false</defaultValue>
-        <label>Move everying to the vehicle tab</label>
-        <tooltip>Moves all furniture added by RimThunder and its modules into the vehicle tab added by Vehicle Framework.</tooltip>
-        <id>RCP_RecycleRimThunderVehicleTab</id>
-        <category>RCP_RecycleRimThunder</category>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>[RimThunder] Move everying to the vehicle tab</label>
         <operations>
             <!--should work for all submods-->
             <li Class="PatchOperationReplace">
