@@ -1,15 +1,18 @@
 <Patch>
-    <Operation MayRequire="dubwise.dubsskylights" Class="VFECore.PatchOperationToggableSequence">
-        <enabled>true</enabled>
-        <label>[Mashed's Ashlands] Architect menu cleanup</label>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>true</defaultValue>
+        <label>Architect menu cleanup</label>
+        <tooltip>Creates a dropdown designator for parasol floors and bridges to reduce architect menu clutter.</tooltip>
+        <id>RCP_RecycleMashedArchitectTab</id>
+        <category>RCP_RecycleMashedAshlands</category>
         <operations>
             <!--parasol wood floor-->
             <li Class="PatchOperationConditional">
-                <xpath>//DesignatorDropdownGroupDef[defName="RCP_WoodFloor"]</xpath>
+                <xpath>//DesignatorDropdownGroupDef[defName="BL_WoodFloor"]</xpath>
                 <match Class="PatchOperationAdd">
                     <xpath>//TerrainDef[defName="Mashed_Ashlands_ParasolWoodPlankFloor"]</xpath>
                     <value>
-                        <designatorDropdown>RCP_WoodFloor</designatorDropdown>
+                        <designatorDropdown>BL_WoodFloor</designatorDropdown>
                     </value>
                 </match>
                 <nomatch Class="PatchOperationSequence">
@@ -18,14 +21,14 @@
                             <xpath>Defs</xpath>
                             <value>
                                 <DesignatorDropdownGroupDef>
-                                    <defName>RCP_WoodFloor</defName>
+                                    <defName>BL_WoodFloor</defName>
                                 </DesignatorDropdownGroupDef>
                             </value>
                         </li>
                         <li Class="PatchOperationAdd">
                             <xpath>//TerrainDef[defName="Mashed_Ashlands_ParasolWoodPlankFloor" or defName="WoodPlankFloor"]</xpath>
                             <value>
-                                <designatorDropdown>RCP_WoodFloor</designatorDropdown>
+                                <designatorDropdown>BL_WoodFloor</designatorDropdown>
                             </value>
                         </li>
                     </operations>
@@ -33,11 +36,11 @@
             </li>
             <!--parasol bridge-->
             <li Class="PatchOperationConditional">
-                <xpath>//DesignatorDropdownGroupDef[defName="RCP_Bridge"]</xpath>
+                <xpath>//DesignatorDropdownGroupDef[defName="BL_Bridge"]</xpath>
                 <match Class="PatchOperationAdd">
                     <xpath>//TerrainDef[defName="Mashed_Ashlands_ParasolWoodBridge"]</xpath>
                     <value>
-                        <designatorDropdown>RCP_Bridge</designatorDropdown>
+                        <designatorDropdown>BL_Bridge</designatorDropdown>
                     </value>
                 </match>
                 <nomatch Class="PatchOperationSequence">
@@ -46,14 +49,14 @@
                             <xpath>Defs</xpath>
                             <value>
                                 <DesignatorDropdownGroupDef>
-                                    <defName>RCP_Bridge</defName>
+                                    <defName>BL_Bridge</defName>
                                 </DesignatorDropdownGroupDef>
                             </value>
                         </li>
                         <li Class="PatchOperationAdd">
                             <xpath>//TerrainDef[defName="Mashed_Ashlands_ParasolWoodBridge" or defName="Bridge"]</xpath>
                             <value>
-                                <designatorDropdown>RCP_Bridge</designatorDropdown>
+                                <designatorDropdown>BL_Bridge</designatorDropdown>
                             </value>
                         </li>
                     </operations>

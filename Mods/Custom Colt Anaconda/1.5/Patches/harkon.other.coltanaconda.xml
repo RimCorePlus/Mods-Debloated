@@ -1,7 +1,9 @@
 <Patch>
-	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>true</enabled>
-		<label>[Custom Colt Anaconda] Prevent extremely powerful .50 BMG spacer variant from spawning on non-spacer pawns</label>
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>true</defaultValue>
+		<label>Prevent extremely powerful .50 BMG spacer variant from spawning on non-spacer pawns</label>
+		<id>RCP_RecycleCCAnacondaTags</id>
+		<category>RCP_RecycleCustomColtAnaconda</category>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//ThingDef[defName="HRK_Colt_Anaconda_L"]/weaponTags/li[text()="Revolver"]</xpath>

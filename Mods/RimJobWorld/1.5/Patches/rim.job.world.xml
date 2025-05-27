@@ -1,7 +1,10 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>true</enabled>
-        <label>[RimJobWorld] Debloat and rebalance</label>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>true</defaultValue>
+        <label>Debloat and rebalance</label>
+        <tooltip>No more ingestible condoms. Increase condom stack limit. Humpshroom doesn't refill psyfocus.</tooltip>
+        <id>RCP_RecycleRimJobWorldRebalance</id>
+        <category>RCP_RecycleRimJobWorld</category>
         <operations>
             <!--make used condoms not ingestible-->
             <li Class="PatchOperationAttributeSet">
@@ -46,9 +49,11 @@
             </li>
         </operations>
     </Operation>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>true</enabled>
-        <label>[RimJobWorld] Remove slut traits from pawn generation</label>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>true</defaultValue>
+        <label>Remove slut traits from pawn generation</label>
+        <id>RCP_RecycleRimJobWorldRemoveSluts</id>
+        <category>RCP_RecycleRimJobWorld</category>
         <operations>
             <!--make used condoms not ingestible-->
             <li Class="PatchOperationReplace">

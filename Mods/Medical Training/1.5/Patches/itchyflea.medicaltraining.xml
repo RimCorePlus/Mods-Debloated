@@ -1,7 +1,9 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>true</enabled>
-        <label>[Medical Training] Remove (tm) from table name</label>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>true</defaultValue>
+        <label>Remove (tm) from table name</label>
+        <id>RCP_RecycleMedicalTrainingName</id>
+        <category>RCP_RecycleMedicalTraining</category>
         <operations>
             <li Class="PatchOperationReplace">
                 <xpath>//ThingDef[defName="IF_MeditrainTable"]/label/text()</xpath>
@@ -9,9 +11,11 @@
             </li>
         </operations>
     </Operation>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>true</enabled>
-        <label>[Medical Training] Remove wood from costlist</label>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>true</defaultValue>
+        <label>Remove wood from costlist</label>
+        <id>RCP_RecycleMedicalTrainingCost</id>
+        <category>RCP_RecycleMedicalTraining</category>
         <operations>
             <li Class="PatchOperationRemove">
                 <xpath>//ThingDef[defName="IF_MeditrainTable"]/costList/WoodLog</xpath>

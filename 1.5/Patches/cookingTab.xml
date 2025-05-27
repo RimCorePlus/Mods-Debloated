@@ -1,13 +1,16 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>true</enabled>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>false</defaultValue>
         <label>Move kitchen buildings into their own architect tab</label>
+        <tooltip>Automatically moves buildings with words like "butcher" and "stove" in the label into a new architect tab. Automatically works for a lot of modded buildings, and support mods like VCE.</tooltip>
+        <id>RCP_RecycleTabsKitchen</id>
+        <category>RCP_RecycleTabs</category>
         <operations>
             <li Class="PatchOperationAdd">
                 <xpath>Defs</xpath>
                 <value>
                     <DesignationCategoryDef>
-                        <defName>RCP_CookingTab</defName>
+                        <defName>BL_CookingTab</defName>
                         <label>kitchen</label>
                         <order>550</order>
                         <specialDesignatorClasses>
@@ -19,7 +22,7 @@
             </li>
             <li Class="PatchOperationReplace">
                 <xpath>//ThingDef[contains(label, "stove") or contains(label, "butcher") or contains(label, "kitchen") or researchPrerequisites/li[text()="Brewing"] or defName="NutrientPasteDispenser"]/designationCategory/text()</xpath>
-                <value>RCP_CookingTab</value>
+                <value>BL_CookingTab</value>
             </li>
             <li Class="PatchOperationReplace">
                 <xpath>//ThingDef[defName="Hopper"]/designationCategory/text()</xpath>
@@ -31,7 +34,7 @@
                 </mods>
                 <match Class="PatchOperationReplace">
                     <xpath>//ThingDef[(starts-with(defName, "VBE_") and @ParentName="BuildingBase") or defName="VBE_Bar"]/designationCategory/text()</xpath>
-                    <value>RCP_CookingTab</value>
+                    <value>BL_CookingTab</value>
                 </match>
             </li>
             <li Class="PatchOperationFindMod">
@@ -41,7 +44,7 @@
                 <!--works for every official VCE addon, and every VCE addon requires the main mod-->
                 <match Class="PatchOperationReplace">
                     <xpath>//ThingDef[starts-with(defName, "VCE_") and @ParentName="BuildingBase"]/designationCategory/text()</xpath>
-                    <value>RCP_CookingTab</value>
+                    <value>BL_CookingTab</value>
                 </match>
             </li>
             <li Class="PatchOperationFindMod">
@@ -50,7 +53,7 @@
                 </mods>
                 <match Class="PatchOperationReplace">
                     <xpath>//ThingDef[@Name="Mashed_Ashlands_AshlandFermentingBarrel_Base"]/designationCategory/text()</xpath>
-                    <value>RCP_CookingTab</value>
+                    <value>BL_CookingTab</value>
                 </match>
             </li>
             <li Class="PatchOperationFindMod">
@@ -59,7 +62,7 @@
                 </mods>
                 <match Class="PatchOperationReplace">
                     <xpath>//ThingDef[@Name="RCP_FridgeBase"]/designationCategory/text()</xpath>
-                    <value>RCP_CookingTab</value>
+                    <value>BL_CookingTab</value>
                 </match>
             </li>
         </operations>

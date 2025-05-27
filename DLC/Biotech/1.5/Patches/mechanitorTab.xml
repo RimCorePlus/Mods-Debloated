@@ -1,13 +1,15 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>true</enabled>
-        <label>[Biotech] Move mechanitor buildings into their own architect tab</label>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>true</defaultValue>
+        <label>Move mechanitor buildings into their own architect tab</label>
+        <id>RCP_RecycleTabsMechanitor</id>
+        <category>RCP_RecycleTabs</category>
         <operations>
             <li Class="PatchOperationAdd">
                 <xpath>Defs</xpath>
                 <value>
                     <DesignationCategoryDef>
-                        <defName>RCP_MechanitorTab</defName>
+                        <defName>BL_MechanitorTab</defName>
                         <label>mechanitor</label>
                         <order>14</order>
                         <specialDesignatorClasses>
@@ -19,7 +21,7 @@
             </li>
             <li Class="PatchOperationReplace">
                 <xpath>//ThingDef[@Name="BaseMechCharger" or @Name="MechGestatorBase" or defName="SubcoreEncoder" or @Name="SubcoreScannerBase" or defName="BandNode" or defName="BurnoutMechlinkBooster" or defName="MechbandDish" or defName="MechBooster"]/designationCategory/text()</xpath>
-                <value>RCP_MechanitorTab</value>
+                <value>BL_MechanitorTab</value>
             </li>
         </operations>
     </Operation>

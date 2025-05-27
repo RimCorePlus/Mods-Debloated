@@ -1,7 +1,9 @@
 <Patch>
-	<Operation Class="VFECore.PatchOperationToggableSequence">
-		<enabled>true</enabled>
-		<label>[Combat Extended Armory] Remove composite armor</label>
+	<Operation Class="ModSettingsFramework.PatchOperationModOption">
+		<defaultValue>true</defaultValue>
+		<label>Remove composite armor</label>
+		<id>RCP_RecycleCEArmoryCompositeArmor</id>
+		<category>RCP_RecycleCEArmory</category>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//ThingDef[defName="CE_Apparel_CompositeArmor" or defName="CE_Apparel_HeavyCompositeHelmet"]</xpath>

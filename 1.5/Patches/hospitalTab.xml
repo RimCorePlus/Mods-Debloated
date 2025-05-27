@@ -1,13 +1,16 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>false</enabled>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>false</defaultValue>
         <label>Move hospital buildings into their own architect tab</label>
+        <tooltip>Supports GiTS Cybernetic Equipment, Medical Training, and VFE - Medical.</tooltip>
+        <id>RCP_RecycleTabsHospital</id>
+        <category>RCP_RecycleTabs</category>
         <operations>
             <li Class="PatchOperationAdd">
                 <xpath>Defs</xpath>
                 <value>
                     <DesignationCategoryDef>
-                        <defName>RCP_HospitalTab</defName>
+                        <defName>BL_HospitalTab</defName>
                         <label>hospital</label>
                         <order>450</order>
                         <specialDesignatorClasses>
@@ -20,12 +23,12 @@
             <li Class="PatchOperationAdd">
                 <xpath>//ThingDef[defName="HospitalBed"]</xpath>
                 <value>
-                    <designationCategory>RCP_HospitalTab</designationCategory>
+                    <designationCategory>BL_HospitalTab</designationCategory>
                 </value>
             </li>
             <li Class="PatchOperationReplace">
                 <xpath>//ThingDef[defName="VitalsMonitor"]/designationCategory/text()</xpath>
-                <value>RCP_HospitalTab</value>
+                <value>BL_HospitalTab</value>
             </li>
             <li Class="PatchOperationFindMod">
                 <mods>
@@ -33,7 +36,7 @@
                 </mods>
                 <match Class="PatchOperationReplace">
                     <xpath>//ThingDef[defName="Bed_OperatingTable" or defName="Bed_OperatingTable" or defName="Facility_VitalsCentre" or defName="Facility_IVDrip" or defName="Bed_CryptoBed"]/designationCategory/text()</xpath>
-                    <value>RCP_HospitalTab</value>
+                    <value>BL_HospitalTab</value>
                 </match>
             </li>
             <li Class="PatchOperationFindMod">
@@ -45,12 +48,12 @@
                         <li Class="PatchOperationAdd">
                             <xpath>//ThingDef[defName="gitsCyberbodyAnchor"]</xpath>
                             <value>
-                                <designationCategory>RCP_HospitalTab</designationCategory>
+                                <designationCategory>BL_HospitalTab</designationCategory>
                             </value>
                         </li>
                         <li Class="PatchOperationReplace">
                             <xpath>//ThingDef[defName="gitsAnchorConsole"]/designationCategory/text()</xpath>
-                            <value>RCP_HospitalTab</value>
+                            <value>BL_HospitalTab</value>
                         </li>
                     </operations>
                 </match>
@@ -61,7 +64,7 @@
                 </mods>
                 <match Class="PatchOperationReplace">
                     <xpath>//ThingDef[defName="IF_MeditrainTable"]/designationCategory/text()</xpath>
-                    <value>RCP_HospitalTab</value>
+                    <value>BL_HospitalTab</value>
                 </match>
             </li>
         </operations>

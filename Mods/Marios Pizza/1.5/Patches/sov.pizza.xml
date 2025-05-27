@@ -1,7 +1,9 @@
 <Patch>
-    <Operation Class="VFECore.PatchOperationToggableSequence">
-        <enabled>true</enabled>
-        <label>[Marios Pizza] Remove hat and mustache</label>
+    <Operation Class="ModSettingsFramework.PatchOperationModOption">
+        <defaultValue>true</defaultValue>
+        <label>Remove hat and mustache</label>
+        <id>RCP_RecycleMariosPizzaOnly</id>
+        <category>RCP_RecycleMariosPizza</category>
         <operations>
             <li Class="PatchOperationRemove">
                 <xpath>//ThingDef[defName="GS_ChefHat"] | //BeardDef[defName="GS_Mario"]</xpath>
