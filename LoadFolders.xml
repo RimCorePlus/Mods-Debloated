@@ -7,7 +7,7 @@
         <li IfModActive="Ludeon.Rimworld.Biotech">DLC/Biotech/1.5</li>
         <!--mods-->
         <li IfModActive="oppey.eyegenes2">Mods/[BT] EyeGenes2 Base - [NL] Facial Animation/1.5</li>
-        <!--<li IfModActive="adaptive.storage.framework">Mods/Adaptive Storage Framework/1.5</li>-->
+        <li IfModActive="adaptive.storage.framework">Mods/Adaptive Storage Framework/1.5</li>
         <li IfModActive="adaptive.storage.neolithic">Mods/Adaptive Storage Neolithic Module/1.5</li>
         <li IfModActive="ceteam.combatextended">Mods/Combat Extended/1.5</li>
         <li IfModActive="ceteam.combatextendedarmory">Mods/Combat Extended Armory/1.5</li>

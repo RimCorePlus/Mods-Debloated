@@ -1,0 +1,20 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>false</enabled>
+        <label>[ASF] Move more shelves to storage tab</label>
+        <operations>
+            <!--add designationCategory for ShelfBase, which is inherited by StorageShelfBase things-->
+            <li Class="PatchOperationAdd">
+                <xpath>//ThingDef[@Name="ShelfBase"]</xpath>
+                <value>
+                    <designationCategory>ASFstorage</designationCategory>
+                </value>
+            </li>
+            <!--replace existing designationCategory for buildings that inherit either parent-->
+            <li Class="PatchOperationReplace">
+                <xpath>//ThingDef[@ParentName="StorageShelfBase" or @ParentName="ShelfBase"]/designationCategory/text()</xpath>
+                <value>ASFstorage</value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>
