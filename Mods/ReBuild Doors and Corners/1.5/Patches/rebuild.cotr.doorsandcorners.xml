@@ -1,9 +1,7 @@
 <Patch>
-    <Operation MayRequire="dubwise.dubsskylights" Class="ModSettingsFramework.PatchOperationModOption">
-        <defaultValue>true</defaultValue>
+    <Operation MayRequire="dubwise.dubsskylights" Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
         <label>Use ReBuild glass for Dubs Skylights</label>
-        <id>RCP_RecycleReBuildDoorsAndCornersSkylights</id>
-        <category>RCP_RecycleReBuildDoorsAndCorners</category>
         <operations>
             <li Class="PatchOperationSetName">
                 <success>Always</success> <!--supress false red error-->

@@ -1,10 +1,7 @@
 <Patch>
-    <Operation Class="ModSettingsFramework.PatchOperationModOption">
-        <defaultValue>true</defaultValue>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
         <label>Set trait commonality to 0</label>
-        <tooltip>This prevents the traits from spawning on new pawns, but doesn't remove them from the game.</tooltip>
-        <id>RCP_RecycleDBHTraits</id>
-        <category>RCP_RecycleDubsBadHygiene</category>
         <operations>
             <li Class="PatchOperationReplace">
                 <xpath>//TraitDef[defName="Hygienic"]/commonality/text()</xpath>

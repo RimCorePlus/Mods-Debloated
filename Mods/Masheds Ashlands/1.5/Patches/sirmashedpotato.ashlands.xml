@@ -1,10 +1,7 @@
 <Patch>
-    <Operation Class="ModSettingsFramework.PatchOperationModOption">
-        <defaultValue>true</defaultValue>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
         <label>Architect menu cleanup</label>
-        <tooltip>Creates a dropdown designator for parasol floors and bridges to reduce architect menu clutter.</tooltip>
-        <id>RCP_RecycleMashedArchitectTab</id>
-        <category>RCP_RecycleMashedAshlands</category>
         <operations>
             <!--parasol wood floor-->
             <li Class="PatchOperationConditional">

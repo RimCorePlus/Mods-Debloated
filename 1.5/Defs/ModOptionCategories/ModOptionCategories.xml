@@ -2,80 +2,10 @@
     <ModSettingsFramework.ModOptionCategoryDef Name="BL_RecycleModOptionsBase" Abstract="True">
         <modSettingsName>[BL] Reduce, Reuse, Recycle</modSettingsName>
         <modPackageSettingsID>boomer.Recycle</modPackageSettingsID>
+        <defName>RCP_Recycle</defName>
+        <label>Sliders (Toggles are in Vanilla Expanded Framework > Toggleable Patches)</label>
     </ModSettingsFramework.ModOptionCategoryDef>
-    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RecycleModOptionsBase">
-        <defName>RCP_RecycleTabs</defName>
-        <label>Architect Tabs</label>
-        <order>0</order>
-    </ModSettingsFramework.ModOptionCategoryDef>
-    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RecycleModOptionsBase">
-        <defName>RCP_RecycleASFNeolithic</defName>
-        <label>Adaptive Storage Neolithic Module</label>
-        <order>20</order>
-    </ModSettingsFramework.ModOptionCategoryDef>
-    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RecycleModOptionsBase">
-        <defName>RCP_RecycleCombatExtended</defName>
-        <label>Combat Extended</label>
-        <order>40</order>
-    </ModSettingsFramework.ModOptionCategoryDef>
-    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RecycleModOptionsBase">
-        <defName>RCP_RecycleCEArmory</defName>
-        <label>Combat Extended Armory</label>
-        <order>41</order>
-    </ModSettingsFramework.ModOptionCategoryDef>
-    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RecycleModOptionsBase">
-        <defName>RCP_RecycleCustomColtAnaconda</defName>
-        <label>Custom Colt Anaconda</label>
-        <order>42</order>
-    </ModSettingsFramework.ModOptionCategoryDef>
-    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RecycleModOptionsBase">
-        <defName>RCP_RecycleDubsBadHygiene</defName>
-        <label>Dubs Bad Hygiene</label>
-        <order>50</order>
-    </ModSettingsFramework.ModOptionCategoryDef>
-    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RecycleModOptionsBase">
-        <defName>RCP_RecycleGiTSCyberbrains</defName>
-        <label>GiTS Cyberbrains</label>
-        <order>80</order>
-    </ModSettingsFramework.ModOptionCategoryDef>
-    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RecycleModOptionsBase">
-        <defName>RCP_RecycleMariosPizza</defName>
-        <label>Mario's Pizza</label>
-        <order>140</order>
-    </ModSettingsFramework.ModOptionCategoryDef>
-    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RecycleModOptionsBase">
-        <defName>RCP_RecycleMashedAshlands</defName>
-        <label>Mashed's Ashlands</label>
-        <order>141</order>
-    </ModSettingsFramework.ModOptionCategoryDef>
-    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RecycleModOptionsBase">
-        <defName>RCP_RecycleMedicalTraining</defName>
-        <label>Medical Training</label>
-        <order>142</order>
-    </ModSettingsFramework.ModOptionCategoryDef>
-    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RecycleModOptionsBase">
-        <defName>RCP_RecycleReBuildDoorsAndCorners</defName>
-        <label>ReBuild: Doors and Corners</label>
-        <order>190</order>
-    </ModSettingsFramework.ModOptionCategoryDef>
-    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RecycleModOptionsBase">
-        <defName>RCP_RecycleReGrowthCore</defName>
-        <label>ReGrowth: Core</label>
-        <order>191</order>
-    </ModSettingsFramework.ModOptionCategoryDef>
-    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RecycleModOptionsBase">
-        <defName>RCP_RecycleRimJobWorld</defName>
-        <label>RimJobWorld</label>
-        <order>192</order>
-    </ModSettingsFramework.ModOptionCategoryDef>
-    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RecycleModOptionsBase">
-        <defName>RCP_RecycleRimThunder</defName>
-        <label>RimThunder</label>
-        <order>193</order>
-    </ModSettingsFramework.ModOptionCategoryDef>
-    <ModSettingsFramework.ModOptionCategoryDef ParentName="BL_RecycleModOptionsBase">
-        <defName>RCP_RecycleDeadMansSwitch</defName>
-        <label>The Dead Man's Switch</label>
-        <order>210</order>
-    </ModSettingsFramework.ModOptionCategoryDef>
+    <!--ModSettingsFramework fails to render all settings when too many are present.
+    Lowest-ordered settings get truncated past an unknown limit.
+    Toggable settings have been moved back to the VEF toggles section for now.-->
 </Defs>

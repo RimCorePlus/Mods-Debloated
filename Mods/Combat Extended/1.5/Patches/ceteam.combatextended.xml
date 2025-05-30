@@ -1,21 +1,16 @@
 <Patch>
-	<Operation Class="ModSettingsFramework.PatchOperationModOption">
-		<defaultValue>true</defaultValue>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>true</enabled>
 		<label>Remove duplicate gas mask</label>
-		<id>RCP_RecycleCEGasMask</id>
-		<category>RCP_RecycleCombatExtended</category>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//ThingDef[defName="CE_Apparel_GasMask"]</xpath>
 			</li>
 		</operations>
 	</Operation>
-	<Operation Class="ModSettingsFramework.PatchOperationModOption">
-		<defaultValue>true</defaultValue>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>true</enabled>
 		<label>Remove exoframe from pawn generation</label>
-		<tooltip>Removes defaultOutfitTags and apparel tags from the exoframe so it doesn't spawn randomly on world pawns. Doesn't remove it from the game.</tooltip>
-		<id>RCP_RecycleCEExoframe</id>
-		<category>RCP_RecycleCombatExtended</category>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//ThingDef[defName="CE_Apparel_ExoFrame"]/apparel/defaultOutfitTags | //ThingDef[defName="CE_Apparel_ExoFrame"]/apparel/tags</xpath>

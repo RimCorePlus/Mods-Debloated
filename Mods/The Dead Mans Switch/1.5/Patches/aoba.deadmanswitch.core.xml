@@ -1,9 +1,7 @@
 <Patch>
-    <Operation Class="ModSettingsFramework.PatchOperationModOption">
-        <defaultValue>true</defaultValue>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
         <label>Remove all empire overlap</label>
-        <id>RCP_RecycleDeadMansSwitchNoEmpire</id>
-        <category>RCP_RecycleDeadMansSwitch</category>
         <operations>
             <li Class="PatchOperationRemove">
                 <xpath>//PawnKindDef/titleRequired[contains(text(),"DMS")] | //RoyalTitlePermitDef[contains(defName,"DMS_") or contains(@Name,"DMS")] | //RoyalTitleDef[contains(defName,"DMS_") or contains(@Name,"DMS")] | //TraderKindDef[defName="DMS_Caravan_TributeCollector"] | //li[text()="DMS_Caravan_TributeCollector"] | //FactionDef[defName="DMS_Army"]/royalFavorLabel | //FactionDef[defName="DMS_Army"]/royalFavorIconPath | //FactionDef[defName="DMS_Army"]/royalTitleTags | //FactionDef[defName="DMS_Army"]/royalTitleTags | //FactionDef[defName="DMS_Army"]/royalTitleInheritanceWorkerClass | //FactionDef[defName="DMS_Army"]/royalTitleInheritanceRelations</xpath>
@@ -14,11 +12,9 @@
             </li>
         </operations>
     </Operation>
-    <Operation Class="ModSettingsFramework.PatchOperationModOption">
-        <defaultValue>true</defaultValue>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
         <label>Make faction natural enemy</label>
-        <id>RCP_RecycleDeadMansSwitchNaturalEnemy</id>
-        <category>RCP_RecycleDeadMansSwitch</category>
         <operations>
             <li Class="PatchOperationAdd">
                 <xpath>//FactionDef[defName="DMS_Army"]</xpath>
@@ -28,11 +24,9 @@
             </li>
         </operations>
     </Operation>
-    <Operation Class="ModSettingsFramework.PatchOperationModOption">
-        <defaultValue>true</defaultValue>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
         <label>Lower settlement commonality</label>
-        <id>RCP_RecycleDeadMansSwitchSettlementCommonality</id>
-        <category>RCP_RecycleDeadMansSwitch</category>
         <operations>
             <li Class="PatchOperationReplace">
                 <xpath>//FactionDef[defName="DMS_Army"]/settlementGenerationWeight/text()</xpath>
@@ -40,22 +34,18 @@
             </li>
         </operations>
     </Operation>
-    <Operation Class="ModSettingsFramework.PatchOperationModOption">
-        <defaultValue>true</defaultValue>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
         <label>Remove vanilla tags from apparel</label>
-        <id>RCP_RecycleDeadMansSwitchTagFixApparel</id>
-        <category>RCP_RecycleDeadMansSwitch</category>
         <operations>
             <li Class="PatchOperationRemove">
                 <xpath>//ThingDef[(contains(@Name,"DMS") or contains(@ParentName,"DMS") or contains(defName,"DMS")) and apparel]/apparel/tags/li[not(contains(.,"DMS")) and not(contains(.,"Garrision"))]</xpath>
             </li>
         </operations>
     </Operation>
-    <Operation Class="ModSettingsFramework.PatchOperationModOption">
-        <defaultValue>true</defaultValue>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
         <label>Remove vanilla tags from weapons</label>
-        <id>RCP_RecycleDeadMansSwitchTagFixWeapon</id>
-        <category>RCP_RecycleDeadMansSwitch</category>
         <operations>
             <li Class="PatchOperationRemove">
                 <xpath>//ThingDef[(contains(@Name,"DMS") or contains(@ParentName,"DMS") or contains(defName,"DMS")) and weaponTags]/weaponTags/li[not(contains(.,"A_")) and not(contains(.,"AK21")) and not(contains(.,"Bipod_SAW")) and not(contains(.,"CE_")) and not(contains(.,"CivilianGun")) and not(contains(.,"DMS")) and not(contains(.,"Dragoon")) and not(contains(.,"ElephantGun")) and not(contains(.,"GSHG")) and not(contains(.,"H_")) and not(contains(.,"NoS")) and not(contains(.,"RiotLMG")) and not(contains(.,"Simple_LongRange")) and not(contains(.,"SurvivalRifle")) and not(contains(.,"V_")) and not(contains(.,"WarcasketAll")) and not(contains(.,"YAKB"))]</xpath>

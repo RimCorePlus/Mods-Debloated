@@ -1,9 +1,7 @@
 <Patch>
-	<Operation Class="ModSettingsFramework.PatchOperationModOption">
-		<defaultValue>true</defaultValue>
+	<Operation Class="VFECore.PatchOperationToggableSequence">
+		<enabled>true</enabled>
 		<label>Remove abilities</label>
-		<id>RCP_RecycleGiTSAbilities</id>
-		<category>RCP_RecycleGiTSCyberbrains</category>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//HediffDef[@ParentName="gitsAddedCyberbrainBase" or @ParentName="gitsAddedCyberbrainBasicBase" or @ParentName="gitsAddedCyberbrainEnhancedBase" or @ParentName="gitsAddedCyberbrainSpecCombatBase" or @ParentName="gitsAddedCyberbrainSpecWorkBase" or @ParentName="gitsAddedCyberbrainAdvCombatBase" or @ParentName="gitsAddedCyberbrainAdvWorkBase" or @ParentName="gitsAddedCyberbrainExtremeBase"]/abilities</xpath>

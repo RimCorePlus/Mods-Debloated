@@ -1,9 +1,7 @@
 <Patch>
-    <Operation Class="ModSettingsFramework.PatchOperationModOption">
-        <defaultValue>true</defaultValue>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
         <label>Move mechanitor buildings into their own architect tab</label>
-        <id>RCP_RecycleTabsMechanitor</id>
-        <category>RCP_RecycleTabs</category>
         <operations>
             <li Class="PatchOperationAdd">
                 <xpath>Defs</xpath>

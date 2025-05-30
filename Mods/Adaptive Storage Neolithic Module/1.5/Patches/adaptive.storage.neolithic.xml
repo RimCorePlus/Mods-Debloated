@@ -1,9 +1,7 @@
 <Patch>
-    <Operation Class="ModSettingsFramework.PatchOperationModOption">
-        <defaultValue>true</defaultValue>
-        <label>Remove research requirement and replace with compelx furniture</label>
-        <id>RCP_RecycleNeolithicResearch</id>
-        <category>RCP_RecycleASFNeolithic</category>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>Remove research requirement and replace with compelx furniture</label>s
         <operations>
             <li Class="PatchOperationReplace">
                 <xpath>//ThingDef[researchPrerequisites/li[text()="ASNeolithicNeolithicStorage" or text()="ASNeolithicNeolithicItemDisplay"]]/researchPrerequisites/li/text()</xpath>

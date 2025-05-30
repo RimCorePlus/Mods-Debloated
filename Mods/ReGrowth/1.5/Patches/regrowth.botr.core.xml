@@ -1,9 +1,7 @@
 <Patch>
-    <Operation Class="ModSettingsFramework.PatchOperationModOption">
-        <defaultValue>true</defaultValue>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
         <label>Remove grassland biome</label>
-        <id>RCP_RecycleReGrowthCoreGrassland</id>
-        <category>RCP_RecycleReGrowthCore</category>
         <operations>
             <li Class="PatchOperationRemove">
                 <xpath>//BiomeDef[defName="RG_TemperateGrassland"] | //li[text()="RG_TemperateGrassland"] | //RG_TemperateGrassland</xpath>
