@@ -1,7 +1,7 @@
 <Patch>
     <Operation Class="VFECore.PatchOperationToggableSequence">
         <enabled>true</enabled>
-        <label>Remove (tm) from table name</label>
+        <label>[Medical Training] Remove (tm) from table name</label>
         <operations>
             <li Class="PatchOperationReplace">
                 <xpath>//ThingDef[defName="IF_MeditrainTable"]/label/text()</xpath>
@@ -11,7 +11,7 @@
     </Operation>
     <Operation Class="VFECore.PatchOperationToggableSequence">
         <enabled>true</enabled>
-        <label>Remove wood from costlist</label>
+        <label>[Medical Training] Remove wood from costlist</label>
         <operations>
             <li Class="PatchOperationRemove">
                 <xpath>//ThingDef[defName="IF_MeditrainTable"]/costList/WoodLog</xpath>

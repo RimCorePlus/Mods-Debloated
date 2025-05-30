@@ -1,7 +1,7 @@
 <Patch>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>true</enabled>
-		<label>Remove duplicate gas mask</label>
+		<label>[Combat Extended] Remove duplicate gas mask</label>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//ThingDef[defName="CE_Apparel_GasMask"]</xpath>
@@ -10,7 +10,7 @@
 	</Operation>
 	<Operation Class="VFECore.PatchOperationToggableSequence">
 		<enabled>true</enabled>
-		<label>Remove exoframe from pawn generation</label>
+		<label>[Combat Extended] Remove exoframe from pawn generation</label>
 		<operations>
 			<li Class="PatchOperationRemove">
 				<xpath>//ThingDef[defName="CE_Apparel_ExoFrame"]/apparel/defaultOutfitTags | //ThingDef[defName="CE_Apparel_ExoFrame"]/apparel/tags</xpath>

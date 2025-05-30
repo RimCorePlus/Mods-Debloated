@@ -1,7 +1,7 @@
 <Patch>
     <Operation MayRequire="dubwise.dubsskylights" Class="VFECore.PatchOperationToggableSequence">
         <enabled>true</enabled>
-        <label>Use ReBuild glass for Dubs Skylights</label>
+        <label>[ReBuild] Use ReBuild glass for Dubs Skylights</label>
         <operations>
             <li Class="PatchOperationSetName">
                 <success>Always</success> <!--supress false red error-->

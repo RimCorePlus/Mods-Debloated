@@ -1,7 +1,7 @@
 <Patch>
     <Operation Class="VFECore.PatchOperationToggableSequence">
         <enabled>true</enabled>
-        <label>Debloat and rebalance</label>
+        <label>[RJW] Debloat and rebalance</label>
         <operations>
             <!--make used condoms not ingestible-->
             <li Class="PatchOperationAttributeSet">
@@ -48,7 +48,7 @@
     </Operation>
     <Operation Class="VFECore.PatchOperationToggableSequence">
         <enabled>true</enabled>
-        <label>Remove slut traits from pawn generation</label>
+        <label>[RJW] Remove slut traits from pawn generation</label>
         <operations>
             <!--make used condoms not ingestible-->
             <li Class="PatchOperationReplace">

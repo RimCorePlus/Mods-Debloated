@@ -1,7 +1,7 @@
 <Patch>
     <Operation Class="VFECore.PatchOperationToggableSequence">
         <enabled>true</enabled>
-        <label>Architect menu cleanup</label>
+        <label>[Mashed's Ashlands] Declutter architect tab</label>
         <operations>
             <!--parasol wood floor-->
             <li Class="PatchOperationConditional">

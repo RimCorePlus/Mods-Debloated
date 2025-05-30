@@ -1,7 +1,7 @@
 <Patch>
     <Operation Class="VFECore.PatchOperationToggableSequence">
         <enabled>true</enabled>
-        <label>Remove research requirement and replace with compelx furniture</label>s
+        <label>[ASF Neolithic] Replace research requirement with compelx furniture</label>
         <operations>
             <li Class="PatchOperationReplace">
                 <xpath>//ThingDef[researchPrerequisites/li[text()="ASNeolithicNeolithicStorage" or text()="ASNeolithicNeolithicItemDisplay"]]/researchPrerequisites/li/text()</xpath>

@@ -1,7 +1,7 @@
 <Patch>
     <Operation Class="VFECore.PatchOperationToggableSequence">
         <enabled>true</enabled>
-        <label>Remove hat and mustache</label>
+        <label>[Mario's Pizza] Remove hat and mustache</label>
         <operations>
             <li Class="PatchOperationRemove">
                 <xpath>//ThingDef[defName="GS_ChefHat"] | //BeardDef[defName="GS_Mario"]</xpath>
