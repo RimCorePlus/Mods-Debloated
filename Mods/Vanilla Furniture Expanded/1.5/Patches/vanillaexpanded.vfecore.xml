@@ -1,0 +1,17 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>[Vanilla Furniture Expanded] Adjust research</label>
+        <operations>
+            <!--you must learn to build a piano before you can make a trash bin-->
+            <li Class="PatchOperationReplace">
+                <xpath>//ResearchProjectDef[defName="MF_WasteDisposal"]/prerequisites/li/text()</xpath>
+                <value>ComplexFurniture</value>
+            </li>
+            <li Class="PatchOperationReplace">
+                <xpath>//ResearchProjectDef[defName="MF_WasteDisposal"]/baseCost/text()</xpath>
+                <value>600</value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

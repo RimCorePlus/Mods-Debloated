@@ -14,21 +14,6 @@
 			<downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl>
 		</li>
 	</modDependencies>
-	<loadBefore>
-		<li>rcp.bloodfeeders</li>
-		<li>rcp.dirtmole</li>
-		<li>RCP.Elves</li>
-		<li>RCP.Empire</li>
-		<li>rcp.foxkin</li>
-		<li>RCP.Genes</li>
-		<li>RCP.Ideology</li>
-		<li>RCP.Impid</li>
-		<li>RCP.Industry</li>
-		<li>RCP.Scenarios</li>
-		<li>RCP.Storytellers</li>
-		<li>RCP.Traits</li>
-		<li>rcp.waster</li>
-	</loadBefore>
 	<loadAfter>
 		<li>adaptive.storage.framework</li>
 		<li>adaptive.storage.neolithic</li>
@@ -36,15 +21,18 @@
 		<li>boomer.Rebalance</li>
 		<li>ceteam.combatextended</li>
 		<li>ceteam.combatextendedarmory</li>
-		<li>RCP.Utilities</li>
 		<li>dankpyon.medieval.overhaul</li>
 		<li>dubwise.dubsbadhygiene</li>
 		<li>moistestwhale.gitscyberbrains</li>
 		<li>oppey.eyegenes2</li>
+		<li>RCP.Scenarios</li>
+		<li>RCP.Utilities</li>
+		<li>rebuild.cotr.doorsandcorners</li>
 		<li>regrowth.botr.core</li>
 		<li>regrowth.botr.retextures</li>
 		<li>rim.job.world</li>
 		<li>smashphil.vehicleframework</li>
 		<li>sov.pizza</li>
+		<li>vanillaexpanded.vfecore</li>
 	</loadAfter>
 </ModMetaData>

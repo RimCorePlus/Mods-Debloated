@@ -23,5 +23,6 @@
         <li IfModActive="rim.job.world">Mods/RimJobWorld/1.5</li>
         <li IfModActive="rimthunder.core">Mods/RimThunder/1.5</li>
         <li IfModActive="aoba.deadmanswitch.core">Mods/The Dead Mans Switch/1.5</li>
+        <li IfModActive="vanillaexpanded.vfecore">Mods/Vanilla Furniture Expanded/1.5</li>
     </v1.5>
 </loadFolders>
