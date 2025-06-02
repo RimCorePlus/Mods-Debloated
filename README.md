@@ -27,6 +27,9 @@ All patches are toggable unless noted otherwise.
 ### [[BT] EyeGenes2 | Base - [NL] Facial Animation |](https://steamcommunity.com/sharedfiles/filedetails/?id=2898151329)
 - Automatic, non-toggable patch to fix duplicate displayPriorityInXenotype red erros with other mods
 
+### Adaptive Storage Framework
+- Move more shelves to storage tab by patching ShelfBase
+
 ### [Adaptive Storage Neolithic Module](https://steamcommunity.com/sharedfiles/filedetails/?id=3033901895)
 - Unlock all buildings with complex furniture
 
@@ -49,10 +52,16 @@ All patches are toggable unless noted otherwise.
 ### [Mario's Pizza](https://steamcommunity.com/sharedfiles/filedetails/?id=3226188356)
 - Remove chef's hat and mustache
 
+### Mashed's Ashlands
+- Create a dropdown for wood floors and bridges in the architect menu so parasol floors don't take up more space
+
 ### [Medical Training](https://steamcommunity.com/sharedfiles/filedetails/?id=1214615921)
 - Remove (tm) from table name
 - Remove wood from costlist
 - Upscaled table texture
+
+### Rebuild: Doors and Corners + Dubs Skylights
+- Use ReBuild glass for Dubs Skylights
 
 ### [ReGrowth: Core](https://steamcommunity.com/workshop/filedetails/?id=2260097569)
 - Remove grassland biome
@@ -62,6 +71,18 @@ All patches are toggable unless noted otherwise.
 
 #### + [Adaptive Storage Framework](https://steamcommunity.com/workshop/filedetails/?id=3033901359)
 - Unused condoms can be stored in end tables
+
+### The Dead Man's Switch
+- Remove all empire overlap
+- Make faction natural enemy
+- Lower settlement commonality to vanilla faction values
+- Remove vanilla tags from apparel and weapons
+
+### Vanilla Expanded Framework
+- Change worktype for unloading item processor from Hauling to the higher priority BasicWorker
+
+### Vanilla Furniture Expanded
+- Modify research tree so waste disposal is more accessible
 
 ## Legal
 Portions of the materials used to create this mod are trademarks and/or copyrighted works of Ludeon Studios Inc. All rights reserved by Ludeon. This mod is not official and is not endorsed by Ludeon.
