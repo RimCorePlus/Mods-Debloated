@@ -1,0 +1,12 @@
+<Patch>
+    <Operation Class="VFECore.PatchOperationToggableSequence">
+        <enabled>true</enabled>
+        <label>[VEF] Change worktype for unloading item processor</label>
+        <operations>
+            <li Class="PatchOperationReplace">
+                <xpath>//WorkGiverDef[defName="IP_RemoveProduct"]/workType/text()</xpath>
+                <value>BasicWorker</value>
+            </li>
+        </operations>
+    </Operation>
+</Patch>
