@@ -8,8 +8,9 @@
             <!--scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs"]/kindCounts[count(li)=1]/li/count[text()="1"] counts pawnkinds ONLY if there's one pawnkind specified-->
             <!--scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs"]/xenotypeCounts[count(li)=1]/li/count[text()="1"] counts xenotypes ONLY if there's one xenotype specified-->
             <!--scenario/parts/li[@Class="ScenPart_StartingThing_Defined"] excludes scenarios with no starting items (like naked brutality), because they're probably not intended to have any items-->
+            <!--not(scenario/parts/li/thingDef[text()="DBH_WaterBottle"]) excludes scenarios that already have water-->
             <li Class="PatchOperationAdd">
-                <xpath>//ScenarioDef[scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns"]/pawnCount[text()="1"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs"]/kindCounts[count(li)=1]/li/count[text()="1"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes"]/xenotypeCounts[count(li)=1]/li/count[text()="1"]][scenario/parts/li[@Class="ScenPart_StartingThing_Defined"]]/scenario/parts</xpath>
+                <xpath>//ScenarioDef[scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns"]/pawnCount[text()="1"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs"]/kindCounts[count(li)=1]/li/count[text()="1"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes"]/xenotypeCounts[count(li)=1]/li/count[text()="1"]][scenario/parts/li[@Class="ScenPart_StartingThing_Defined"]][not(scenario/parts/li/thingDef[text()="DBH_WaterBottle"])]/scenario/parts</xpath>
                 <success>Always</success>
                 <value>
                     <li Class="ScenPart_StartingThing_Defined">
@@ -20,7 +21,7 @@
                 </value>
             </li>
             <li Class="PatchOperationAdd">
-                <xpath>//ScenarioDef[scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns"]/pawnCount[text()="2"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs"]/kindCounts[count(li)=1]/li/count[text()="2"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes"]/xenotypeCounts[count(li)=1]/li/count[text()="2"]][scenario/parts/li[@Class="ScenPart_StartingThing_Defined"]]/scenario/parts</xpath>
+                <xpath>//ScenarioDef[scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns"]/pawnCount[text()="2"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs"]/kindCounts[count(li)=1]/li/count[text()="2"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes"]/xenotypeCounts[count(li)=1]/li/count[text()="2"]][scenario/parts/li[@Class="ScenPart_StartingThing_Defined"]][not(scenario/parts/li/thingDef[text()="DBH_WaterBottle"])]/scenario/parts</xpath>
                 <success>Always</success>
                 <value>
                     <li Class="ScenPart_StartingThing_Defined">
@@ -31,7 +32,7 @@
                 </value>
             </li>
             <li Class="PatchOperationAdd">
-                <xpath>//ScenarioDef[scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns"]/pawnCount[text()="3"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs"]/kindCounts[count(li)=1]/li/count[text()="3"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes"]/xenotypeCounts[count(li)=1]/li/count[text()="3"]][scenario/parts/li[@Class="ScenPart_StartingThing_Defined"]]/scenario/parts</xpath>
+                <xpath>//ScenarioDef[scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns"]/pawnCount[text()="3"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs"]/kindCounts[count(li)=1]/li/count[text()="3"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes"]/xenotypeCounts[count(li)=1]/li/count[text()="3"]][scenario/parts/li[@Class="ScenPart_StartingThing_Defined"]][not(scenario/parts/li/thingDef[text()="DBH_WaterBottle"])]/scenario/parts</xpath>
                 <success>Always</success>
                 <value>
                     <li Class="ScenPart_StartingThing_Defined">
@@ -42,7 +43,7 @@
                 </value>
             </li>
             <li Class="PatchOperationAdd">
-                <xpath>//ScenarioDef[scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns"]/pawnCount[text()="4"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs"]/kindCounts[count(li)=1]/li/count[text()="4"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes"]/xenotypeCounts[count(li)=1]/li/count[text()="4"]][scenario/parts/li[@Class="ScenPart_StartingThing_Defined"]]/scenario/parts</xpath>
+                <xpath>//ScenarioDef[scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns"]/pawnCount[text()="4"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs"]/kindCounts[count(li)=1]/li/count[text()="4"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes"]/xenotypeCounts[count(li)=1]/li/count[text()="4"]][scenario/parts/li[@Class="ScenPart_StartingThing_Defined"]][not(scenario/parts/li/thingDef[text()="DBH_WaterBottle"])]/scenario/parts</xpath>
                 <success>Always</success>
                 <value>
                     <li Class="ScenPart_StartingThing_Defined">
@@ -53,7 +54,7 @@
                 </value>
             </li>
             <li Class="PatchOperationAdd">
-                <xpath>//ScenarioDef[scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns"]/pawnCount[text()="5"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs"]/kindCounts[count(li)=1]/li/count[text()="5"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes"]/xenotypeCounts[count(li)=1]/li/count[text()="5"]][scenario/parts/li[@Class="ScenPart_StartingThing_Defined"]]/scenario/parts</xpath>
+                <xpath>//ScenarioDef[scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns"]/pawnCount[text()="5"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs"]/kindCounts[count(li)=1]/li/count[text()="5"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes"]/xenotypeCounts[count(li)=1]/li/count[text()="5"]][scenario/parts/li[@Class="ScenPart_StartingThing_Defined"]][not(scenario/parts/li/thingDef[text()="DBH_WaterBottle"])]/scenario/parts</xpath>
                 <success>Always</success>
                 <value>
                     <li Class="ScenPart_StartingThing_Defined">
@@ -64,7 +65,7 @@
                 </value>
             </li>
             <li Class="PatchOperationAdd">
-                <xpath>//ScenarioDef[scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns"]/pawnCount[text()="6"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs"]/kindCounts[count(li)=1]/li/count[text()="6"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes"]/xenotypeCounts[count(li)=1]/li/count[text()="6"]][scenario/parts/li[@Class="ScenPart_StartingThing_Defined"]]/scenario/parts</xpath>
+                <xpath>//ScenarioDef[scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns"]/pawnCount[text()="6"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs"]/kindCounts[count(li)=1]/li/count[text()="6"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes"]/xenotypeCounts[count(li)=1]/li/count[text()="6"]][scenario/parts/li[@Class="ScenPart_StartingThing_Defined"]][not(scenario/parts/li/thingDef[text()="DBH_WaterBottle"])]/scenario/parts</xpath>
                 <success>Always</success>
                 <value>
                     <li Class="ScenPart_StartingThing_Defined">
@@ -75,7 +76,7 @@
                 </value>
             </li>
             <li Class="PatchOperationAdd">
-                <xpath>//ScenarioDef[scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns"]/pawnCount[text()="7"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs"]/kindCounts[count(li)=1]/li/count[text()="7"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes"]/xenotypeCounts[count(li)=1]/li/count[text()="7"]][scenario/parts/li[@Class="ScenPart_StartingThing_Defined"]]/scenario/parts</xpath>
+                <xpath>//ScenarioDef[scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns"]/pawnCount[text()="7"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs"]/kindCounts[count(li)=1]/li/count[text()="7"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes"]/xenotypeCounts[count(li)=1]/li/count[text()="7"]][scenario/parts/li[@Class="ScenPart_StartingThing_Defined"]][not(scenario/parts/li/thingDef[text()="DBH_WaterBottle"])]/scenario/parts</xpath>
                 <success>Always</success>
                 <value>
                     <li Class="ScenPart_StartingThing_Defined">
@@ -86,7 +87,7 @@
                 </value>
             </li>
             <li Class="PatchOperationAdd">
-                <xpath>//ScenarioDef[scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns"]/pawnCount[text()="8"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs"]/kindCounts[count(li)=1]/li/count[text()="8"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes"]/xenotypeCounts[count(li)=1]/li/count[text()="8"]][scenario/parts/li[@Class="ScenPart_StartingThing_Defined"]]/scenario/parts</xpath>
+                <xpath>//ScenarioDef[scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns"]/pawnCount[text()="8"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs"]/kindCounts[count(li)=1]/li/count[text()="8"] or scenario/parts/li[@Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes"]/xenotypeCounts[count(li)=1]/li/count[text()="8"]][scenario/parts/li[@Class="ScenPart_StartingThing_Defined"]][not(scenario/parts/li/thingDef[text()="DBH_WaterBottle"])]/scenario/parts</xpath>
                 <success>Always</success>
                 <value>
                     <li Class="ScenPart_StartingThing_Defined">
@@ -100,7 +101,7 @@
             <li Class="PatchOperationConditional">
                 <xpath>//ScenarioDef[defName="Sanguophage"]</xpath>
                 <match Class="PatchOperationAdd">
-                    <xpath>//ScenarioDef[defName="Sanguophage"]/scenario/parts</xpath>
+                    <xpath>//ScenarioDef[defName="Sanguophage"][not(scenario/parts/li/thingDef[text()="DBH_WaterBottle"])]/scenario/parts</xpath>
                     <success>Always</success>
                     <value>
                         <li Class="ScenPart_StartingThing_Defined">
@@ -114,7 +115,7 @@
             <li Class="PatchOperationConditional">
                 <xpath>//ScenarioDef[defName="TheAnomaly"]</xpath>
                 <match Class="PatchOperationAdd">
-                    <xpath>//ScenarioDef[defName="TheAnomaly"]/scenario/parts</xpath>
+                    <xpath>//ScenarioDef[defName="TheAnomaly"][not(scenario/parts/li/thingDef[text()="DBH_WaterBottle"])]/scenario/parts</xpath>
                     <success>Always</success>
                     <value>
                         <li Class="ScenPart_StartingThing_Defined">
@@ -128,7 +129,7 @@
             <li Class="PatchOperationConditional">
                 <xpath>//ScenarioDef[defName="RCP_Expedition"]</xpath>
                 <match Class="PatchOperationAdd">
-                    <xpath>//ScenarioDef[defName="RCP_Expedition"]/scenario/parts</xpath>
+                    <xpath>//ScenarioDef[defName="RCP_Expedition"][not(scenario/parts/li/thingDef[text()="DBH_WaterBottle"])]/scenario/parts</xpath>
                     <success>Always</success>
                     <value>
                         <li Class="ScenPart_StartingThing_Defined">
